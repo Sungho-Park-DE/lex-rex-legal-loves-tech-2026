@@ -138,3 +138,8 @@ Radar-Saat, UI).
 
 `cases/` und `store/` sind gitignored: ein Fallobjekt enthält die Pseudonym-Zuordnung, und die
 verlässt diesen Rechner nicht.
+
+## Lizenz
+
+MIT — siehe [`LICENSE`](LICENSE). Die Gesetzestexte in `normbasis/` sind amtliche Werke (§ 5 UrhG);
+die Demofälle sind Fiktion. Das Programm ersetzt keine Rechtsberatung — es bereitet sie vor.
