@@ -1,0 +1,311 @@
+{
+  "meta": {
+    "source": "https://www.gesetze-im-internet.de",
+    "publisher": "Bundesamt für Justiz / juris GmbH",
+    "fetched_on": "2026-08-26",
+    "generated_by": "data/fetch_statutes.py",
+    "note": "Non-official reading copy of official XML. Every entry carries its own `stand` (the norm's builddate) — cite that, not the fetch date. `geprueft` is the law-student check, not the download."
+  },
+  "eintraege": {
+    "bgb_241_2": {
+      "key": "bgb_241_2",
+      "gesetz": "BGB",
+      "norm": "§ 241 Abs. 2 BGB",
+      "absatz": "2",
+      "text": "Das Schuldverhältnis kann nach seinem Inhalt jeden Teil zur Rücksicht auf die Rechte, Rechtsgüter und Interessen des anderen Teils verpflichten.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__241.html",
+      "geprueft": false
+    },
+    "bgb_305_2": {
+      "key": "bgb_305_2",
+      "gesetz": "BGB",
+      "norm": "§ 305 Abs. 2 BGB",
+      "absatz": "2",
+      "text": "Allgemeine Geschäftsbedingungen werden nur dann Bestandteil eines Vertrags, wenn der Verwender bei Vertragsschluss 1. die andere Vertragspartei ausdrücklich oder, wenn ein ausdrücklicher Hinweis wegen der Art des Vertragsschlusses nur unter unverhältnismäßigen Schwierigkeiten möglich ist, durch deutlich sichtbaren Aushang am Orte des Vertragsschlusses auf sie hinweist und 2. der anderen Vertragspartei die Möglichkeit verschafft, in zumutbarer Weise, die auch eine für den Verwender erkennbare körperliche Behinderung der anderen Vertragspartei angemessen berücksichtigt, von ihrem Inhalt Kenntnis zu nehmen, und wenn die andere Vertragspartei mit ihrer Geltung einverstanden ist.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__305.html",
+      "geprueft": false
+    },
+    "bgb_305b": {
+      "key": "bgb_305b",
+      "gesetz": "BGB",
+      "norm": "§ 305b BGB",
+      "absatz": null,
+      "text": "Individuelle Vertragsabreden haben Vorrang vor Allgemeinen Geschäftsbedingungen.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__305b.html",
+      "geprueft": false
+    },
+    "bgb_305c": {
+      "key": "bgb_305c",
+      "gesetz": "BGB",
+      "norm": "§ 305c BGB",
+      "absatz": null,
+      "text": "(1) Bestimmungen in Allgemeinen Geschäftsbedingungen, die nach den Umständen, insbesondere nach dem äußeren Erscheinungsbild des Vertrags, so ungewöhnlich sind, dass der Vertragspartner des Verwenders mit ihnen nicht zu rechnen braucht, werden nicht Vertragsbestandteil. (2) Zweifel bei der Auslegung Allgemeiner Geschäftsbedingungen gehen zu Lasten des Verwenders.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__305c.html",
+      "geprueft": false
+    },
+    "bgb_306": {
+      "key": "bgb_306",
+      "gesetz": "BGB",
+      "norm": "§ 306 BGB",
+      "absatz": null,
+      "text": "(1) Sind Allgemeine Geschäftsbedingungen ganz oder teilweise nicht Vertragsbestandteil geworden oder unwirksam, so bleibt der Vertrag im Übrigen wirksam. (2) Soweit die Bestimmungen nicht Vertragsbestandteil geworden oder unwirksam sind, richtet sich der Inhalt des Vertrags nach den gesetzlichen Vorschriften. (3) Der Vertrag ist unwirksam, wenn das Festhalten an ihm auch unter Berücksichtigung der nach Absatz 2 vorgesehenen Änderung eine unzumutbare Härte für eine Vertragspartei darstellen würde.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__306.html",
+      "geprueft": false
+    },
+    "bgb_307_1_1": {
+      "key": "bgb_307_1_1",
+      "gesetz": "BGB",
+      "norm": "§ 307 Abs. 1 S. 1, Abs. 2 BGB",
+      "absatz": "1, 2",
+      "text": "Bestimmungen in Allgemeinen Geschäftsbedingungen sind unwirksam, wenn sie den Vertragspartner des Verwenders entgegen den Geboten von Treu und Glauben unangemessen benachteiligen. Eine unangemessene Benachteiligung kann sich auch daraus ergeben, dass die Bestimmung nicht klar und verständlich ist. Eine unangemessene Benachteiligung ist im Zweifel anzunehmen, wenn eine Bestimmung 1. mit wesentlichen Grundgedanken der gesetzlichen Regelung, von der abgewichen wird, nicht zu vereinbaren ist oder 2. wesentliche Rechte oder Pflichten, die sich aus der Natur des Vertrags ergeben, so einschränkt, dass die Erreichung des Vertragszwecks gefährdet ist.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__307.html",
+      "geprueft": false
+    },
+    "bgb_307_1_2": {
+      "key": "bgb_307_1_2",
+      "gesetz": "BGB",
+      "norm": "§ 307 Abs. 1 S. 2 BGB",
+      "absatz": "1",
+      "text": "Bestimmungen in Allgemeinen Geschäftsbedingungen sind unwirksam, wenn sie den Vertragspartner des Verwenders entgegen den Geboten von Treu und Glauben unangemessen benachteiligen. Eine unangemessene Benachteiligung kann sich auch daraus ergeben, dass die Bestimmung nicht klar und verständlich ist.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__307.html",
+      "geprueft": false
+    },
+    "bgb_307_3": {
+      "key": "bgb_307_3",
+      "gesetz": "BGB",
+      "norm": "§ 307 Abs. 3 BGB",
+      "absatz": "3",
+      "text": "Die Absätze 1 und 2 sowie die §§ 308 und 309 gelten nur für Bestimmungen in Allgemeinen Geschäftsbedingungen, durch die von Rechtsvorschriften abweichende oder diese ergänzende Regelungen vereinbart werden. Andere Bestimmungen können nach Absatz 1 Satz 2 in Verbindung mit Absatz 1 Satz 1 unwirksam sein.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__307.html",
+      "geprueft": false
+    },
+    "bgb_308_4": {
+      "key": "bgb_308_4",
+      "gesetz": "BGB",
+      "norm": "§ 308 Nr. 4 BGB",
+      "absatz": "Nr. 4",
+      "text": "4. (Änderungsvorbehalt) die Vereinbarung eines Rechts des Verwenders, die versprochene Leistung zu ändern oder von ihr abzuweichen, wenn nicht die Vereinbarung der Änderung oder Abweichung unter Berücksichtigung der Interessen des Verwenders für den anderen Vertragsteil zumutbar ist;",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__308.html",
+      "geprueft": false
+    },
+    "bgb_308_5": {
+      "key": "bgb_308_5",
+      "gesetz": "BGB",
+      "norm": "§ 308 Nr. 5 BGB",
+      "absatz": "Nr. 5",
+      "text": "5. (Fingierte Erklärungen) eine Bestimmung, wonach eine Erklärung des Vertragspartners des Verwenders bei Vornahme oder Unterlassung einer bestimmten Handlung als von ihm abgegeben oder nicht abgegeben gilt, es sei denn, dassa) dem Vertragspartner eine angemessene Frist zur Abgabe einer ausdrücklichen Erklärung eingeräumt ist und b) der Verwender sich verpflichtet, den Vertragspartner bei Beginn der Frist auf die vorgesehene Bedeutung seines Verhaltens besonders hinzuweisen;",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__308.html",
+      "geprueft": false
+    },
+    "bgb_309_9": {
+      "key": "bgb_309_9",
+      "gesetz": "BGB",
+      "norm": "§ 309 Nr. 9 BGB",
+      "absatz": "Nr. 9",
+      "text": "9. bei einem Vertragsverhältnis, das die regelmäßige Lieferung von Waren oder die regelmäßige Erbringung von Dienst- oder Werkleistungen durch den Verwender zum Gegenstand hat, a) eine den anderen Vertragsteil länger als zwei Jahre bindende Laufzeit des Vertrags, b) eine den anderen Vertragsteil bindende stillschweigende Verlängerung des Vertragsverhältnisses, es sei denn das Vertragsverhältnis wird nur auf unbestimmte Zeit verlängert und dem anderen Vertragsteil wird das Recht eingeräumt, das verlängerte Vertragsverhältnis jederzeit mit einer Frist von höchstens einem Monat zu kündigen, oder c) eine zu Lasten des anderen Vertragsteils längere Kündigungsfrist als einen Monat vor Ablauf der zunächst vorgesehenen Vertragsdauer; dies gilt nicht für Verträge über die Lieferung zusammengehörig verkaufter Sachen sowie für Versicherungsverträge;",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__309.html",
+      "geprueft": false
+    },
+    "bgb_309_13": {
+      "key": "bgb_309_13",
+      "gesetz": "BGB",
+      "norm": "§ 309 Nr. 13 lit. b BGB",
+      "absatz": "Nr. 13",
+      "text": "13. (Form von Anzeigen und Erklärungen) eine Bestimmung, durch die Anzeigen oder Erklärungen, die dem Verwender oder einem Dritten gegenüber abzugeben sind, gebunden werden a) an eine strengere Form als die schriftliche Form in einem Vertrag, für den durch Gesetz notarielle Beurkundung vorgeschrieben ist oder b) an eine strengere Form als die Textform in anderen als den in Buchstabe a genannten Verträgen oder c) an besondere Zugangserfordernisse;",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__309.html",
+      "geprueft": false
+    },
+    "bgb_310_3": {
+      "key": "bgb_310_3",
+      "gesetz": "BGB",
+      "norm": "§ 310 Abs. 3 BGB",
+      "absatz": "3",
+      "text": "Bei Verträgen zwischen einem Unternehmer und einem Verbraucher (Verbraucherverträge) finden die Vorschriften dieses Abschnitts mit folgenden Maßgaben Anwendung: 1. Allgemeine Geschäftsbedingungen gelten als vom Unternehmer gestellt, es sei denn, dass sie durch den Verbraucher in den Vertrag eingeführt wurden; 2. § 305c Abs. 2 und die §§ 306 und 307 bis 309 dieses Gesetzes sowie Artikel 46b des Einführungsgesetzes zum Bürgerlichen Gesetzbuche finden auf vorformulierte Vertragsbedingungen auch dann Anwendung, wenn diese nur zur einmaligen Verwendung bestimmt sind und soweit der Verbraucher auf Grund der Vorformulierung auf ihren Inhalt keinen Einfluss nehmen konnte; 3. bei der Beurteilung der unangemessenen Benachteiligung nach § 307 Abs. 1 und 2 sind auch die den Vertragsschluss begleitenden Umstände zu berücksichtigen.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__310.html",
+      "geprueft": false
+    },
+    "bgb_315_3": {
+      "key": "bgb_315_3",
+      "gesetz": "BGB",
+      "norm": "§ 315 Abs. 3 BGB",
+      "absatz": "3",
+      "text": "Soll die Bestimmung nach billigem Ermessen erfolgen, so ist die getroffene Bestimmung für den anderen Teil nur verbindlich, wenn sie der Billigkeit entspricht. Entspricht sie nicht der Billigkeit, so wird die Bestimmung durch Urteil getroffen; das Gleiche gilt, wenn die Bestimmung verzögert wird.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__315.html",
+      "geprueft": false
+    },
+    "bgb_812": {
+      "key": "bgb_812",
+      "gesetz": "BGB",
+      "norm": "§ 812 BGB",
+      "absatz": null,
+      "text": "(1) Wer durch die Leistung eines anderen oder in sonstiger Weise auf dessen Kosten etwas ohne rechtlichen Grund erlangt, ist ihm zur Herausgabe verpflichtet. Diese Verpflichtung besteht auch dann, wenn der rechtliche Grund später wegfällt oder der mit einer Leistung nach dem Inhalt des Rechtsgeschäfts bezweckte Erfolg nicht eintritt. (2) Als Leistung gilt auch die durch Vertrag erfolgte Anerkennung des Bestehens oder des Nichtbestehens eines Schuldverhältnisses.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__812.html",
+      "geprueft": false
+    },
+    "bgb_195": {
+      "key": "bgb_195",
+      "gesetz": "BGB",
+      "norm": "§ 195 BGB",
+      "absatz": null,
+      "text": "Die regelmäßige Verjährungsfrist beträgt drei Jahre.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__195.html",
+      "geprueft": false
+    },
+    "bgb_199": {
+      "key": "bgb_199",
+      "gesetz": "BGB",
+      "norm": "§ 199 BGB",
+      "absatz": null,
+      "text": "(1) Die regelmäßige Verjährungsfrist beginnt, soweit nicht ein anderer Verjährungsbeginn bestimmt ist, mit dem Schluss des Jahres, in dem 1. der Anspruch entstanden ist und 2. der Gläubiger von den den Anspruch begründenden Umständen und der Person des Schuldners Kenntnis erlangt oder ohne grobe Fahrlässigkeit erlangen müsste. (2) Schadensersatzansprüche, die auf der Verletzung des Lebens, des Körpers, der Gesundheit oder der Freiheit beruhen, verjähren ohne Rücksicht auf ihre Entstehung und die Kenntnis oder grob fahrlässige Unkenntnis in 30 Jahren von der Begehung der Handlung, der Pflichtverletzung oder dem sonstigen, den Schaden auslösenden Ereignis an. (3) Sonstige Schadensersatzansprüche verjähren 1. ohne Rücksicht auf die Kenntnis oder grob fahrlässige Unkenntnis in zehn Jahren von ihrer Entstehung an und 2. ohne Rücksicht auf ihre Entstehung und die Kenntnis oder grob fahrlässige Unkenntnis in 30 Jahren von der Begehung der Handlung, der Pflichtverletzung oder dem sonstigen, den Schaden auslösenden Ereignis an. Maßgeblich ist die früher endende Frist. (3a) Ansprüche, die auf einem Erbfall beruhen oder deren Geltendmachung die Kenntnis einer Verfügung von Todes wegen voraussetzt, verjähren ohne Rücksicht auf die Kenntnis oder grob fahrlässige Unkenntnis in 30 Jahren von der Entstehung des Anspruchs an. (4) Andere Ansprüche als die nach den Absätzen 2 bis 3a verjähren ohne Rücksicht auf die Kenntnis oder grob fahrlässige Unkenntnis in zehn Jahren von ihrer Entstehung an. (5) Geht der Anspruch auf ein Unterlassen, so tritt an die Stelle der Entstehung die Zuwiderhandlung.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__199.html",
+      "geprueft": false
+    },
+    "bgb_145": {
+      "key": "bgb_145",
+      "gesetz": "BGB",
+      "norm": "§ 145 BGB",
+      "absatz": null,
+      "text": "Wer einem anderen die Schließung eines Vertrags anträgt, ist an den Antrag gebunden, es sei denn, dass er die Gebundenheit ausgeschlossen hat.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__145.html",
+      "geprueft": false
+    },
+    "bgb_147": {
+      "key": "bgb_147",
+      "gesetz": "BGB",
+      "norm": "§ 147 BGB",
+      "absatz": null,
+      "text": "(1) Der einem Anwesenden gemachte Antrag kann nur sofort angenommen werden. Dies gilt auch von einem mittels Fernsprechers oder einer sonstigen technischen Einrichtung von Person zu Person gemachten Antrag. (2) Der einem Abwesenden gemachte Antrag kann nur bis zu dem Zeitpunkt angenommen werden, in welchem der Antragende den Eingang der Antwort unter regelmäßigen Umständen erwarten darf.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__147.html",
+      "geprueft": false
+    },
+    "bgb_151": {
+      "key": "bgb_151",
+      "gesetz": "BGB",
+      "norm": "§ 151 BGB",
+      "absatz": null,
+      "text": "Der Vertrag kommt durch die Annahme des Antrags zustande, ohne dass die Annahme dem Antragenden gegenüber erklärt zu werden braucht, wenn eine solche Erklärung nach der Verkehrssitte nicht zu erwarten ist oder der Antragende auf sie verzichtet hat. Der Zeitpunkt, in welchem der Antrag erlischt, bestimmt sich nach dem aus dem Antrag oder den Umständen zu entnehmenden Willen des Antragenden.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__151.html",
+      "geprueft": false
+    },
+    "bgb_123": {
+      "key": "bgb_123",
+      "gesetz": "BGB",
+      "norm": "§ 123 BGB",
+      "absatz": null,
+      "text": "(1) Wer zur Abgabe einer Willenserklärung durch arglistige Täuschung oder widerrechtlich durch Drohung bestimmt worden ist, kann die Erklärung anfechten. (2) Hat ein Dritter die Täuschung verübt, so ist eine Erklärung, die einem anderen gegenüber abzugeben war, nur dann anfechtbar, wenn dieser die Täuschung kannte oder kennen musste. Soweit ein anderer als derjenige, welchem gegenüber die Erklärung abzugeben war, aus der Erklärung unmittelbar ein Recht erworben hat, ist die Erklärung ihm gegenüber anfechtbar, wenn er die Täuschung kannte oder kennen musste.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__123.html",
+      "geprueft": false
+    },
+    "bgb_280_1": {
+      "key": "bgb_280_1",
+      "gesetz": "BGB",
+      "norm": "§ 280 Abs. 1 BGB",
+      "absatz": "1",
+      "text": "Verletzt der Schuldner eine Pflicht aus dem Schuldverhältnis, so kann der Gläubiger Ersatz des hierdurch entstehenden Schadens verlangen. Dies gilt nicht, wenn der Schuldner die Pflichtverletzung nicht zu vertreten hat.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__280.html",
+      "geprueft": false
+    },
+    "bgb_286": {
+      "key": "bgb_286",
+      "gesetz": "BGB",
+      "norm": "§ 286 BGB",
+      "absatz": null,
+      "text": "(1) Leistet der Schuldner auf eine Mahnung des Gläubigers nicht, die nach dem Eintritt der Fälligkeit erfolgt, so kommt er durch die Mahnung in Verzug. Der Mahnung stehen die Erhebung der Klage auf die Leistung sowie die Zustellung eines Mahnbescheids im Mahnverfahren gleich. (2) Der Mahnung bedarf es nicht, wenn 1. für die Leistung eine Zeit nach dem Kalender bestimmt ist, 2. der Leistung ein Ereignis vorauszugehen hat und eine angemessene Zeit für die Leistung in der Weise bestimmt ist, dass sie sich von dem Ereignis an nach dem Kalender berechnen lässt, 3. der Schuldner die Leistung ernsthaft und endgültig verweigert, 4. aus besonderen Gründen unter Abwägung der beiderseitigen Interessen der sofortige Eintritt des Verzugs gerechtfertigt ist. (3) Der Schuldner einer Entgeltforderung kommt spätestens in Verzug, wenn er nicht innerhalb von 30 Tagen nach Fälligkeit und Zugang einer Rechnung oder gleichwertigen Zahlungsaufstellung leistet; dies gilt gegenüber einem Schuldner, der Verbraucher ist, nur, wenn auf diese Folgen in der Rechnung oder Zahlungsaufstellung besonders hingewiesen worden ist. Wenn der Zeitpunkt des Zugangs der Rechnung oder Zahlungsaufstellung unsicher ist, kommt der Schuldner, der nicht Verbraucher ist, spätestens 30 Tage nach Fälligkeit und Empfang der Gegenleistung in Verzug. (4) Der Schuldner kommt nicht in Verzug, solange die Leistung infolge eines Umstands unterbleibt, den er nicht zu vertreten hat. (5) Für eine von den Absätzen 1 bis 3 abweichende Vereinbarung über den Eintritt des Verzugs gilt § 271a Absatz 1 bis 5 entsprechend.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__286.html",
+      "geprueft": false
+    },
+    "bgb_312b": {
+      "key": "bgb_312b",
+      "gesetz": "BGB",
+      "norm": "§ 312b BGB",
+      "absatz": null,
+      "text": "(1) Außerhalb von Geschäftsräumen geschlossene Verträge sind Verträge, 1. die bei gleichzeitiger körperlicher Anwesenheit des Verbrauchers und des Unternehmers an einem Ort geschlossen werden, der kein Geschäftsraum des Unternehmers ist, 2. für die der Verbraucher unter den in Nummer 1 genannten Umständen ein Angebot abgegeben hat, 3. die in den Geschäftsräumen des Unternehmers oder durch Fernkommunikationsmittel geschlossen werden, bei denen der Verbraucher jedoch unmittelbar zuvor außerhalb der Geschäftsräume des Unternehmers bei gleichzeitiger körperlicher Anwesenheit des Verbrauchers und des Unternehmers persönlich und individuell angesprochen wurde, oder 4. die auf einem Ausflug geschlossen werden, der von dem Unternehmer oder mit seiner Hilfe organisiert wurde, um beim Verbraucher für den Verkauf von Waren oder die Erbringung von Dienstleistungen zu werben und mit ihm entsprechende Verträge abzuschließen. Dem Unternehmer stehen Personen gleich, die in seinem Namen oder Auftrag handeln. (2) Geschäftsräume im Sinne des Absatzes 1 sind unbewegliche Gewerberäume, in denen der Unternehmer seine Tätigkeit dauerhaft ausübt, und bewegliche Gewerberäume, in denen der Unternehmer seine Tätigkeit für gewöhnlich ausübt. Gewerberäume, in denen die Person, die im Namen oder Auftrag des Unternehmers handelt, ihre Tätigkeit dauerhaft oder für gewöhnlich ausübt, stehen Räumen des Unternehmers gleich.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__312b.html",
+      "geprueft": false
+    },
+    "bgb_312c": {
+      "key": "bgb_312c",
+      "gesetz": "BGB",
+      "norm": "§ 312c BGB",
+      "absatz": null,
+      "text": "(1) Fernabsatzverträge sind Verträge, bei denen der Unternehmer oder eine in seinem Namen oder Auftrag handelnde Person und der Verbraucher für die Vertragsverhandlungen und den Vertragsschluss ausschließlich Fernkommunikationsmittel verwenden, es sei denn, dass der Vertragsschluss nicht im Rahmen eines für den Fernabsatz organisierten Vertriebs- oder Dienstleistungssystems erfolgt. (2) Fernkommunikationsmittel im Sinne dieses Gesetzes sind alle Kommunikationsmittel, die zur Anbahnung oder zum Abschluss eines Vertrags eingesetzt werden können, ohne dass die Vertragsparteien gleichzeitig körperlich anwesend sind, wie Briefe, Kataloge, Telefonanrufe, Telekopien, E-Mails, über den Mobilfunkdienst versendete Nachrichten (SMS) sowie Rundfunk und digitale Dienste nach § 1 Absatz 4 Nummer 1 des Digitale-Dienste-Gesetzes.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__312c.html",
+      "geprueft": false
+    },
+    "bgb_312g": {
+      "key": "bgb_312g",
+      "gesetz": "BGB",
+      "norm": "§ 312g BGB",
+      "absatz": null,
+      "text": "(1) Dem Verbraucher steht bei außerhalb von Geschäftsräumen geschlossenen Verträgen und bei Fernabsatzverträgen ein Widerrufsrecht gemäß § 355 zu. (2) Das Widerrufsrecht besteht, soweit die Parteien nichts anderes vereinbart haben, nicht bei folgenden Verträgen: 1. Verträge zur Lieferung von Waren, die nicht vorgefertigt sind und für deren Herstellung eine individuelle Auswahl oder Bestimmung durch den Verbraucher maßgeblich ist oder die eindeutig auf die persönlichen Bedürfnisse des Verbrauchers zugeschnitten sind, 2. Verträge zur Lieferung von Waren, die schnell verderben können oder deren Verfallsdatum schnell überschritten würde, 3. Verträge zur Lieferung versiegelter Waren, die aus Gründen des Gesundheitsschutzes oder der Hygiene nicht zur Rückgabe geeignet sind, wenn ihre Versiegelung nach der Lieferung entfernt wurde, 4. Verträge zur Lieferung von Waren, wenn diese nach der Lieferung auf Grund ihrer Beschaffenheit untrennbar mit anderen Gütern vermischt wurden, 5. Verträge zur Lieferung alkoholischer Getränke, deren Preis bei Vertragsschluss vereinbart wurde, die aber frühestens 30 Tage nach Vertragsschluss geliefert werden können und deren aktueller Wert von Schwankungen auf dem Markt abhängt, auf die der Unternehmer keinen Einfluss hat, 6. Verträge zur Lieferung von Ton- oder Videoaufnahmen oder Computersoftware in einer versiegelten Packung, wenn die Versiegelung nach der Lieferung entfernt wurde, 7. Verträge zur Lieferung von Zeitungen, Zeitschriften oder Illustrierten mit Ausnahme von Abonnement-Verträgen, 8. Verträge zur Lieferung von Waren oder zur Erbringung von Dienstleistungen, einschließlich Finanzdienstleistungen, deren Preis von Schwankungen auf dem Finanzmarkt abhängt, auf die der Unternehmer keinen Einfluss hat und die innerhalb der Widerrufsfrist auftreten können, insbesondere Dienstleistungen im Zusammenhang mit Aktien, mit Anteilen an offenen Investmentvermögen im Sinne von § 1 Absatz 4 des Kapitalanlagegesetzbuchs und mit anderen handelbaren Wertpapieren, Devisen, Derivaten oder Geldmarktinstrumenten, 9. Verträge zur Erbringung von Dienstleistungen in den Bereichen Beherbergung zu anderen Zwecken als zu Wohnzwecken, Beförderung von Waren, Kraftfahrzeugvermietung, Lieferung von Speisen und Getränken sowie zur Erbringung weiterer Dienstleistungen im Zusammenhang mit Freizeitbetätigungen, wenn der Vertrag für die Erbringung einen spezifischen Termin oder Zeitraum vorsieht, 10. Verträge, die im Rahmen einer Vermarktungsform geschlossen werden, bei der der Unternehmer Verbrauchern, die persönlich anwesend sind oder denen diese Möglichkeit gewährt wird, Waren oder Dienstleistungen anbietet, und zwar in einem vom Versteigerer durchgeführten, auf konkurrierenden Geboten basierenden transparenten Verfahren, bei dem der Bieter, der den Zuschlag erhalten hat, zum Erwerb der Waren oder Dienstleistungen verpflichtet ist (öffentlich zugängliche Versteigerung), 11. Verträge, bei denen der Verbraucher den Unternehmer ausdrücklich aufgefordert hat, ihn aufzusuchen, um dringende Reparatur- oder Instandhaltungsarbeiten vorzunehmen; dies gilt nicht hinsichtlich weiterer bei dem Besuch erbrachter Dienstleistungen, die der Verbraucher nicht ausdrücklich verlangt hat, oder hinsichtlich solcher bei dem Besuch gelieferter Waren, die bei der Instandhaltung oder Reparatur nicht unbedingt als Ersatzteile benötigt werden, 12. Verträge zur Erbringung von Wett- und Lotteriedienstleistungen, es sei denn, dass der Verbraucher seine Vertragserklärung telefonisch abgegeben hat oder der Vertrag außerhalb von Geschäftsräumen geschlossen wurde, und 13. notariell beurkundete Verträge; dies gilt für Fernabsatzverträge über Finanzdienstleistungen nur, wenn der Notar bestätigt, dass die Rechte des Verbrauchers aus § 312d Absatz 2 gewahrt sind. (3) Das Widerrufsrecht besteht ferner nicht 1. bei Verträgen, bei denen dem Verbraucher bereits aufgrund der §§ 495, 506 bis 513 ein Widerrufsrecht nach § 355 zusteht, 2. bei außerhalb von Geschäftsräumen geschlossenen Verträgen, bei denen dem Verbraucher bereits nach § 305 Absatz 1 bis 6 des Kapitalanlagegesetzbuchs oder § 2d Absatz 1 bis 5 des Vermögensanlagengesetzes ein Widerrufsrecht zusteht.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__312g.html",
+      "geprueft": false
+    },
+    "bgb_355": {
+      "key": "bgb_355",
+      "gesetz": "BGB",
+      "norm": "§ 355 BGB",
+      "absatz": null,
+      "text": "(1) Wird einem Verbraucher durch Gesetz ein Widerrufsrecht nach dieser Vorschrift eingeräumt, so sind der Verbraucher und der Unternehmer an ihre auf den Abschluss des Vertrags gerichteten Willenserklärungen nicht mehr gebunden, wenn der Verbraucher seine Willenserklärung fristgerecht widerrufen hat. Der Widerruf erfolgt durch Erklärung gegenüber dem Unternehmer. Aus der Erklärung muss der Entschluss des Verbrauchers zum Widerruf des Vertrags eindeutig hervorgehen. Der Widerruf muss keine Begründung enthalten. Zur Fristwahrung genügt die rechtzeitige Absendung des Widerrufs. (2) Die Widerrufsfrist beträgt 14 Tage. Sie beginnt mit Vertragsschluss, soweit nichts anderes bestimmt ist. (3) Im Falle des Widerrufs sind die empfangenen Leistungen unverzüglich zurückzugewähren. Bestimmt das Gesetz eine Höchstfrist für die Rückgewähr, so beginnt diese für den Unternehmer mit dem Zugang und für den Verbraucher mit der Abgabe der Widerrufserklärung. Ein Verbraucher wahrt diese Frist durch die rechtzeitige Absendung der Waren. Der Unternehmer trägt bei Widerruf die Gefahr der Rücksendung der Waren.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__355.html",
+      "geprueft": false
+    },
+    "bgb_356": {
+      "key": "bgb_356",
+      "gesetz": "BGB",
+      "norm": "§ 356 BGB",
+      "absatz": null,
+      "text": "(1) Der Unternehmer kann dem Verbraucher die Möglichkeit einräumen, das Muster-Widerrufsformular nach Anlage 2 zu Artikel 246a § 1 Absatz 2 Satz 1 Nummer 1 des Einführungsgesetzes zum Bürgerlichen Gesetzbuche oder eine andere eindeutige Widerrufserklärung auf der Webseite des Unternehmers auszufüllen und zu übermitteln. Macht der Verbraucher von dieser Möglichkeit Gebrauch, muss der Unternehmer dem Verbraucher den Zugang des Widerrufs unverzüglich auf einem dauerhaften Datenträger bestätigen. (2) Die Widerrufsfrist beginnt 1. bei einem Verbrauchsgüterkauf, a) der nicht unter die Buchstaben b bis d fällt, sobald der Verbraucher oder ein von ihm benannter Dritter, der nicht Frachtführer ist, die Waren erhalten hat, b) bei dem der Verbraucher mehrere Waren im Rahmen einer einheitlichen Bestellung bestellt hat und die Waren getrennt geliefert werden, sobald der Verbraucher oder ein von ihm benannter Dritter, der nicht Frachtführer ist, die letzte Ware erhalten hat, c) bei dem die Ware in mehreren Teilsendungen oder Stücken geliefert wird, sobald der Verbraucher oder ein vom Verbraucher benannter Dritter, der nicht Frachtführer ist, die letzte Teilsendung oder das letzte Stück erhalten hat, d) der auf die regelmäßige Lieferung von Waren über einen festgelegten Zeitraum gerichtet ist, sobald der Verbraucher oder ein von ihm benannter Dritter, der nicht Frachtführer ist, die erste Ware erhalten hat, 2. bei einem Vertrag, der die nicht in einem begrenzten Volumen oder in einer bestimmten Menge angebotene Lieferung von Wasser, Gas oder Strom, die Lieferung von Fernwärme oder die Lieferung von nicht auf einem körperlichen Datenträger befindlichen digitalen Inhalten zum Gegenstand hat, mit Vertragsschluss. (3) Die Widerrufsfrist beginnt nicht, bevor der Unternehmer den Verbraucher entsprechend den Anforderungen des Artikels 246a § 1 Absatz 2 Satz 1 Nummer 1 des Einführungsgesetzes zum Bürgerlichen Gesetzbuche unterrichtet hat. Bei Verträgen über Finanzdienstleistungen beginnt die Widerrufsfrist nicht, bevor der Verbraucher die Vertragsbestimmungen einschließlich der Allgemeinen Geschäftsbedingungen erhalten hat und der Unternehmer den Verbraucher entsprechend den Anforderungen des Artikels 246b § 2 Absatz 1 des Einführungsgesetzes zum Bürgerlichen Gesetzbuche unterrichtet hat. (4) Das Widerrufsrecht erlischt spätestens zwölf Monate und 14 Tage nach dem in Absatz 2 oder § 355 Absatz 2 Satz 2 genannten Zeitpunkt. Bei Verträgen über Finanzdienstleistungen gilt Satz 1 nicht, wenn der Verbraucher nicht nach Artikel 246b § 1 Absatz 1 Nummer 16 des Einführungsgesetzes zum Bürgerlichen Gesetzbuche über sein Widerrufsrecht belehrt wurde. (5) Das Widerrufsrecht erlischt bei Verträgen über die Erbringung von Dienstleistungen auch unter folgenden Voraussetzungen: 1. bei einem Vertrag, der den Verbraucher nicht zur Zahlung eines Preises verpflichtet, wenn der Unternehmer die Dienstleistung vollständig erbracht hat, 2. bei einem Vertrag, der den Verbraucher zur Zahlung eines Preises verpflichtet, mit der vollständigen Erbringung der Dienstleistung, wenn der Verbraucher vor Beginn der Erbringung a) ausdrücklich zugestimmt hat, dass der Unternehmer mit der Erbringung der Dienstleistung vor Ablauf der Widerrufsfrist beginnt, b) bei einem außerhalb von Geschäftsräumen geschlossenen Vertrag die Zustimmung nach Buchstabe a auf einem dauerhaften Datenträger übermittelt hat und c) seine Kenntnis davon bestätigt hat, dass sein Widerrufsrecht mit vollständiger Vertragserfüllung durch den Unternehmer erlischt, 3. bei einem Vertrag, bei dem der Verbraucher den Unternehmer ausdrücklich aufgefordert hat, ihn aufzusuchen, um Reparaturarbeiten auszuführen, mit der vollständigen Erbringung der Dienstleistung, wenn der Verbraucher die in Nummer 2 Buchstabe a und b genannten Voraussetzungen erfüllt hat, 4. bei einem Vertrag über die Erbringung von Finanzdienstleistungen, wenn der Vertrag von beiden Seiten auf ausdrücklichen Wunsch des Verbrauchers vollständig erfüllt ist, bevor der Verbraucher sein Widerrufsrecht ausübt. (6) Das Widerrufsrecht erlischt bei Verträgen über die Bereitstellung von nicht auf einem körperlichen Datenträger befindlichen digitalen Inhalten auch unter folgenden Voraussetzungen: 1. bei einem Vertrag, der den Verbraucher nicht zur Zahlung eines Preises verpflichtet, wenn der Unternehmer mit der Vertragserfüllung begonnen hat, 2. bei einem Vertrag, der den Verbraucher zur Zahlung eines Preises verpflichtet, wenn a) der Unternehmer mit der Vertragserfüllung begonnen hat, b) der Verbraucher ausdrücklich zugestimmt hat, dass der Unternehmer mit der Vertragserfüllung vor Ablauf der Widerrufsfrist beginnt, c) der Verbraucher seine Kenntnis davon bestätigt hat, dass durch seine Zustimmung nach Buchstabe b mit Beginn der Vertragserfüllung sein Widerrufsrecht erlischt, und d) der Unternehmer dem Verbraucher eine Bestätigung gemäß § 312f zur Verfügung gestellt hat.",
+      "stand": "2026-08-18",
+      "url": "https://www.gesetze-im-internet.de/bgb/__356.html",
+      "geprueft": false
+    },
+    "rdg_13a": {
+      "key": "rdg_13a",
+      "gesetz": "RDG",
+      "norm": "§ 13a RDG",
+      "absatz": null,
+      "text": "(1) Registrierte Personen, die Inkassodienstleistungen erbringen (Inkassodienstleister), müssen mit der ersten Geltendmachung einer Forderung gegenüber einer Privatperson folgende Informationen klar und verständlich in Textform übermitteln: 1. den Namen oder die Firma ihres Auftraggebers sowie dessen Anschrift, sofern nicht dargelegt wird, dass durch die Angabe der Anschrift überwiegende schutzwürdige Interessen des Auftraggebers beeinträchtigt würden, 2. den Forderungsgrund, bei Verträgen unter konkreter Darlegung des Vertragsgegenstands und des Datums des Vertragsschlusses, bei unerlaubten Handlungen unter Darlegung der Art und des Datums der Handlung, 3. wenn Zinsen geltend gemacht werden, eine Zinsberechnung unter Darlegung der zu verzinsenden Forderung, des Zinssatzes und des Zeitraums, für den die Zinsen berechnet werden, 4. wenn ein Zinssatz über dem gesetzlichen Verzugszinssatz geltend gemacht wird, einen gesonderten Hinweis hierauf und die Angabe, aufgrund welcher Umstände der erhöhte Zinssatz gefordert wird, 5. wenn Inkassokosten geltend gemacht werden, Angaben zu deren Art, Höhe und Entstehungsgrund, 6. wenn mit den Inkassokosten Umsatzsteuerbeträge geltend gemacht werden, eine Erklärung, dass der Auftraggeber diese Beträge nicht als Vorsteuer abziehen kann, 7. wenn die Anschrift der Privatperson nicht vom Gläubiger mitgeteilt, sondern anderweitig ermittelt wurde, einen Hinweis hierauf sowie darauf, wie eventuell aufgetretene Fehler geltend gemacht werden können, 8. Bezeichnung, Anschrift und elektronische Erreichbarkeit der für sie zuständigen Aufsichtsbehörde. (2) Auf die entsprechende Anfrage einer Privatperson hat ein Inkassodienstleister die folgenden ergänzenden Informationen unverzüglich in Textform mitzuteilen: 1. den Namen oder die Firma desjenigen, in dessen Person die Forderung entstanden ist, 2. bei Verträgen die wesentlichen Umstände des Vertragsschlusses. (3) Beabsichtigt ein Inkassodienstleister, mit einer Privatperson eine Stundungs- oder Ratenzahlungsvereinbarung zu treffen, so hat er sie zuvor in Textform auf die dadurch entstehenden Kosten hinzuweisen. (4) Fordert ein Inkassodienstleister eine Privatperson zur Abgabe eines Schuldanerkenntnisses auf, so hat er sie mit der Aufforderung nach Maßgabe des Satzes 2 in Textform darauf hinzuweisen, dass sie durch das Schuldanerkenntnis in der Regel die Möglichkeit verliert, solche Einwendungen und Einreden gegen die anerkannte Forderung geltend zu machen, die zum Zeitpunkt der Abgabe des Schuldanerkenntnisses begründet waren. Der Hinweis muss 1. deutlich machen, welche Teile der Forderung vom Schuldanerkenntnis erfasst werden, und 2. typische Beispiele von Einwendungen und Einreden benennen, die nicht mehr geltend gemacht werden können, wie das Nichtbestehen, die Erfüllung oder die Verjährung der anerkannten Forderung. (5) Privatperson im Sinne dieser Vorschrift ist jede natürliche Person, gegen die eine Forderung geltend gemacht wird, die nicht im Zusammenhang mit ihrer gewerblichen oder selbständigen beruflichen Tätigkeit steht.",
+      "stand": "2024-12-31",
+      "url": "https://www.gesetze-im-internet.de/rdg/__13a.html",
+      "geprueft": false
+    },
+    "rdg_10": {
+      "key": "rdg_10",
+      "gesetz": "RDG",
+      "norm": "§ 10 RDG",
+      "absatz": null,
+      "text": "(1) Natürliche und juristische Personen sowie rechtsfähige Personengesellschaften, die beim Bundesamt für Justiz registriert sind (registrierte Personen), dürfen aufgrund besonderer Sachkunde Rechtsdienstleistungen in folgenden Bereichen erbringen: 1. Inkassodienstleistungen (§ 2 Abs. 2 Satz 1), 2. Rentenberatung auf dem Gebiet der gesetzlichen Renten- und Unfallversicherung, des sozialen Entschädigungsrechts, des übrigen Sozialversicherungs- und Schwerbehindertenrechts mit Bezug zu einer gesetzlichen Rente sowie der betrieblichen und berufsständischen Versorgung, 3. Rechtsdienstleistungen in einem ausländischen Recht; ist das ausländische Recht das Recht eines Mitgliedstaates der Europäischen Union, eines anderen Vertragsstaates des Abkommens über den Europäischen Wirtschaftsraum oder der Schweiz, darf auch auf dem Gebiet des Rechts der Europäischen Union und des Rechts des Europäischen Wirtschaftsraums beraten werden. Die Registrierung kann auf einen Teilbereich der in Satz 1 genannten Bereiche beschränkt werden, wenn sich der Teilbereich von den anderen in den Bereich fallenden Tätigkeiten trennen lässt und der Registrierung für den Teilbereich keine zwingenden Gründe des Allgemeininteresses entgegenstehen. (2) Die Registrierung erfolgt auf Antrag. Soll die Registrierung nach Absatz 1 Satz 2 für einen Teilbereich erfolgen, ist dieser im Antrag zu bezeichnen. (3) Die Registrierung kann, wenn dies zum Schutz der Rechtsuchenden oder des Rechtsverkehrs erforderlich ist, von Bedingungen abhängig gemacht oder mit Auflagen verbunden werden. Auflagen können jederzeit angeordnet oder geändert werden. Ist die Registrierung auf einen Teilbereich beschränkt, muss der Umfang der beruflichen Tätigkeit den Rechtsuchenden gegenüber eindeutig angegeben werden.",
+      "stand": "2024-12-31",
+      "url": "https://www.gesetze-im-internet.de/rdg/__10.html",
+      "geprueft": false
+    }
+  }
+}

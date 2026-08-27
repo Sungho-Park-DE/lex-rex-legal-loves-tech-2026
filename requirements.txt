@@ -1,0 +1,16 @@
+# Base = prep-repo set, versions proven together on python 3.11.15
+# (pymupdf4llm 1.28.0 · chromadb 1.5.9 · anthropic 0.116.0 · pydantic 2.13.4)
+pymupdf4llm     # PDF -> structured markdown
+chromadb        # local vector DB with built-in embeddings (no API key)
+anthropic       # current LLM edge (intake, cited answers)
+pydantic        # schema-first structured outputs
+
+# Hackathon additions — not yet wired, installed up front (venue wifi):
+google-genai    # tech partner Gemini; port of the LLM edge is a day-1 decision
+streamlit       # fallback demo UI if we don't go Lovable
+
+# Backend (added 22 Aug, ladder rung 1 — 14 §10):
+fastapi         # POST /faelle, GET /faelle/{id}, GET /vokabular (local only)
+uvicorn[standard]  # dev server for the Lovable frontend to talk to
+pytest          # golden runner + rung-1 assertions
+httpx           # fastapi.testclient

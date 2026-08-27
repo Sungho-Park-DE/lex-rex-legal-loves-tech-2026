@@ -1,0 +1,20 @@
+{
+  "kanal": "vbs",
+  "ticket_nr": "VBS-48415",
+  "thema": "Allgemeines Verbraucherrecht",
+  "eingegangen_am": "2026-08-26T11:20:00",
+  "anbieter": "Seepark Aktiv",
+  "branche": "fitness",
+  "gegner": null,
+  "freitext": "Mein Studio schreibt mir, dass der Beitrag ab November von 32,00 auf 33,60 Euro steigt, und beruft sich dabei auf Ziffer 5.2 seiner Bedingungen. Ich habe die Bedingungen und den Vertrag herausgesucht und schicke beides mit — allerdings ist mir aufgefallen, dass bei den Bedingungen die zweite Seite fehlt, ausgerechnet die mit Ziffer 5. Können Sie trotzdem schon sagen, ob das zulässig ist?",
+  "identitaet": {
+    "name": "Jonas Wiedemann",
+    "adresse": "Sanderstraße 30, 97070 Würzburg",
+    "email": "j.wiedemann@example.de",
+    "telefon": "0931 223344",
+    "kundennummer": "W-30518"
+  },
+  "anhaenge": ["schreiben.md", "bedingungen_seite1.md", "vertrag.md"],
+  "geprueft": false,
+  "hinweis": "Fiktion — eigene Testdaten für die Gegenprobe zum Flip (12_aufgaben_franz_runde2_de §5 Fälle 3 und 3b): das Nachreichen geht hier zugunsten des Studios aus. Kein echter Fall, keine echten Personen."
+}

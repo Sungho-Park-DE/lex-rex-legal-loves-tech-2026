@@ -1,0 +1,137 @@
+{
+  "stand": "27.08.2026",
+  "faelle_gesamt": 9,
+  "schwellen": {
+    "beschwerden": 30,
+    "beratungen": 15,
+    "k_min": 3
+  },
+  "cluster": [
+    {
+      "anbieter": "bodyline gyms",
+      "branche": "fitness",
+      "faelle": 4,
+      "einordnungen": [
+        {
+          "text": "wahrscheinlich unwirksam",
+          "anzahl": 3,
+          "tone": "rot"
+        },
+        {
+          "text": "wirksam",
+          "anzahl": 1,
+          "tone": "gruen"
+        }
+      ],
+      "pruefpunkte_nein": [
+        {
+          "titel": "Symmetrie- und Kostenweitergabegebot",
+          "anzahl": 2
+        },
+        {
+          "titel": "Vorrang der Individualabrede / Preisgarantie",
+          "anzahl": 1
+        },
+        {
+          "titel": "Transparenzgebot",
+          "anzahl": 1
+        }
+      ],
+      "betrag_median": 4.75,
+      "referat_flags": 1,
+      "schaden": {
+        "drohend_median": 63.0,
+        "drohend_summe": 252.0,
+        "entstanden_median": 21.25,
+        "entstanden_summe": 118.5,
+        "fallzahl": 4,
+        "unbeziffert": 0,
+        "gekappt": 1,
+        "verlaengert": 1,
+        "basen": [
+          "fallback_24",
+          "laufzeit",
+          "verlaengerung_monatlich"
+        ]
+      },
+      "fallgruppe_id": "preiserhoehung",
+      "wiederholung": 0
+    }
+  ],
+  "klauseltypen": [
+    {
+      "pruefpunkt_id": "P7",
+      "titel": "Symmetrie- und Kostenweitergabegebot",
+      "norm": "§ 307 Abs. 1 S. 1, Abs. 2 BGB",
+      "norm_kurz": "§ 307 I 1 BGB",
+      "fallgruppe_id": "preiserhoehung",
+      "verbreitung": 3,
+      "betroffenheit": 4,
+      "quote": 0.44,
+      "grundgesamtheit": 9,
+      "schaden_drohend_median": 66.0,
+      "bereits_abgemahnt": false,
+      "abmahnung_kurz": null,
+      "abmahnung_geprueft": null
+    },
+    {
+      "pruefpunkt_id": "P6",
+      "titel": "Transparenzgebot",
+      "norm": "§ 307 Abs. 1 S. 2 BGB",
+      "norm_kurz": "§ 307 I 2 BGB",
+      "fallgruppe_id": "preiserhoehung",
+      "verbreitung": 3,
+      "betroffenheit": 4,
+      "quote": 0.44,
+      "grundgesamtheit": 9,
+      "schaden_drohend_median": 106.5,
+      "bereits_abgemahnt": false,
+      "abmahnung_kurz": null,
+      "abmahnung_geprueft": null
+    }
+  ],
+  "unter_schwelle_klauseltypen": 2,
+  "unter_schwelle_anbieter": 3,
+  "markierte_faelle": [
+    {
+      "fall_hash": "68fee120b7e87fb543aad9e979b817ef",
+      "fall_kennung": "68fee120",
+      "anbieter": null,
+      "einordnung": "wahrscheinlich unwirksam",
+      "kriterien": [
+        "schadenshoehe"
+      ],
+      "kriterien_labels": [
+        "bedeutsame Schadenshöhe"
+      ],
+      "zeit": "2026-05-13",
+      "wiederholung": 0
+    },
+    {
+      "fall_hash": "3007f3be787d78bcf3b146a0491d60d9",
+      "fall_kennung": "3007f3be",
+      "anbieter": "bodyline gyms",
+      "einordnung": "wahrscheinlich unwirksam",
+      "kriterien": [
+        "neuigkeitswert",
+        "dauerbrenner"
+      ],
+      "kriterien_labels": [
+        "hoher Neuigkeitswert",
+        "Dauerbrenner"
+      ],
+      "zeit": "2026-07-15",
+      "wiederholung": 0
+    }
+  ],
+  "wiederholungen_gesamt": 2,
+  "prueflogik_fassungen": {
+    "fallgruppe_id": "preiserhoehung",
+    "aktuell": "0.7.0",
+    "zeilen_aktuell": 7,
+    "zeilen_aelter": 2,
+    "aelteste": "0.5.0"
+  },
+  "hinweis": "Anbieter mit weniger als 3 Fällen werden nicht einzeln ausgewiesen (3 zurückgehalten). Bei einem markierten Fall ist aus demselben Grund kein Anbieter genannt. 2 Klauseltypen werden aus demselben Grund nicht ausgewiesen. Beträge sind gerundet; der Datensatz enthält keine Namen, keine Freitexte und keine Dokumenttexte. Statt eines Namens trägt jeder markierte Fall eine pseudonyme Kennung — sie erlaubt das Wiederfinden, ohne eine Person zu nennen.",
+  "geltungsbereich": "Diese Auswertung bildet das Beratungsaufkommen der Verbraucherzentrale ab, nicht den Markt. Sie zeigt, was hier ankommt — nicht, wie verbreitet eine Klausel tatsächlich ist."
+}

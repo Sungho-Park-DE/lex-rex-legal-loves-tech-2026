@@ -1,0 +1,173 @@
+{
+  "aufgabe": "extract_fields",
+  "modell": "claude-opus-5",
+  "prompt_version": "p1",
+  "eingabe": {
+    "dokumenttyp": "agb",
+    "seiten": [
+      {
+        "nr": 1,
+        "text": "Mitgliedsbedingungen der Seepark Aktiv GmbH\nFassung vom 01.06.2024\n\n1. Geltungsbereich\n\n1.1 Diese Bedingungen gelten für alle Mitgliedschaften der Seepark Aktiv GmbH.\n\n2. Vertragsschluss\n\n2.1 Der Vertrag kommt mit Unterzeichnung des Mitgliedsvertrages zustande.\n\n2.2 Die Mitgliedschaft ist personengebunden.\n\n3. Leistungen\n\n3.1 Das Studio hält die in der Studiobeschreibung genannten Geräte, Kurse und den Wellnessbereich in dem dort beschriebenen Umfang bereit.\n\n3.2 Fällt ein Kurs aus, bietet das Studio einen gleichwertigen Ersatztermin an.\n\n4. Öffnungszeiten\n\n4.1 Die Öffnungszeiten sind im Studio und auf der Website veröffentlicht.\n\n4.2 An gesetzlichen Feiertagen gelten gesonderte Öffnungszeiten, die zwei Wochen im Voraus bekannt gegeben werden.\n\n— Seite 1 von 3 —"
+      }
+    ],
+    "felder": [
+      {
+        "feld_id": "agb.fassung_datum",
+        "typ": "datum",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.preisklausel_text",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": "Wortlaut der Preisanpassungsklausel — die ganze Klausel mit allen Sätzen (Anlass, Voraussetzungen, Umfang bzw. Kappung), nicht nur der erste Satz; ohne ihn gilt das Dokument als unvollständig",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.preisklausel_ziffer",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.klausel_ueberschrift",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.nennt_anlass",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "Anlass der Erhöhung in der Klausel",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.nennt_voraussetzungen",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "Voraussetzungen der Erhöhung in der Klausel",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.nennt_umfang",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "Umfang der Erhöhung in der Klausel",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.kostenbezug",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "knüpft die Erhöhung an Kostenentwicklung?",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.senkungspflicht",
+        "typ": "enum",
+        "werte": [
+          "pflicht",
+          "ermessen",
+          "keine"
+        ],
+        "beschreibung": "Regelung zur Weitergabe von Kostensenkungen",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.kuendigungsrecht_bei_erhoehung",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.erklaerungsfiktion_text",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.erklaerungsfiktion_frist_und_hinweis",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "nennt die Fiktionsklausel Frist und Hinweispflicht (§ 308 Nr. 5)?",
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.widerspruchsfrist_tage",
+        "typ": "zahl",
+        "werte": null,
+        "beschreibung": "Frist in Tagen, innerhalb derer die AGB einen Widerspruch gegen die Anpassung verlangen (zwei Wochen = 14); nur wenn die AGB eine solche Frist nennen",
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.widerspruch_formerfordernis",
+        "typ": "enum",
+        "werte": [
+          "schriftform",
+          "textform",
+          "formfrei",
+          "keine_angabe"
+        ],
+        "beschreibung": "Welche Form verlangen die AGB für den Widerspruch gegen die Anpassung? „schriftlich“ ohne Zusatz = schriftform; „in Textform“ / „per E-Mail“ = textform",
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.leistungsaenderungsrecht",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.leistungsaenderung_mit_grund",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      }
+    ]
+  },
+  "ausgabe": {
+    "felder": [
+      {
+        "feld_id": "agb.fassung_datum",
+        "wert": "2024-06-01",
+        "zitat": "Fassung vom 01.06.2024",
+        "seite": 1
+      },
+      {
+        "feld_id": "agb.leistungsaenderungsrecht",
+        "wert": false,
+        "zitat": "3.1 Das Studio hält die in der Studiobeschreibung genannten Geräte, Kurse und den Wellnessbereich in dem dort beschriebenen Umfang bereit.",
+        "seite": 1
+      }
+    ]
+  },
+  "dauer_ms": 4200,
+  "kosten_cent": 1.1,
+  "zeit": null,
+  "aus_cache": false
+}

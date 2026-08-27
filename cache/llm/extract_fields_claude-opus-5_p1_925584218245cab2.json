@@ -1,0 +1,249 @@
+{
+  "aufgabe": "extract_fields",
+  "modell": "claude-opus-5",
+  "prompt_version": "p1",
+  "eingabe": {
+    "dokumenttyp": "agb",
+    "seiten": [
+      {
+        "nr": 1,
+        "text": "Allgemeine Geschäftsbedingungen der FitPoint 24 GmbH\nFassung vom 01.05.2021\n\n1. Geltungsbereich\n\n1.1 Diese Bedingungen gelten für alle Mitgliedschaften im Studio der FitPoint 24 GmbH.\n\n2. Vertragsschluss\n\n2.1 Der Vertrag kommt mit Unterzeichnung des Mitgliedsvertrages zustande.\n\n2.2 Die Mitgliedschaft ist nicht übertragbar.\n\n3. Leistungen\n\n3.1 Der Betreiber hält die in der Studiobeschreibung genannten Geräte und Kurse bereit.\n\n3.2 Einzelne Kurse können wegen Krankheit des Kursleiters ausfallen.\n\n4. Öffnungszeiten\n\n4.1 Die Öffnungszeiten werden im Studio ausgehängt."
+      },
+      {
+        "nr": 2,
+        "text": "5. Beiträge\n\n5.1 Der bei Vertragsschluss vereinbarte monatliche Beitrag ist im Voraus zum Monatsersten fällig.\n\n5.2 Der Betreiber ist berechtigt, den monatlichen Beitrag anzupassen. Die Anpassung wird dem Mitglied mitgeteilt. Trainiert das Mitglied nach Zugang der Mitteilung weiter, gilt die Anpassung als angenommen.\n\n5.3 Die Zahlung erfolgt per SEPA-Lastschrift.\n\n6. Laufzeit\n\n6.1 Die Mindestlaufzeit ergibt sich aus dem Mitgliedsvertrag.\n\n7. Hausordnung\n\n7.1 Die im Studio ausgehängte Hausordnung ist Bestandteil des Vertrages."
+      }
+    ],
+    "felder": [
+      {
+        "feld_id": "agb.fassung_datum",
+        "typ": "datum",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.preisklausel_text",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": "Wortlaut der Preisanpassungsklausel — die ganze Klausel mit allen Sätzen (Anlass, Voraussetzungen, Umfang bzw. Kappung), nicht nur der erste Satz; ohne ihn gilt das Dokument als unvollständig",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.preisklausel_ziffer",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.klausel_ueberschrift",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.nennt_anlass",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "Anlass der Erhöhung in der Klausel",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.nennt_voraussetzungen",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "Voraussetzungen der Erhöhung in der Klausel",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.nennt_umfang",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "Umfang der Erhöhung in der Klausel",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.kostenbezug",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "knüpft die Erhöhung an Kostenentwicklung?",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.senkungspflicht",
+        "typ": "enum",
+        "werte": [
+          "pflicht",
+          "ermessen",
+          "keine"
+        ],
+        "beschreibung": "Regelung zur Weitergabe von Kostensenkungen",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.kuendigungsrecht_bei_erhoehung",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.erklaerungsfiktion_text",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.erklaerungsfiktion_frist_und_hinweis",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "nennt die Fiktionsklausel Frist und Hinweispflicht (§ 308 Nr. 5)?",
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.widerspruchsfrist_tage",
+        "typ": "zahl",
+        "werte": null,
+        "beschreibung": "Frist in Tagen, innerhalb derer die AGB einen Widerspruch gegen die Anpassung verlangen (zwei Wochen = 14); nur wenn die AGB eine solche Frist nennen",
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.widerspruch_formerfordernis",
+        "typ": "enum",
+        "werte": [
+          "schriftform",
+          "textform",
+          "formfrei",
+          "keine_angabe"
+        ],
+        "beschreibung": "Welche Form verlangen die AGB für den Widerspruch gegen die Anpassung? „schriftlich“ ohne Zusatz = schriftform; „in Textform“ / „per E-Mail“ = textform",
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.leistungsaenderungsrecht",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.leistungsaenderung_mit_grund",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      }
+    ]
+  },
+  "ausgabe": {
+    "felder": [
+      {
+        "feld_id": "agb.fassung_datum",
+        "wert": "2021-05-01",
+        "zitat": "Fassung vom 01.05.2021",
+        "seite": 1
+      },
+      {
+        "feld_id": "agb.preisklausel_text",
+        "wert": "Der Betreiber ist berechtigt, den monatlichen Beitrag anzupassen.",
+        "zitat": "Der Betreiber ist berechtigt, den monatlichen Beitrag anzupassen.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.preisklausel_ziffer",
+        "wert": "5.2",
+        "zitat": "5.2 Der Betreiber ist berechtigt",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.klausel_ueberschrift",
+        "wert": "Beiträge",
+        "zitat": "5. Beiträge",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.nennt_anlass",
+        "wert": false,
+        "zitat": "Der Betreiber ist berechtigt, den monatlichen Beitrag anzupassen.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.nennt_voraussetzungen",
+        "wert": false,
+        "zitat": "Der Betreiber ist berechtigt, den monatlichen Beitrag anzupassen.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.nennt_umfang",
+        "wert": false,
+        "zitat": "Der Betreiber ist berechtigt, den monatlichen Beitrag anzupassen.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.kostenbezug",
+        "wert": false,
+        "zitat": "Der Betreiber ist berechtigt, den monatlichen Beitrag anzupassen.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.senkungspflicht",
+        "wert": "keine",
+        "zitat": "5.2 Der Betreiber ist berechtigt, den monatlichen Beitrag anzupassen. Die Anpassung wird dem Mitglied mitgeteilt. Trainiert das Mitglied nach Zugang der Mitteilung weiter, gilt die Anpassung als angenommen.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.kuendigungsrecht_bei_erhoehung",
+        "wert": false,
+        "zitat": "5.2 Der Betreiber ist berechtigt, den monatlichen Beitrag anzupassen. Die Anpassung wird dem Mitglied mitgeteilt. Trainiert das Mitglied nach Zugang der Mitteilung weiter, gilt die Anpassung als angenommen.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.erklaerungsfiktion_text",
+        "wert": "Trainiert das Mitglied nach Zugang der Mitteilung weiter, gilt die Anpassung als angenommen.",
+        "zitat": "Trainiert das Mitglied nach Zugang der Mitteilung weiter, gilt die Anpassung als angenommen.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.erklaerungsfiktion_frist_und_hinweis",
+        "wert": false,
+        "zitat": "Trainiert das Mitglied nach Zugang der Mitteilung weiter, gilt die Anpassung als angenommen.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.widerspruch_formerfordernis",
+        "wert": "keine_angabe",
+        "zitat": "5.2 Der Betreiber ist berechtigt, den monatlichen Beitrag anzupassen. Die Anpassung wird dem Mitglied mitgeteilt. Trainiert das Mitglied nach Zugang der Mitteilung weiter, gilt die Anpassung als angenommen.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.leistungsaenderungsrecht",
+        "wert": false,
+        "zitat": "3.1 Der Betreiber hält die in der Studiobeschreibung genannten Geräte und Kurse bereit.",
+        "seite": 1
+      }
+    ]
+  },
+  "dauer_ms": 4200,
+  "kosten_cent": 1.1,
+  "zeit": null,
+  "aus_cache": false
+}

@@ -1,0 +1,20 @@
+{
+  "kanal": "vbs",
+  "ticket_nr": "VBS-48213",
+  "thema": "Allgemeines Verbraucherrecht",
+  "eingegangen_am": "2026-08-24T09:12:00",
+  "anbieter": "FitPoint 24",
+  "branche": "fitness",
+  "gegner": null,
+  "freitext": "Mein Fitnessstudio hat mir geschrieben, dass mein Beitrag ab September von 29,90 auf 36,90 Euro steigt. Im Brief steht, dass ich schon zustimme, wenn ich das nächste Mal durchs Drehkreuz gehe. Beim Vertragsschluss im Oktober 2025 wurde mir aber zugesichert, dass der Preis ein Jahr lang gleich bleibt; so steht es auch im Vertrag. Ich hänge den Brief, die AGB und meinen Vertrag an. Muss ich das hinnehmen?",
+  "identitaet": {
+    "name": "Ingeborg Maier",
+    "adresse": "Lindenstraße 12, 80331 München",
+    "email": "i.maier@example.de",
+    "telefon": "089 1234567",
+    "kundennummer": "4711-2233"
+  },
+  "anhaenge": ["schreiben.md", "agb.md", "vertrag.md"],
+  "geprueft": false,
+  "hinweis": "Fiktion — eigene Testdaten (14 §7 happy path, 15 §13). Kein echter Fall, keine echten Personen."
+}

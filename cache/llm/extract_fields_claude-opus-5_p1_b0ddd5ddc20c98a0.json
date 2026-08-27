@@ -1,0 +1,140 @@
+{
+  "aufgabe": "extract_fields",
+  "modell": "claude-opus-5",
+  "prompt_version": "p1",
+  "eingabe": {
+    "dokumenttyp": "vertrag",
+    "seiten": [
+      {
+        "nr": 1,
+        "text": "FitPoint 24 GmbH — Mitgliedsvertrag\n\nMitglied: @@PERSON_1@@, @@ADRESSE_1@@, @@ADRESSE_2@@\nKundennummer: @@KUNDENNR_1@@\nVertragsdatum: 01.10.2025\n\nTarif: Basis\nMonatlicher Beitrag: 29,90 EUR\nMindestlaufzeit: 24 Monate\n\nPreisgarantie: Der Beitrag bleibt für 12 Monate ab Vertragsbeginn unverändert.\n\nVerlängerung: Der Vertrag verlängert sich um jeweils 12 Monate, wenn er nicht 3 Monate vor Ablauf gekündigt wird.\n\nDie Allgemeinen Geschäftsbedingungen in der Fassung vom 01.05.2021 habe ich erhalten und erkenne sie an.\n\nMünchen, 01.10.2025\n\nUnterschrift Mitglied: @@PERSON_3@@"
+      }
+    ],
+    "felder": [
+      {
+        "feld_id": "vertrag.datum",
+        "typ": "datum",
+        "werte": null,
+        "beschreibung": "Datum des Vertragsschlusses",
+        "zitat_pflicht": false,
+        "pflicht": true
+      },
+      {
+        "feld_id": "vertrag.laufzeit_monate",
+        "typ": "zahl",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": false
+      },
+      {
+        "feld_id": "vertrag.verlaengerung_text",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "vertrag.beitrag",
+        "typ": "betrag",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": true
+      },
+      {
+        "feld_id": "vertrag.vertragsbeginn",
+        "typ": "datum",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": false
+      },
+      {
+        "feld_id": "vertrag.preisgarantie_monate",
+        "typ": "zahl",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": false
+      },
+      {
+        "feld_id": "vertrag.preisgarantie_bis",
+        "typ": "datum",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": false
+      },
+      {
+        "feld_id": "vertrag.agb_einbezogen_hinweis",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "vertrag.aenderungsvereinbarung_hinweis",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "wurde eine spätere AGB-Änderung vereinbart?",
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "vertrag.preisklausel_text",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": "falls die Preisklausel im Vertrag selbst steht (dann gelten die agb.*-Klauselfelder analog als vertrag.*)",
+        "zitat_pflicht": true,
+        "pflicht": false
+      }
+    ]
+  },
+  "ausgabe": {
+    "felder": [
+      {
+        "feld_id": "vertrag.datum",
+        "wert": "2025-10-01",
+        "zitat": "Vertragsdatum: 01.10.2025",
+        "seite": 1
+      },
+      {
+        "feld_id": "vertrag.laufzeit_monate",
+        "wert": 24,
+        "zitat": "Mindestlaufzeit: 24 Monate",
+        "seite": 1
+      },
+      {
+        "feld_id": "vertrag.verlaengerung_text",
+        "wert": "Der Vertrag verlängert sich um jeweils 12 Monate, wenn er nicht 3 Monate vor Ablauf gekündigt wird.",
+        "zitat": "Verlängerung: Der Vertrag verlängert sich um jeweils 12 Monate, wenn er nicht 3 Monate vor Ablauf gekündigt wird.",
+        "seite": 1
+      },
+      {
+        "feld_id": "vertrag.beitrag",
+        "wert": "29,90",
+        "zitat": "Monatlicher Beitrag: 29,90 EUR",
+        "seite": 1
+      },
+      {
+        "feld_id": "vertrag.preisgarantie_monate",
+        "wert": 12,
+        "zitat": "Preisgarantie: Der Beitrag bleibt für 12 Monate ab Vertragsbeginn unverändert.",
+        "seite": 1
+      },
+      {
+        "feld_id": "vertrag.agb_einbezogen_hinweis",
+        "wert": true,
+        "zitat": "Die Allgemeinen Geschäftsbedingungen in der Fassung vom 01.05.2021 habe ich erhalten und erkenne sie an.",
+        "seite": 1
+      }
+    ]
+  },
+  "dauer_ms": 4200,
+  "kosten_cent": 1.1,
+  "zeit": null,
+  "aus_cache": false
+}

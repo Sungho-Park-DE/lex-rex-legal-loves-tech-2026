@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "note": "Franz' Anleitung §7: „erneutes Auftreten einer bereits abgemahnten Klausel löst einen Hinweis aus“. Ein Eintrag je bekanntem Verfahren, das einen unserer Klauseltypen (= Prüfpunkt) betrifft. `klauseltyp` ist UNSERE Zuordnung zum Prüfpunkt, nicht die des Gerichts — `geprueft:false` gilt für Zuordnung UND Verfahrensdaten, bis ein Mensch aus dem Team das Original gelesen hat (14 §8). Nur Einträge, die in analysis/11 §2 als [V] stehen und die Korrektur aus analysis/30 §5 tragen. Kein Eintrag außerhalb unserer Klauseltypen (Telefonica, Kündigungsbutton, Auto-Renewal: andere Fallgruppen, kein Treffer möglich). `verwender` ist der Beklagte des öffentlichen Verfahrens — kein Fall aus unserem Bestand.",
+    "attribution_regel": "CLAUDE.md binding table — LG Bamberg 13 O 730/22 (McFit) = vzbv, nicht VZ Bayern; OLG Bamberg 3 UKl 20/24 e (FitOne) = VZ Bayern, Vergleich 21.02.2025, KEIN Urteil.",
+    "matching": "Treffer = Prüfpunkt des Falls im Zustand NEIN ∩ `klauseltyp`. Der Verwendername spielt keine Rolle — gematcht wird der Klauseltyp, nicht das Unternehmen (Register §R R2: keine Namen unter k_min).",
+    "nicht_zugeordnet": [
+      {
+        "verfahren": "OLG Bamberg 3 UKl 20/24 e (FitOne GmbH, Verbraucherzentrale Bayern)",
+        "ausgang": "Vergleich per Beschluss § 278 Abs. 6 ZPO vom 21.02.2025, Streitwert 5.000 € — kein Urteil",
+        "grund": "Gegenstand sind eine halbjährliche „Energie- und Hygienepauschale“ und eine Verwaltungspauschale für das Zutrittsmedium — **keine Preisanpassungsklausel**. Unsere frühere Zuordnung zu preiserhoehung/P7 (Kostenweitergabegebot) trug nicht und ist am 25.08.2026 entfernt worden (analysis/34 §1, Beschluss-PDF gelesen). Ein Klauseltyp „Pauschale“ existiert in keinem unserer Schemata; ein Eintrag, der nie matcht, wäre Füllmaterial. Wieder aufnehmen, sobald es einen Prüfpunkt dafür gibt.",
+        "quelle": "https://www.verbraucherzentrale.bayern/sites/default/files/2025-06/olg-bamberg-beschluss-vom-21.02.2025-az.-3-ukl-20_24.pdf",
+        "quelle_register": "https://www.bundesjustizamt.de/DE/Themen/Verbraucherrechte/VerbandsklageregisterMusterfeststellungsklagenregister/Verbandsklagenregister/Unterlassungsklagen/Klagen/2024/168/UKlag_168_2024_node.html"
+      }
+    ]
+  },
+  "eintraege": [
+    {
+      "id": "abm_mcfit_drehkreuz_2022",
+      "klauseltyp": "preiserhoehung/P9",
+      "verwender": "McFIT (RSG Group GmbH)",
+      "gegenstand": "Drehkreuz-Passage als Zustimmung zur Preiserhöhung (Zustimmungsfiktion durch Weiternutzung)",
+      "massnahme": "urteil",
+      "traeger": "vzbv",
+      "gericht": "LG Bamberg",
+      "az": "13 O 730/22",
+      "datum": "2024-03-15",
+      "ausgang": "Endurteil 15.03.2024 (Volltext gelesen, analysis/34 §1): die Drehkreuz-Aufforderung ist eine unzulässige aggressive geschäftliche Handlung, die Klausel weicht von §§ 305 Abs. 2, 311 Abs. 1, 145 ff. BGB ab (§ 307 Abs. 1 S. 1, Abs. 2 Nr. 1 BGB); Berufung OLG Bamberg 3 U 39/24 e durch Unterlassungserklärung erledigt — nicht vom OLG bestätigt",
+      "quelle": "https://www.gesetze-bayern.de/Content/Document/Y-300-Z-GRURRS-B-2024-N-8090",
+      "zuordnung_grund": "Der Anker lg_bamberg_13_o_730_22 hängt im Schema an P9; dieselbe Klausel — die Leitsätze nennen genau die Zustimmungsfiktion durch Weiternutzung (analysis/34 §1, Primärquelle).",
+      "geprueft": false,
+      "quelle_sekundaer": "https://www.vzbv.de/urteile/urteil-vorgehen-bei-preiserhoehung-mcfit-studios-unzulaessig"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "aufgabe": "propose_fallgruppe",
+  "modell": "claude-opus-5",
+  "prompt_version": "p1",
+  "eingabe": {
+    "freitext": "Mein Studio erhöht den Beitrag und schreibt, ein Gericht hätte das so entschieden. In dem Brief steht auch eine Ziffer aus den AGB, aber wenn ich in den AGB nachsehe, steht unter dieser Ziffer etwas ganz anderes. Ich habe beides angehängt. Muss ich das zahlen?",
+    "doktypen": [
+      "agb",
+      "erhoehungsschreiben",
+      "vertrag"
+    ],
+    "taxonomie": [
+      "inkasso",
+      "klausel_check",
+      "kuendigung",
+      "preiserhoehung"
+    ]
+  },
+  "ausgabe": {
+    "vorschlaege": [
+      {
+        "fallgruppe_id": "preiserhoehung",
+        "begruendung": "Das Studio erhöht den laufenden Monatsbeitrag einseitig.",
+        "zitate": [
+          "Mein Studio erhöht den Beitrag"
+        ]
+      },
+      {
+        "fallgruppe_id": "klausel_check",
+        "begruendung": "Der Kunde bestreitet, dass die zitierte Klausel so in den AGB steht.",
+        "zitate": [
+          "wenn ich in den AGB nachsehe, steht unter dieser Ziffer etwas ganz anderes"
+        ]
+      }
+    ]
+  },
+  "dauer_ms": 3100,
+  "kosten_cent": 0.6,
+  "zeit": null,
+  "aus_cache": false
+}

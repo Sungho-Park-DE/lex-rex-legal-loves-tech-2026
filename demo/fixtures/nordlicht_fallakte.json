@@ -1,0 +1,3588 @@
+{
+  "ansicht_version": "1.15",
+  "case_id": "F-2026-0003",
+  "kopf": {
+    "case_id": "F-2026-0003",
+    "ticket_nr": "VBS-48402",
+    "thema": "Allgemeines Verbraucherrecht",
+    "kanal": {
+      "code": "vbs",
+      "label": "schriftlich (VBS)",
+      "tone": "grau",
+      "detail": "Virtuelle Beratungsstelle — die Anfrage kam schriftlich über das Online-Ticket der Verbraucherzentrale."
+    },
+    "anbieter": "Nordlicht Sportclub",
+    "gegner": null,
+    "eingegangen_am": "2026-08-26T08:05:00",
+    "status": {
+      "code": "offen",
+      "label": "offen",
+      "tone": "grau",
+      "detail": null
+    },
+    "fallgruppe": {
+      "code": "preiserhoehung",
+      "label": "Preiserhöhung im Verbrauchervertrag",
+      "tone": "grau",
+      "detail": null
+    },
+    "stufe": {
+      "code": "A",
+      "label": "Stufe A — volles Prüfschema",
+      "tone": "grau",
+      "detail": null
+    },
+    "fallgruppe_bestaetigt": true,
+    "fallgruppe_vorschlag_fehlt": false,
+    "fallgruppe_vorschlaege": [
+      {
+        "fallgruppe": {
+          "code": "preiserhoehung",
+          "label": "Preiserhöhung im Verbrauchervertrag",
+          "tone": "grau",
+          "detail": null
+        },
+        "stufe": {
+          "code": "A",
+          "label": "Stufe A — volles Prüfschema",
+          "tone": "grau",
+          "detail": null
+        },
+        "begruendung": "Der Club erhöht den laufenden Monatsbeitrag einseitig.",
+        "zitate": [
+          {
+            "dok_id": "T0",
+            "seite": 1,
+            "zitat": "dass mein Beitrag ab Oktober von 27,50 auf 31,90 Euro steigt",
+            "feld_id": null
+          }
+        ]
+      },
+      {
+        "fallgruppe": {
+          "code": "klausel_check",
+          "label": "Zweifelhafte Klausel",
+          "tone": "grau",
+          "detail": null
+        },
+        "stufe": {
+          "code": "C",
+          "label": "Stufe C — nur Zuordnung",
+          "tone": "grau",
+          "detail": null
+        },
+        "begruendung": "Im Kern steht die Wirksamkeit der Preisanpassungsklausel in den AGB.",
+        "zitate": []
+      }
+    ],
+    "fallgruppe_beleg": {
+      "dok_id": "D1",
+      "seite": 1,
+      "zitat": "Nach Ziffer 7.2 unserer Allgemeinen Geschäftsbedingungen",
+      "feld_id": null
+    },
+    "schema_stopp_text": null,
+    "hinweis": null
+  },
+  "hero": {
+    "einordnung": {
+      "code": "unklar",
+      "label": "unklar – es fehlt: die AGB, die bei Vertragsschluss galten, den Mitgliedsvertrag oder das Anmeldeformular",
+      "label_basis": "unklar – es fehlt …",
+      "tone": "gelb"
+    },
+    "vollstaendigkeit": {
+      "verbraucher": [
+        {
+          "was": "die AGB, die bei Vertragsschluss galten",
+          "grund": "Daraus ergibt sich, ob das Studio den Beitrag überhaupt einseitig ändern darf und unter welchen Bedingungen.",
+          "quelle": {
+            "code": "verbraucher",
+            "label": "Verbraucherseite",
+            "tone": "grau",
+            "detail": null
+          },
+          "dokumenttyp": {
+            "code": "agb",
+            "label": "AGB",
+            "tone": "grau",
+            "detail": null
+          },
+          "feld_id": null,
+          "felder": [
+            "Wortlaut der Preisklausel",
+            "Anlass genannt",
+            "Voraussetzungen genannt",
+            "Umfang genannt",
+            "Senkungspflicht",
+            "Kostenbezug"
+          ],
+          "pruefpunkt_id": null,
+          "beschaffungsweg": "Mitgliedsvertrag (Rückseite/Anlage), Studio-Website, Studio-App",
+          "fehlzustand": {
+            "code": "nicht_eingereicht",
+            "label": "noch nicht eingereicht",
+            "tone": "gelb",
+            "detail": null
+          },
+          "aussage": null
+        },
+        {
+          "was": "den Mitgliedsvertrag oder das Anmeldeformular",
+          "grund": "Daraus ergeben sich Vertragsdatum, Laufzeit, der vereinbarte Beitrag und eine mögliche Preisgarantie.",
+          "quelle": {
+            "code": "verbraucher",
+            "label": "Verbraucherseite",
+            "tone": "grau",
+            "detail": null
+          },
+          "dokumenttyp": {
+            "code": "vertrag",
+            "label": "Vertrag",
+            "tone": "grau",
+            "detail": null
+          },
+          "feld_id": null,
+          "felder": [
+            "Vertragsdatum"
+          ],
+          "pruefpunkt_id": null,
+          "beschaffungsweg": "Unterlagen vom Vertragsschluss, Kundenkonto im Studio",
+          "fehlzustand": {
+            "code": "nicht_eingereicht",
+            "label": "noch nicht eingereicht",
+            "tone": "gelb",
+            "detail": null
+          },
+          "aussage": null
+        }
+      ],
+      "unternehmen": [
+        {
+          "was": "die Kostenkalkulation des Studios",
+          "grund": "Eine Begründung im Schreiben genügt dafür nicht: Erst die Aufstellung, welche Kosten sich um wie viel verändert haben, macht die Höhe der Erhöhung prüfbar.",
+          "quelle": {
+            "code": "unternehmen",
+            "label": "Unternehmensseite",
+            "tone": "grau",
+            "detail": null
+          },
+          "dokumenttyp": {
+            "code": "kostenkalkulation",
+            "label": "Kostenkalkulation",
+            "tone": "grau",
+            "detail": null
+          },
+          "feld_id": null,
+          "felder": [],
+          "pruefpunkt_id": null,
+          "beschaffungsweg": "Auskunftsverlangen an das Studio — nie als Nachforderung beim Verbraucher",
+          "fehlzustand": {
+            "code": "nicht_eingereicht",
+            "label": "noch nicht eingereicht",
+            "tone": "gelb",
+            "detail": null
+          },
+          "aussage": null
+        }
+      ],
+      "vollstaendig_verbraucherseite": false
+    },
+    "plain": [
+      "Ob die Erhöhung wirksam ist, lässt sich noch nicht sagen — dazu brauchen wir noch die AGB, die bei Vertragsschluss galten, und den Mitgliedsvertrag oder das Anmeldeformular."
+    ],
+    "pruefumfang": [
+      {
+        "pruefpunkt_id": "P2",
+        "titel": "Einbeziehung der Preisklausel",
+        "zustand": {
+          "code": "WERTUNG",
+          "label": "Bewertung nötig",
+          "tone": "gelb",
+          "detail": "Das Programm kann diesen Punkt nicht allein entscheiden — die Beraterin bewertet, das Ergebnis bleibt bis dahin offen."
+        },
+        "text": "Galt die zitierte Klauselfassung schon bei Vertragsschluss, und wurde sie wirksam einbezogen?"
+      },
+      {
+        "pruefpunkt_id": "P4",
+        "titel": "Überraschende Klausel / Unklarheit",
+        "zustand": {
+          "code": "FEHLT",
+          "label": "Angabe fehlt",
+          "tone": "gelb",
+          "detail": null
+        },
+        "text": "Ist die Klausel an überraschender Stelle oder unter irreführender Überschrift versteckt, oder mehrdeutig formuliert?"
+      },
+      {
+        "pruefpunkt_id": "P6",
+        "titel": "Transparenzgebot",
+        "zustand": {
+          "code": "FEHLT",
+          "label": "Angabe fehlt",
+          "tone": "gelb",
+          "detail": null
+        },
+        "text": "Reicht die Bestimmtheit der Klausel aus — kann die Kundin Anlass, Voraussetzungen und Umfang einer Erhöhung selbst nachvollziehen?"
+      },
+      {
+        "pruefpunkt_id": "P7",
+        "titel": "Symmetrie- und Kostenweitergabegebot",
+        "zustand": {
+          "code": "FEHLT",
+          "label": "Angabe fehlt",
+          "tone": "gelb",
+          "detail": null
+        },
+        "text": "Ist die Senkungsregel eine echte Pflicht oder nur ein Ermessen, und knüpft die Klausel an Kosten an?"
+      },
+      {
+        "pruefpunkt_id": "P11",
+        "titel": "Ausübungskontrolle § 315",
+        "zustand": {
+          "code": "FEHLT",
+          "label": "Angabe fehlt",
+          "tone": "gelb",
+          "detail": null
+        },
+        "text": "NICHT geprüft: ob die Höhe der Erhöhung angemessen ist (§ 315 BGB) — dazu fehlt die Kostenkalkulation des Studios."
+      },
+      {
+        "pruefpunkt_id": "P12",
+        "titel": "Rechtsfolgen bei Unwirksamkeit",
+        "zustand": {
+          "code": "INAKTIV",
+          "label": "nicht geprüft",
+          "tone": "grau",
+          "detail": "Bei dieser Einordnung spielt der Punkt keine Rolle; er wurde nicht geprüft."
+        },
+        "text": "greift bei dieser Einordnung nicht"
+      }
+    ]
+  },
+  "offene_punkte": [
+    {
+      "art": {
+        "code": "fehlt",
+        "label": "fehlende Unterlage",
+        "tone": "gelb",
+        "detail": "Der Wert steht in keiner vorliegenden Unterlage."
+      },
+      "text": "die AGB, die bei Vertragsschluss galten",
+      "pruefpunkt_id": null,
+      "pruefpunkt_titel": null,
+      "quelle": {
+        "code": "verbraucher",
+        "label": "Verbraucherseite",
+        "tone": "grau",
+        "detail": null
+      },
+      "feld_id": null,
+      "feld_label": null
+    },
+    {
+      "art": {
+        "code": "fehlt",
+        "label": "fehlende Unterlage",
+        "tone": "gelb",
+        "detail": "Der Wert steht in keiner vorliegenden Unterlage."
+      },
+      "text": "den Mitgliedsvertrag oder das Anmeldeformular",
+      "pruefpunkt_id": null,
+      "pruefpunkt_titel": null,
+      "quelle": {
+        "code": "verbraucher",
+        "label": "Verbraucherseite",
+        "tone": "grau",
+        "detail": null
+      },
+      "feld_id": null,
+      "feld_label": null
+    },
+    {
+      "art": {
+        "code": "wertung",
+        "label": "Bewertung durch die Beraterin",
+        "tone": "gelb",
+        "detail": "Einschätzung der Beraterin — das Programm stellt die Frage, entscheidet sie aber nicht."
+      },
+      "text": "Galt die zitierte Klauselfassung schon bei Vertragsschluss, und wurde sie wirksam einbezogen?",
+      "pruefpunkt_id": "P2",
+      "pruefpunkt_titel": "Einbeziehung der Preisklausel",
+      "quelle": null,
+      "feld_id": null,
+      "feld_label": null
+    },
+    {
+      "art": {
+        "code": "frage",
+        "label": "Frage ans Gespräch",
+        "tone": "gelb",
+        "detail": null
+      },
+      "text": "Haben Sie beim Vertragsschluss die AGB bekommen oder unterschrieben, dass Sie sie kennen?",
+      "pruefpunkt_id": "P2",
+      "pruefpunkt_titel": "Einbeziehung der Preisklausel",
+      "quelle": null,
+      "feld_id": null,
+      "feld_label": null
+    }
+  ],
+  "pruefpfad": {
+    "wurzel": {
+      "code": "FEHLT",
+      "label": "Angabe fehlt",
+      "tone": "gelb",
+      "detail": null
+    },
+    "gerissene_stufe": null,
+    "gerissene_stufe_titel": null,
+    "stufen": [
+      {
+        "stufe_id": "S0",
+        "titel": "Stufe 0 — Anwendungsbereich",
+        "zustand": {
+          "code": "JA",
+          "label": "erfüllt",
+          "tone": "gruen",
+          "detail": null
+        },
+        "pruefpunkte": [
+          {
+            "pruefpunkt_id": "P0",
+            "titel": "Anwendungsbereich / Regime",
+            "proposition": "Es geht um eine einseitige Preisänderung in einem laufenden Fitnessvertrag (allgemeines AGB-Recht, kein Sonderregime).",
+            "zustand": {
+              "code": "JA",
+              "label": "erfüllt",
+              "tone": "gruen",
+              "detail": null
+            },
+            "rolle": {
+              "code": "gate",
+              "label": "Vorfrage",
+              "tone": "grau",
+              "detail": "Vorfrage: muss zuerst passen, sonst wird nicht weitergeprüft."
+            },
+            "typ": {
+              "code": "fakt",
+              "label": "Tatsache",
+              "tone": "grau",
+              "detail": "Eine Tatsache aus den Unterlagen (Datum, Betrag, ob etwas genannt ist) — das Programm prüft sie nach Regel."
+            },
+            "herkunft": {
+              "code": "explizit",
+              "label": "im Dokument belegt",
+              "tone": "gruen",
+              "detail": "Der Wert steht so in den Unterlagen; das Zitat daneben ist die Stelle."
+            },
+            "badge": {
+              "code": "verifiziert",
+              "label": "Zitat verifiziert",
+              "tone": "gruen",
+              "detail": "Das Zitat wurde Zeichen für Zeichen im Dokument wiedergefunden."
+            },
+            "grund": "Einseitige Änderung eines laufenden Vertrags — das Prüfschema ist anwendbar.",
+            "zitate": [
+              {
+                "dok_id": "D1",
+                "seite": 1,
+                "zitat": "Nach Ziffer 7.2 unserer Allgemeinen Geschäftsbedingungen",
+                "feld_id": null
+              }
+            ],
+            "anker": [
+              {
+                "key": "bgb_310_3",
+                "label": "§ 310 Abs. 3 BGB",
+                "ebene": {
+                  "code": "gesetz",
+                  "label": "Gesetz",
+                  "tone": "grau",
+                  "detail": null
+                },
+                "status": null,
+                "geprueft": false,
+                "pruefstand": {
+                  "code": "ungeprueft",
+                  "label": "Fundstelle ungeprüft",
+                  "tone": "grau",
+                  "detail": "Der Gesetzestext liegt vor und ist unverändert übernommen — gegengelesen am Original hat ihn niemand aus dem Team."
+                },
+                "aufgeloest": true,
+                "kernaussage": null,
+                "text": "Bei Verträgen zwischen einem Unternehmer und einem Verbraucher (Verbraucherverträge) finden die Vorschriften dieses Abschnitts mit folgenden Maßgaben Anwendung: 1. Allgemeine Geschäftsbedingungen gelten als vom Unternehmer gestellt, es sei denn, dass sie durch den Verbraucher in den Vertrag eingeführt wurden; 2. § 305c Abs. 2 und die §§ 306 und 307 bis 309 dieses Gesetzes sowie Artikel 46b des Einführungsgesetzes zum Bürgerlichen Gesetzbuche finden auf vorformulierte Vertragsbedingungen auch dann Anwendung, wenn diese nur zur einmaligen Verwendung bestimmt sind und soweit der Verbraucher auf Grund der Vorformulierung auf ihren Inhalt keinen Einfluss nehmen konnte; 3. bei der Beurteilung der unangemessenen Benachteiligung nach § 307 Abs. 1 und 2 sind auch die den Vertragsschluss begleitenden Umstände zu berücksichtigen.",
+                "url": "https://www.gesetze-im-internet.de/bgb/__310.html",
+                "stand": "2026-08-18"
+              }
+            ],
+            "verwendet": [
+              {
+                "feld_id": "erhoehungsschreiben.grundlage_genannt",
+                "feld_label": "genannte Grundlage",
+                "wert_anzeige": "eine Vertragsklausel",
+                "herkunft": {
+                  "code": "explizit",
+                  "label": "im Dokument belegt",
+                  "tone": "gruen",
+                  "detail": "Der Wert steht so in den Unterlagen; das Zitat daneben ist die Stelle."
+                },
+                "badge": {
+                  "code": "verifiziert",
+                  "label": "Zitat verifiziert",
+                  "tone": "gruen",
+                  "detail": "Das Zitat wurde Zeichen für Zeichen im Dokument wiedergefunden."
+                },
+                "verifiziert": true,
+                "zitat": {
+                  "dok_id": "D1",
+                  "seite": 1,
+                  "zitat": "Nach Ziffer 7.2 unserer Allgemeinen Geschäftsbedingungen",
+                  "feld_id": null
+                },
+                "annahme_anzeige": null
+              }
+            ],
+            "fehlt": [],
+            "owner": null,
+            "wertungsfrage": null,
+            "llm_befund": false,
+            "geprueft_von": [],
+            "frist": null,
+            "betrag": null,
+            "override": null,
+            "inaktiv_grund": null,
+            "hinweis_abmahnung": null,
+            "normrang": null
+          }
+        ]
+      },
+      {
+        "stufe_id": "S1",
+        "titel": "Stufe 1 — Rechtsgrundlage",
+        "zustand": {
+          "code": "JA",
+          "label": "erfüllt",
+          "tone": "gruen",
+          "detail": null
+        },
+        "pruefpunkte": [
+          {
+            "pruefpunkt_id": "P1a",
+            "titel": "Erhöhung überhaupt erklärt",
+            "proposition": "Dem Mitglied ist eine Erhöhung erklärt worden — es gibt ein Erhöhungsschreiben (oder eine gleichwertige Mitteilung).",
+            "zustand": {
+              "code": "JA",
+              "label": "erfüllt",
+              "tone": "gruen",
+              "detail": null
+            },
+            "rolle": {
+              "code": "tragend",
+              "label": "tragend",
+              "tone": "grau",
+              "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+            },
+            "typ": {
+              "code": "fakt",
+              "label": "Tatsache",
+              "tone": "grau",
+              "detail": "Eine Tatsache aus den Unterlagen (Datum, Betrag, ob etwas genannt ist) — das Programm prüft sie nach Regel."
+            },
+            "herkunft": {
+              "code": "fehlt",
+              "label": "nicht belegt",
+              "tone": "gelb",
+              "detail": "Der Wert steht in keiner vorliegenden Unterlage."
+            },
+            "badge": null,
+            "grund": "Eine Erhöhung ist erklärt worden; ihre Formalien werden gesondert geprüft.",
+            "zitate": [],
+            "anker": [
+              {
+                "key": "bgb_812",
+                "label": "§ 812 Abs. 1 S. 1 BGB",
+                "ebene": {
+                  "code": "gesetz",
+                  "label": "Gesetz",
+                  "tone": "grau",
+                  "detail": null
+                },
+                "status": null,
+                "geprueft": false,
+                "pruefstand": {
+                  "code": "ungeprueft",
+                  "label": "Fundstelle ungeprüft",
+                  "tone": "grau",
+                  "detail": "Der Gesetzestext liegt vor und ist unverändert übernommen — gegengelesen am Original hat ihn niemand aus dem Team."
+                },
+                "aufgeloest": true,
+                "kernaussage": null,
+                "text": "(1) Wer durch die Leistung eines anderen oder in sonstiger Weise auf dessen Kosten etwas ohne rechtlichen Grund erlangt, ist ihm zur Herausgabe verpflichtet. Diese Verpflichtung besteht auch dann, wenn der rechtliche Grund später wegfällt oder der mit einer Leistung nach dem Inhalt des Rechtsgeschäfts bezweckte Erfolg nicht eintritt. (2) Als Leistung gilt auch die durch Vertrag erfolgte Anerkennung des Bestehens oder des Nichtbestehens eines Schuldverhältnisses.",
+                "url": "https://www.gesetze-im-internet.de/bgb/__812.html",
+                "stand": "2026-08-18"
+              }
+            ],
+            "verwendet": [],
+            "fehlt": [],
+            "owner": null,
+            "wertungsfrage": null,
+            "llm_befund": false,
+            "geprueft_von": [
+              {
+                "wer": "Franz",
+                "am": "2026-08-24",
+                "beleg": "Runde 3, Rückmeldung zu Fall 6",
+                "umfang": "Ohne Erklärung entfällt der Rechtsgrund; Herausgabeanspruch nach § 812 Abs. 1 S. 1 BGB.",
+                "vorbehalt": "Die Regel greift nur auf die Angabe des Mitglieds hin (Fehlzustand „existiert nicht“); ob wirklich nie erklärt wurde, ist Tatsachenfrage."
+              }
+            ],
+            "frist": null,
+            "betrag": null,
+            "override": null,
+            "inaktiv_grund": null,
+            "hinweis_abmahnung": null,
+            "normrang": null
+          },
+          {
+            "pruefpunkt_id": "P1",
+            "titel": "Rechtsgrundlage der Erhöhung",
+            "proposition": "Das Schreiben benennt eine Grundlage für die Erhöhung (Klausel, Gesetz oder eine Zustimmungsfrage).",
+            "zustand": {
+              "code": "JA",
+              "label": "erfüllt",
+              "tone": "gruen",
+              "detail": null
+            },
+            "rolle": {
+              "code": "tragend",
+              "label": "tragend",
+              "tone": "grau",
+              "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+            },
+            "typ": {
+              "code": "fakt",
+              "label": "Tatsache",
+              "tone": "grau",
+              "detail": "Eine Tatsache aus den Unterlagen (Datum, Betrag, ob etwas genannt ist) — das Programm prüft sie nach Regel."
+            },
+            "herkunft": {
+              "code": "explizit",
+              "label": "im Dokument belegt",
+              "tone": "gruen",
+              "detail": "Der Wert steht so in den Unterlagen; das Zitat daneben ist die Stelle."
+            },
+            "badge": {
+              "code": "verifiziert",
+              "label": "Zitat verifiziert",
+              "tone": "gruen",
+              "detail": "Das Zitat wurde Zeichen für Zeichen im Dokument wiedergefunden."
+            },
+            "grund": "Das Schreiben nennt eine Grundlage (eine Vertragsklausel).",
+            "zitate": [
+              {
+                "dok_id": "D1",
+                "seite": 1,
+                "zitat": "Nach Ziffer 7.2 unserer Allgemeinen Geschäftsbedingungen",
+                "feld_id": null
+              }
+            ],
+            "anker": [],
+            "verwendet": [
+              {
+                "feld_id": "erhoehungsschreiben.grundlage_genannt",
+                "feld_label": "genannte Grundlage",
+                "wert_anzeige": "eine Vertragsklausel",
+                "herkunft": {
+                  "code": "explizit",
+                  "label": "im Dokument belegt",
+                  "tone": "gruen",
+                  "detail": "Der Wert steht so in den Unterlagen; das Zitat daneben ist die Stelle."
+                },
+                "badge": {
+                  "code": "verifiziert",
+                  "label": "Zitat verifiziert",
+                  "tone": "gruen",
+                  "detail": "Das Zitat wurde Zeichen für Zeichen im Dokument wiedergefunden."
+                },
+                "verifiziert": true,
+                "zitat": {
+                  "dok_id": "D1",
+                  "seite": 1,
+                  "zitat": "Nach Ziffer 7.2 unserer Allgemeinen Geschäftsbedingungen",
+                  "feld_id": null
+                },
+                "annahme_anzeige": null
+              }
+            ],
+            "fehlt": [],
+            "owner": null,
+            "wertungsfrage": null,
+            "llm_befund": false,
+            "geprueft_von": [],
+            "frist": null,
+            "betrag": null,
+            "override": null,
+            "inaktiv_grund": null,
+            "hinweis_abmahnung": null,
+            "normrang": null
+          }
+        ]
+      },
+      {
+        "stufe_id": "S2",
+        "titel": "Stufe 2 — Einbeziehung",
+        "zustand": {
+          "code": "FEHLT",
+          "label": "Angabe fehlt",
+          "tone": "gelb",
+          "detail": null
+        },
+        "pruefpunkte": [
+          {
+            "pruefpunkt_id": "P2",
+            "titel": "Einbeziehung der Preisklausel",
+            "proposition": "Die Preisklausel war bei Vertragsschluss Vertragsbestandteil, und die zitierte Klausel steht in dieser Fassung.",
+            "zustand": {
+              "code": "WERTUNG",
+              "label": "Bewertung nötig",
+              "tone": "gelb",
+              "detail": "Das Programm kann diesen Punkt nicht allein entscheiden — die Beraterin bewertet, das Ergebnis bleibt bis dahin offen."
+            },
+            "rolle": {
+              "code": "tragend",
+              "label": "tragend",
+              "tone": "grau",
+              "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+            },
+            "typ": {
+              "code": "fakt",
+              "label": "Tatsache",
+              "tone": "grau",
+              "detail": "Eine Tatsache aus den Unterlagen (Datum, Betrag, ob etwas genannt ist) — das Programm prüft sie nach Regel."
+            },
+            "herkunft": {
+              "code": "fehlt",
+              "label": "nicht belegt",
+              "tone": "gelb",
+              "detail": "Der Wert steht in keiner vorliegenden Unterlage."
+            },
+            "badge": null,
+            "grund": "Galt die zitierte Klauselfassung schon bei Vertragsschluss, und wurde sie wirksam einbezogen?",
+            "zitate": [],
+            "anker": [
+              {
+                "key": "bgb_305_2",
+                "label": "§ 305 Abs. 2 BGB",
+                "ebene": {
+                  "code": "gesetz",
+                  "label": "Gesetz",
+                  "tone": "grau",
+                  "detail": null
+                },
+                "status": null,
+                "geprueft": false,
+                "pruefstand": {
+                  "code": "ungeprueft",
+                  "label": "Fundstelle ungeprüft",
+                  "tone": "grau",
+                  "detail": "Der Gesetzestext liegt vor und ist unverändert übernommen — gegengelesen am Original hat ihn niemand aus dem Team."
+                },
+                "aufgeloest": true,
+                "kernaussage": null,
+                "text": "Allgemeine Geschäftsbedingungen werden nur dann Bestandteil eines Vertrags, wenn der Verwender bei Vertragsschluss 1. die andere Vertragspartei ausdrücklich oder, wenn ein ausdrücklicher Hinweis wegen der Art des Vertragsschlusses nur unter unverhältnismäßigen Schwierigkeiten möglich ist, durch deutlich sichtbaren Aushang am Orte des Vertragsschlusses auf sie hinweist und 2. der anderen Vertragspartei die Möglichkeit verschafft, in zumutbarer Weise, die auch eine für den Verwender erkennbare körperliche Behinderung der anderen Vertragspartei angemessen berücksichtigt, von ihrem Inhalt Kenntnis zu nehmen, und wenn die andere Vertragspartei mit ihrer Geltung einverstanden ist.",
+                "url": "https://www.gesetze-im-internet.de/bgb/__305.html",
+                "stand": "2026-08-18"
+              }
+            ],
+            "verwendet": [],
+            "fehlt": [],
+            "owner": null,
+            "wertungsfrage": "Galt die zitierte Klauselfassung schon bei Vertragsschluss, und wurde sie wirksam einbezogen?",
+            "llm_befund": false,
+            "geprueft_von": [],
+            "frist": null,
+            "betrag": null,
+            "override": null,
+            "inaktiv_grund": null,
+            "hinweis_abmahnung": null,
+            "normrang": null
+          },
+          {
+            "pruefpunkt_id": "P3",
+            "titel": "Vorrang der Individualabrede / Preisgarantie",
+            "proposition": "Es gibt keine Preisgarantie, die den Erhöhungszeitpunkt abdeckt.",
+            "zustand": {
+              "code": "FEHLT",
+              "label": "Angabe fehlt",
+              "tone": "gelb",
+              "detail": null
+            },
+            "rolle": {
+              "code": "tragend",
+              "label": "tragend",
+              "tone": "grau",
+              "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+            },
+            "typ": {
+              "code": "fakt",
+              "label": "Tatsache",
+              "tone": "grau",
+              "detail": "Eine Tatsache aus den Unterlagen (Datum, Betrag, ob etwas genannt ist) — das Programm prüft sie nach Regel."
+            },
+            "herkunft": {
+              "code": "explizit",
+              "label": "im Dokument belegt",
+              "tone": "gruen",
+              "detail": "Der Wert steht so in den Unterlagen; das Zitat daneben ist die Stelle."
+            },
+            "badge": {
+              "code": "verifiziert",
+              "label": "Zitat verifiziert",
+              "tone": "gruen",
+              "detail": "Das Zitat wurde Zeichen für Zeichen im Dokument wiedergefunden."
+            },
+            "grund": "Es fehlt: Datum des Vertragsschlusses",
+            "zitate": [
+              {
+                "dok_id": "D1",
+                "seite": 1,
+                "zitat": "ab dem 01.10.2026",
+                "feld_id": null
+              }
+            ],
+            "anker": [
+              {
+                "key": "bgb_305b",
+                "label": "§ 305b BGB",
+                "ebene": {
+                  "code": "gesetz",
+                  "label": "Gesetz",
+                  "tone": "grau",
+                  "detail": null
+                },
+                "status": null,
+                "geprueft": false,
+                "pruefstand": {
+                  "code": "ungeprueft",
+                  "label": "Fundstelle ungeprüft",
+                  "tone": "grau",
+                  "detail": "Der Gesetzestext liegt vor und ist unverändert übernommen — gegengelesen am Original hat ihn niemand aus dem Team."
+                },
+                "aufgeloest": true,
+                "kernaussage": null,
+                "text": "Individuelle Vertragsabreden haben Vorrang vor Allgemeinen Geschäftsbedingungen.",
+                "url": "https://www.gesetze-im-internet.de/bgb/__305b.html",
+                "stand": "2026-08-18"
+              }
+            ],
+            "verwendet": [
+              {
+                "feld_id": "erhoehungsschreiben.wirksam_ab",
+                "feld_label": "Erhöhung soll gelten ab",
+                "wert_anzeige": "01.10.2026",
+                "herkunft": {
+                  "code": "explizit",
+                  "label": "im Dokument belegt",
+                  "tone": "gruen",
+                  "detail": "Der Wert steht so in den Unterlagen; das Zitat daneben ist die Stelle."
+                },
+                "badge": {
+                  "code": "verifiziert",
+                  "label": "Zitat verifiziert",
+                  "tone": "gruen",
+                  "detail": "Das Zitat wurde Zeichen für Zeichen im Dokument wiedergefunden."
+                },
+                "verifiziert": true,
+                "zitat": {
+                  "dok_id": "D1",
+                  "seite": 1,
+                  "zitat": "ab dem 01.10.2026",
+                  "feld_id": null
+                },
+                "annahme_anzeige": null
+              }
+            ],
+            "fehlt": [
+              "vertrag.datum"
+            ],
+            "owner": {
+              "code": "verbraucher",
+              "label": "Verbraucherseite",
+              "tone": "grau",
+              "detail": null
+            },
+            "wertungsfrage": null,
+            "llm_befund": false,
+            "geprueft_von": [],
+            "frist": null,
+            "betrag": null,
+            "override": null,
+            "inaktiv_grund": null,
+            "hinweis_abmahnung": null,
+            "normrang": null
+          },
+          {
+            "pruefpunkt_id": "P4",
+            "titel": "Überraschende Klausel / Unklarheit",
+            "proposition": "Die Preisklausel ist weder überraschend platziert noch mehrdeutig.",
+            "zustand": {
+              "code": "FEHLT",
+              "label": "Angabe fehlt",
+              "tone": "gelb",
+              "detail": null
+            },
+            "rolle": {
+              "code": "tragend",
+              "label": "tragend",
+              "tone": "grau",
+              "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+            },
+            "typ": {
+              "code": "text",
+              "label": "Textverständnis",
+              "tone": "grau",
+              "detail": "Hier muss jemand den Sinn einer Klausel lesen. Das Sprachmodell schlägt vor, die Beraterin prüft (gelber Chip)."
+            },
+            "herkunft": {
+              "code": "fehlt",
+              "label": "nicht belegt",
+              "tone": "gelb",
+              "detail": "Der Wert steht in keiner vorliegenden Unterlage."
+            },
+            "badge": null,
+            "grund": "Es fehlt: Wortlaut der Preisanpassungsklausel — die ganze Klausel mit allen Sätzen (Anlass, Voraussetzungen, Umfang bzw. Kappung), nicht nur der erste Satz; ohne ihn gilt das Dokument als unvollständig",
+            "zitate": [],
+            "anker": [
+              {
+                "key": "bgb_305c",
+                "label": "§ 305c BGB",
+                "ebene": {
+                  "code": "gesetz",
+                  "label": "Gesetz",
+                  "tone": "grau",
+                  "detail": null
+                },
+                "status": null,
+                "geprueft": false,
+                "pruefstand": {
+                  "code": "ungeprueft",
+                  "label": "Fundstelle ungeprüft",
+                  "tone": "grau",
+                  "detail": "Der Gesetzestext liegt vor und ist unverändert übernommen — gegengelesen am Original hat ihn niemand aus dem Team."
+                },
+                "aufgeloest": true,
+                "kernaussage": null,
+                "text": "(1) Bestimmungen in Allgemeinen Geschäftsbedingungen, die nach den Umständen, insbesondere nach dem äußeren Erscheinungsbild des Vertrags, so ungewöhnlich sind, dass der Vertragspartner des Verwenders mit ihnen nicht zu rechnen braucht, werden nicht Vertragsbestandteil. (2) Zweifel bei der Auslegung Allgemeiner Geschäftsbedingungen gehen zu Lasten des Verwenders.",
+                "url": "https://www.gesetze-im-internet.de/bgb/__305c.html",
+                "stand": "2026-08-18"
+              }
+            ],
+            "verwendet": [],
+            "fehlt": [
+              "agb.preisklausel_text"
+            ],
+            "owner": {
+              "code": "verbraucher",
+              "label": "Verbraucherseite",
+              "tone": "grau",
+              "detail": null
+            },
+            "wertungsfrage": "Ist die Klausel an überraschender Stelle oder unter irreführender Überschrift versteckt, oder mehrdeutig formuliert?",
+            "llm_befund": false,
+            "geprueft_von": [],
+            "frist": null,
+            "betrag": null,
+            "override": null,
+            "inaktiv_grund": null,
+            "hinweis_abmahnung": null,
+            "normrang": null
+          }
+        ]
+      },
+      {
+        "stufe_id": "S3",
+        "titel": "Stufe 3 — Inhaltskontrolle",
+        "zustand": {
+          "code": "FEHLT",
+          "label": "Angabe fehlt",
+          "tone": "gelb",
+          "detail": null
+        },
+        "pruefpunkte": [
+          {
+            "pruefpunkt_id": "P8",
+            "titel": "Erklärungsfiktion (§ 308 Nr. 5)",
+            "proposition": "Die Klausel verstößt nicht gegen § 308 Nr. 5 (Erklärungsfiktion ohne Mindestanforderungen).",
+            "zustand": {
+              "code": "JA",
+              "label": "erfüllt",
+              "tone": "gruen",
+              "detail": null
+            },
+            "rolle": {
+              "code": "tragend",
+              "label": "tragend",
+              "tone": "grau",
+              "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+            },
+            "typ": {
+              "code": "fakt",
+              "label": "Tatsache",
+              "tone": "grau",
+              "detail": "Eine Tatsache aus den Unterlagen (Datum, Betrag, ob etwas genannt ist) — das Programm prüft sie nach Regel."
+            },
+            "herkunft": {
+              "code": "explizit",
+              "label": "im Dokument belegt",
+              "tone": "gruen",
+              "detail": "Der Wert steht so in den Unterlagen; das Zitat daneben ist die Stelle."
+            },
+            "badge": {
+              "code": "verifiziert",
+              "label": "Zitat verifiziert",
+              "tone": "gruen",
+              "detail": "Das Zitat wurde Zeichen für Zeichen im Dokument wiedergefunden."
+            },
+            "grund": "Die Erhöhung hängt nach den vorliegenden Unterlagen nicht von einer Erklärungsfiktion ohne Frist und Hinweis ab.",
+            "zitate": [
+              {
+                "dok_id": "D1",
+                "seite": 1,
+                "zitat": "Der Einzug erfolgt wie gewohnt zum Monatsersten. Ihre Mitgliedschaft läuft im Übrigen unverändert weiter.",
+                "feld_id": null
+              }
+            ],
+            "anker": [
+              {
+                "key": "bgb_308_5",
+                "label": "§ 308 Nr. 5 BGB",
+                "ebene": {
+                  "code": "gesetz",
+                  "label": "Gesetz",
+                  "tone": "grau",
+                  "detail": null
+                },
+                "status": null,
+                "geprueft": false,
+                "pruefstand": {
+                  "code": "ungeprueft",
+                  "label": "Fundstelle ungeprüft",
+                  "tone": "grau",
+                  "detail": "Der Gesetzestext liegt vor und ist unverändert übernommen — gegengelesen am Original hat ihn niemand aus dem Team."
+                },
+                "aufgeloest": true,
+                "kernaussage": null,
+                "text": "5. (Fingierte Erklärungen) eine Bestimmung, wonach eine Erklärung des Vertragspartners des Verwenders bei Vornahme oder Unterlassung einer bestimmten Handlung als von ihm abgegeben oder nicht abgegeben gilt, es sei denn, dassa) dem Vertragspartner eine angemessene Frist zur Abgabe einer ausdrücklichen Erklärung eingeräumt ist und b) der Verwender sich verpflichtet, den Vertragspartner bei Beginn der Frist auf die vorgesehene Bedeutung seines Verhaltens besonders hinzuweisen;",
+                "url": "https://www.gesetze-im-internet.de/bgb/__308.html",
+                "stand": "2026-08-18"
+              }
+            ],
+            "verwendet": [
+              {
+                "feld_id": "erhoehungsschreiben.zustimmungsmechanismus",
+                "feld_label": "Zustimmungsmechanismus",
+                "wert_anzeige": "keinen Mechanismus",
+                "herkunft": {
+                  "code": "explizit",
+                  "label": "im Dokument belegt",
+                  "tone": "gruen",
+                  "detail": "Der Wert steht so in den Unterlagen; das Zitat daneben ist die Stelle."
+                },
+                "badge": {
+                  "code": "verifiziert",
+                  "label": "Zitat verifiziert",
+                  "tone": "gruen",
+                  "detail": "Das Zitat wurde Zeichen für Zeichen im Dokument wiedergefunden."
+                },
+                "verifiziert": true,
+                "zitat": {
+                  "dok_id": "D1",
+                  "seite": 1,
+                  "zitat": "Der Einzug erfolgt wie gewohnt zum Monatsersten. Ihre Mitgliedschaft läuft im Übrigen unverändert weiter.",
+                  "feld_id": null
+                },
+                "annahme_anzeige": null
+              }
+            ],
+            "fehlt": [],
+            "owner": null,
+            "wertungsfrage": null,
+            "llm_befund": false,
+            "geprueft_von": [
+              {
+                "wer": "Franz",
+                "am": "2026-08-23",
+                "beleg": "Runde 3, Aufgabe 2",
+                "umfang": "§ 308 Nr. 5 lit. a trägt: eine Zustimmungsfiktion greift nicht, wenn die Widerspruchsfrist unangemessen ist. Seine Maßstäbe: unter einer Woche klar zu kurz, 14 Tage Untergrenze, 4 bis 6 Wochen üblich.",
+                "vorbehalt": "Bestätigt ist der Maßstab, nicht die Umsetzung: die Schwellen 7 und 42 Tage sind unsere Übersetzung seiner Worte, und der Bereich dazwischen wird bewusst der Beraterin vorgelegt statt entschieden. Paulina liest lit. a anders: maßgeblich ist für sie die Zeit bis zum Wirksamwerden, weil bis dahin widersprochen werden kann — nach dieser Lesart ist die Frist in Fall 1 ausreichend (Antwort vom 26.08.2026). Die Frage ist zwischen beiden offen; das Programm folgt hier Franz und misst die Widerspruchsfrist."
+              }
+            ],
+            "frist": null,
+            "betrag": null,
+            "override": null,
+            "inaktiv_grund": null,
+            "hinweis_abmahnung": null,
+            "normrang": {
+              "code": "wertungsfrei",
+              "label": "wertungsfrei",
+              "tone": "grau",
+              "detail": "Ein Verstoß gegen § 309 oder § 308 BGB gilt ohne Wertung — prozessual belastbarer als die Abwägung nach § 307."
+            }
+          },
+          {
+            "pruefpunkt_id": "P8c",
+            "titel": "Formerfordernis für den Widerspruch (§ 309 Nr. 13 lit. b)",
+            "proposition": "Die AGB binden den Widerspruch gegen die Anpassung an keine strengere Form als die Textform.",
+            "zustand": {
+              "code": "JA",
+              "label": "erfüllt",
+              "tone": "gruen",
+              "detail": null
+            },
+            "rolle": {
+              "code": "tragend",
+              "label": "tragend",
+              "tone": "grau",
+              "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+            },
+            "typ": {
+              "code": "fakt",
+              "label": "Tatsache",
+              "tone": "grau",
+              "detail": "Eine Tatsache aus den Unterlagen (Datum, Betrag, ob etwas genannt ist) — das Programm prüft sie nach Regel."
+            },
+            "herkunft": {
+              "code": "fehlt",
+              "label": "nicht belegt",
+              "tone": "gelb",
+              "detail": "Der Wert steht in keiner vorliegenden Unterlage."
+            },
+            "badge": null,
+            "grund": "Für den Widerspruch verlangen die AGB nach den vorliegenden Unterlagen keine strengere Form als die Textform.",
+            "zitate": [],
+            "anker": [
+              {
+                "key": "bgb_309_13",
+                "label": "§ 309 Nr. 13 lit. b BGB",
+                "ebene": {
+                  "code": "gesetz",
+                  "label": "Gesetz",
+                  "tone": "grau",
+                  "detail": null
+                },
+                "status": null,
+                "geprueft": false,
+                "pruefstand": {
+                  "code": "ungeprueft",
+                  "label": "Fundstelle ungeprüft",
+                  "tone": "grau",
+                  "detail": "Der Gesetzestext liegt vor und ist unverändert übernommen — gegengelesen am Original hat ihn niemand aus dem Team."
+                },
+                "aufgeloest": true,
+                "kernaussage": null,
+                "text": "13. (Form von Anzeigen und Erklärungen) eine Bestimmung, durch die Anzeigen oder Erklärungen, die dem Verwender oder einem Dritten gegenüber abzugeben sind, gebunden werden a) an eine strengere Form als die schriftliche Form in einem Vertrag, für den durch Gesetz notarielle Beurkundung vorgeschrieben ist oder b) an eine strengere Form als die Textform in anderen als den in Buchstabe a genannten Verträgen oder c) an besondere Zugangserfordernisse;",
+                "url": "https://www.gesetze-im-internet.de/bgb/__309.html",
+                "stand": "2026-08-18"
+              }
+            ],
+            "verwendet": [],
+            "fehlt": [],
+            "owner": null,
+            "wertungsfrage": null,
+            "llm_befund": false,
+            "geprueft_von": [
+              {
+                "wer": "Paulina",
+                "am": "2026-08-24",
+                "beleg": "Runde 3, Aufgabe 2",
+                "umfang": "§ 309 Nr. 13 trägt: „schriftlich“ wird regelmäßig als Schriftform i. S. d. § 126 BGB ausgelegt, das ist strenger als Textform; die Klausel ist ein eigener Unwirksamkeitsgrund neben der Fiktion, und weil damit kein funktionierender Erklärungsweg eröffnet ist, greift die Fiktion nach § 308 Nr. 5 lit. a auch ohne Widerspruch nicht.",
+                "vorbehalt": "Sie zitiert die Norm ohne Buchstaben; der amtliche Text hat a/b/c als Alternativen, lit. b ist der Fitness-Fall — Zitierweise ist unsere Korrektur, die Subsumtion ihre. Franz hat zur selben Frage widersprüchlich geantwortet; die Umsetzung als harter NEIN-Punkt stützt sich auf ihre Antwort allein. Nicht bestätigt: ob „schriftlich“ im Einzelfall doch als Textform auszulegen ist — dafür steht das Feld auf textform."
+              }
+            ],
+            "frist": null,
+            "betrag": null,
+            "override": null,
+            "inaktiv_grund": null,
+            "hinweis_abmahnung": null,
+            "normrang": {
+              "code": "wertungsfrei",
+              "label": "wertungsfrei",
+              "tone": "grau",
+              "detail": "Ein Verstoß gegen § 309 oder § 308 BGB gilt ohne Wertung — prozessual belastbarer als die Abwägung nach § 307."
+            }
+          },
+          {
+            "pruefpunkt_id": "P9",
+            "titel": "Zustimmungsfiktion",
+            "proposition": "Das Schreiben wertet weder Schweigen noch Weiternutzung als Zustimmung zur Preisänderung.",
+            "zustand": {
+              "code": "JA",
+              "label": "erfüllt",
+              "tone": "gruen",
+              "detail": null
+            },
+            "rolle": {
+              "code": "tragend",
+              "label": "tragend",
+              "tone": "grau",
+              "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+            },
+            "typ": {
+              "code": "fakt",
+              "label": "Tatsache",
+              "tone": "grau",
+              "detail": "Eine Tatsache aus den Unterlagen (Datum, Betrag, ob etwas genannt ist) — das Programm prüft sie nach Regel."
+            },
+            "herkunft": {
+              "code": "explizit",
+              "label": "im Dokument belegt",
+              "tone": "gruen",
+              "detail": "Der Wert steht so in den Unterlagen; das Zitat daneben ist die Stelle."
+            },
+            "badge": {
+              "code": "verifiziert",
+              "label": "Zitat verifiziert",
+              "tone": "gruen",
+              "detail": "Das Zitat wurde Zeichen für Zeichen im Dokument wiedergefunden."
+            },
+            "grund": "Das Schreiben wertet nach den vorliegenden Unterlagen weder Schweigen noch Weiternutzung als Zustimmung.",
+            "zitate": [
+              {
+                "dok_id": "D1",
+                "seite": 1,
+                "zitat": "Der Einzug erfolgt wie gewohnt zum Monatsersten. Ihre Mitgliedschaft läuft im Übrigen unverändert weiter.",
+                "feld_id": null
+              }
+            ],
+            "anker": [
+              {
+                "key": "bgb_308_5",
+                "label": "§ 308 Nr. 5 BGB",
+                "ebene": {
+                  "code": "gesetz",
+                  "label": "Gesetz",
+                  "tone": "grau",
+                  "detail": null
+                },
+                "status": null,
+                "geprueft": false,
+                "pruefstand": {
+                  "code": "ungeprueft",
+                  "label": "Fundstelle ungeprüft",
+                  "tone": "grau",
+                  "detail": "Der Gesetzestext liegt vor und ist unverändert übernommen — gegengelesen am Original hat ihn niemand aus dem Team."
+                },
+                "aufgeloest": true,
+                "kernaussage": null,
+                "text": "5. (Fingierte Erklärungen) eine Bestimmung, wonach eine Erklärung des Vertragspartners des Verwenders bei Vornahme oder Unterlassung einer bestimmten Handlung als von ihm abgegeben oder nicht abgegeben gilt, es sei denn, dassa) dem Vertragspartner eine angemessene Frist zur Abgabe einer ausdrücklichen Erklärung eingeräumt ist und b) der Verwender sich verpflichtet, den Vertragspartner bei Beginn der Frist auf die vorgesehene Bedeutung seines Verhaltens besonders hinzuweisen;",
+                "url": "https://www.gesetze-im-internet.de/bgb/__308.html",
+                "stand": "2026-08-18"
+              },
+              {
+                "key": "bgh_xi_zr_26_20",
+                "label": "BGH, XI ZR 26/20 (2021-04-27)",
+                "ebene": {
+                  "code": "dogmatik",
+                  "label": "Dogmatik",
+                  "tone": "grau",
+                  "detail": null
+                },
+                "status": {
+                  "code": "gefestigt",
+                  "label": "gefestigt",
+                  "tone": "grau",
+                  "detail": null
+                },
+                "geprueft": false,
+                "pruefstand": {
+                  "code": "ungeprueft",
+                  "label": "Fundstelle ungeprüft",
+                  "tone": "grau",
+                  "detail": "Der Gesetzestext liegt vor und ist unverändert übernommen — gegengelesen am Original hat ihn niemand aus dem Team."
+                },
+                "aufgeloest": true,
+                "kernaussage": "Zustimmungsfiktion in AGB für Entgeltänderungen unwirksam (Banken); die Begründung ist allgemeines Vertragsrecht (§§ 145 ff., 305 Abs. 2, 311 Abs. 1 BGB — Schweigen ist keine Annahme), nicht Bankrecht. Auf Fitness angewandt von LG Bamberg 13 O 730/22, das dieses Urteil ausdrücklich zitiert.",
+                "text": null,
+                "url": "https://dejure.org/dienste/vernetzung/rechtsprechung?Text=XI+ZR+26%2F20",
+                "stand": null
+              },
+              {
+                "key": "lg_bamberg_13_o_730_22",
+                "label": "LG Bamberg, 13 O 730/22 (2024-03-15)",
+                "ebene": {
+                  "code": "rechtsanwendung",
+                  "label": "Rechtsanwendung",
+                  "tone": "grau",
+                  "detail": null
+                },
+                "status": {
+                  "code": "gefestigt",
+                  "label": "gefestigt",
+                  "tone": "grau",
+                  "detail": null
+                },
+                "geprueft": true,
+                "pruefstand": {
+                  "code": "geprueft",
+                  "label": "Fundstelle gegengelesen",
+                  "tone": "gruen",
+                  "detail": "Jemand aus dem Team hat diese Fundstelle im Originaltext gelesen und bestätigt."
+                },
+                "aufgeloest": true,
+                "kernaussage": "Drehkreuz/Weiternutzung als Zustimmung = aggressive geschäftliche Handlung",
+                "text": null,
+                "url": "https://www.gesetze-bayern.de/Content/Document/Y-300-Z-GRURRS-B-2024-N-8090",
+                "stand": null
+              }
+            ],
+            "verwendet": [
+              {
+                "feld_id": "erhoehungsschreiben.zustimmungsmechanismus",
+                "feld_label": "Zustimmungsmechanismus",
+                "wert_anzeige": "keinen Mechanismus",
+                "herkunft": {
+                  "code": "explizit",
+                  "label": "im Dokument belegt",
+                  "tone": "gruen",
+                  "detail": "Der Wert steht so in den Unterlagen; das Zitat daneben ist die Stelle."
+                },
+                "badge": {
+                  "code": "verifiziert",
+                  "label": "Zitat verifiziert",
+                  "tone": "gruen",
+                  "detail": "Das Zitat wurde Zeichen für Zeichen im Dokument wiedergefunden."
+                },
+                "verifiziert": true,
+                "zitat": {
+                  "dok_id": "D1",
+                  "seite": 1,
+                  "zitat": "Der Einzug erfolgt wie gewohnt zum Monatsersten. Ihre Mitgliedschaft läuft im Übrigen unverändert weiter.",
+                  "feld_id": null
+                },
+                "annahme_anzeige": null
+              }
+            ],
+            "fehlt": [],
+            "owner": null,
+            "wertungsfrage": null,
+            "llm_befund": false,
+            "geprueft_von": [
+              {
+                "wer": "Paulina",
+                "am": "2026-08-24",
+                "beleg": "Runde 3, Nachfrage per WhatsApp zu den zwei unsignierten Punkten der Demo-Linie",
+                "umfang": "Bestätigt den Satz, so wie er im Programm steht: „Schweigen oder Weitertrainieren ist keine Zustimmung zu einem höheren Beitrag.“ Vorgelegt mit den drei Fundstellen § 308 Nr. 5 BGB, BGH XI ZR 26/20 und LG Bamberg 13 O 730/22.",
+                "vorbehalt": "Bestätigt ist der Satz, nicht seine Unbedingtheit und nicht die Fundstellen. Zwei Dinge deckt ihre Zusage nicht: (1) Unsere Regel gilt ohne Ausnahme, während Franz’ Antwort aus Runde 3 sich liest, als sei die Fiktion bei angemessener Frist in Ordnung — diese Spannung ist offen. (2) BGH XI ZR 26/20 ist eine Bankensache; die Übertragbarkeit auf Fitness hat Paulina am 26.08.2026 bejaht — LG Bamberg 13 O 730/22 wendet das Urteil ausdrücklich an. Das Bamberger Urteil hat sie am 26.08.2026 im Original gelesen — es ist der erste bestätigte Anker im Bestand. Offen bleibt das Urteil des BGH selbst: das hat niemand aus dem Team im Original gelesen, deshalb steht dieser eine Anker weiter auf „ungeprüft“."
+              }
+            ],
+            "frist": null,
+            "betrag": null,
+            "override": null,
+            "inaktiv_grund": null,
+            "hinweis_abmahnung": null,
+            "normrang": {
+              "code": "wertungsfrei",
+              "label": "wertungsfrei",
+              "tone": "grau",
+              "detail": "Ein Verstoß gegen § 309 oder § 308 BGB gilt ohne Wertung — prozessual belastbarer als die Abwägung nach § 307."
+            }
+          },
+          {
+            "pruefpunkt_id": "P5",
+            "titel": "Kontrollfähigkeit",
+            "proposition": "Die Klausel ist ein Preisänderungsvorbehalt (kontrollfähig), keine Vereinbarung des ursprünglichen Preises.",
+            "zustand": {
+              "code": "FEHLT",
+              "label": "Angabe fehlt",
+              "tone": "gelb",
+              "detail": null
+            },
+            "rolle": {
+              "code": "gate",
+              "label": "Vorfrage",
+              "tone": "grau",
+              "detail": "Vorfrage: muss zuerst passen, sonst wird nicht weitergeprüft."
+            },
+            "typ": {
+              "code": "fakt",
+              "label": "Tatsache",
+              "tone": "grau",
+              "detail": "Eine Tatsache aus den Unterlagen (Datum, Betrag, ob etwas genannt ist) — das Programm prüft sie nach Regel."
+            },
+            "herkunft": {
+              "code": "fehlt",
+              "label": "nicht belegt",
+              "tone": "gelb",
+              "detail": "Der Wert steht in keiner vorliegenden Unterlage."
+            },
+            "badge": null,
+            "grund": "Es fehlt: Wortlaut der Preisanpassungsklausel — die ganze Klausel mit allen Sätzen (Anlass, Voraussetzungen, Umfang bzw. Kappung), nicht nur der erste Satz; ohne ihn gilt das Dokument als unvollständig",
+            "zitate": [],
+            "anker": [
+              {
+                "key": "bgb_307_3",
+                "label": "§ 307 Abs. 3 BGB",
+                "ebene": {
+                  "code": "gesetz",
+                  "label": "Gesetz",
+                  "tone": "grau",
+                  "detail": null
+                },
+                "status": null,
+                "geprueft": false,
+                "pruefstand": {
+                  "code": "ungeprueft",
+                  "label": "Fundstelle ungeprüft",
+                  "tone": "grau",
+                  "detail": "Der Gesetzestext liegt vor und ist unverändert übernommen — gegengelesen am Original hat ihn niemand aus dem Team."
+                },
+                "aufgeloest": true,
+                "kernaussage": null,
+                "text": "Die Absätze 1 und 2 sowie die §§ 308 und 309 gelten nur für Bestimmungen in Allgemeinen Geschäftsbedingungen, durch die von Rechtsvorschriften abweichende oder diese ergänzende Regelungen vereinbart werden. Andere Bestimmungen können nach Absatz 1 Satz 2 in Verbindung mit Absatz 1 Satz 1 unwirksam sein.",
+                "url": "https://www.gesetze-im-internet.de/bgb/__307.html",
+                "stand": "2026-08-18"
+              }
+            ],
+            "verwendet": [],
+            "fehlt": [
+              "agb.preisklausel_text"
+            ],
+            "owner": {
+              "code": "verbraucher",
+              "label": "Verbraucherseite",
+              "tone": "grau",
+              "detail": null
+            },
+            "wertungsfrage": null,
+            "llm_befund": false,
+            "geprueft_von": [],
+            "frist": null,
+            "betrag": null,
+            "override": null,
+            "inaktiv_grund": null,
+            "hinweis_abmahnung": null,
+            "normrang": null
+          },
+          {
+            "pruefpunkt_id": "P6",
+            "titel": "Transparenzgebot",
+            "proposition": "Die Klausel nennt Anlass, Voraussetzungen und Umfang einer Erhöhung so genau, dass die Kundin sie selbst nachvollziehen könnte.",
+            "zustand": {
+              "code": "FEHLT",
+              "label": "Angabe fehlt",
+              "tone": "gelb",
+              "detail": null
+            },
+            "rolle": {
+              "code": "tragend",
+              "label": "tragend",
+              "tone": "grau",
+              "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+            },
+            "typ": {
+              "code": "text",
+              "label": "Textverständnis",
+              "tone": "grau",
+              "detail": "Hier muss jemand den Sinn einer Klausel lesen. Das Sprachmodell schlägt vor, die Beraterin prüft (gelber Chip)."
+            },
+            "herkunft": {
+              "code": "fehlt",
+              "label": "nicht belegt",
+              "tone": "gelb",
+              "detail": "Der Wert steht in keiner vorliegenden Unterlage."
+            },
+            "badge": null,
+            "grund": "Es fehlt: Anlass der Erhöhung in der Klausel, Voraussetzungen der Erhöhung in der Klausel, Umfang der Erhöhung in der Klausel",
+            "zitate": [],
+            "anker": [
+              {
+                "key": "bgb_307_1_2",
+                "label": "§ 307 Abs. 1 S. 2 BGB",
+                "ebene": {
+                  "code": "gesetz",
+                  "label": "Gesetz",
+                  "tone": "grau",
+                  "detail": null
+                },
+                "status": null,
+                "geprueft": false,
+                "pruefstand": {
+                  "code": "ungeprueft",
+                  "label": "Fundstelle ungeprüft",
+                  "tone": "grau",
+                  "detail": "Der Gesetzestext liegt vor und ist unverändert übernommen — gegengelesen am Original hat ihn niemand aus dem Team."
+                },
+                "aufgeloest": true,
+                "kernaussage": null,
+                "text": "Bestimmungen in Allgemeinen Geschäftsbedingungen sind unwirksam, wenn sie den Vertragspartner des Verwenders entgegen den Geboten von Treu und Glauben unangemessen benachteiligen. Eine unangemessene Benachteiligung kann sich auch daraus ergeben, dass die Bestimmung nicht klar und verständlich ist.",
+                "url": "https://www.gesetze-im-internet.de/bgb/__307.html",
+                "stand": "2026-08-18"
+              }
+            ],
+            "verwendet": [],
+            "fehlt": [
+              "agb.nennt_anlass",
+              "agb.nennt_voraussetzungen",
+              "agb.nennt_umfang"
+            ],
+            "owner": {
+              "code": "verbraucher",
+              "label": "Verbraucherseite",
+              "tone": "grau",
+              "detail": null
+            },
+            "wertungsfrage": "Reicht die Bestimmtheit der Klausel aus — kann die Kundin Anlass, Voraussetzungen und Umfang einer Erhöhung selbst nachvollziehen?",
+            "llm_befund": false,
+            "geprueft_von": [
+              {
+                "wer": "Paulina",
+                "am": "2026-08-24",
+                "beleg": "Runde 3, Nachfrage per WhatsApp zu den zwei unsignierten Punkten der Demo-Linie",
+                "umfang": "Bestätigt den Satz, so wie er im Programm steht: „Die Klausel muss Anlass, Voraussetzungen und Umfang der Erhöhung nennen. Fehlt eines davon, ist sie intransparent.“ Vorgelegt mit § 307 Abs. 1 S. 2 BGB.",
+                "vorbehalt": "Bestätigt ist die Regel, nicht ihre Anwendung auf eine einzelne Klausel. Ob eine Klausel den Anlass, die Voraussetzungen und den Umfang tatsächlich nennt, entscheidet bei uns die Extraktion aus dem Dokument — nicht sie. Wo diese drei Angaben nicht als geprüft vorliegen, geht der Punkt deshalb auf WERTUNG und fragt die Beraterin, statt selbst zu entscheiden."
+              }
+            ],
+            "frist": null,
+            "betrag": null,
+            "override": null,
+            "inaktiv_grund": null,
+            "hinweis_abmahnung": null,
+            "normrang": null
+          },
+          {
+            "pruefpunkt_id": "P7",
+            "titel": "Symmetrie- und Kostenweitergabegebot",
+            "proposition": "Die Klausel beschränkt Erhöhungen auf echte Kostensteigerungen und verpflichtet zur Weitergabe von Kostensenkungen.",
+            "zustand": {
+              "code": "FEHLT",
+              "label": "Angabe fehlt",
+              "tone": "gelb",
+              "detail": null
+            },
+            "rolle": {
+              "code": "tragend",
+              "label": "tragend",
+              "tone": "grau",
+              "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+            },
+            "typ": {
+              "code": "text",
+              "label": "Textverständnis",
+              "tone": "grau",
+              "detail": "Hier muss jemand den Sinn einer Klausel lesen. Das Sprachmodell schlägt vor, die Beraterin prüft (gelber Chip)."
+            },
+            "herkunft": {
+              "code": "fehlt",
+              "label": "nicht belegt",
+              "tone": "gelb",
+              "detail": "Der Wert steht in keiner vorliegenden Unterlage."
+            },
+            "badge": null,
+            "grund": "Es fehlt: Regelung zur Weitergabe von Kostensenkungen, knüpft die Erhöhung an Kostenentwicklung?",
+            "zitate": [],
+            "anker": [
+              {
+                "key": "bgb_307_1_1",
+                "label": "§ 307 Abs. 1 S. 1, Abs. 2 BGB",
+                "ebene": {
+                  "code": "gesetz",
+                  "label": "Gesetz",
+                  "tone": "grau",
+                  "detail": null
+                },
+                "status": null,
+                "geprueft": false,
+                "pruefstand": {
+                  "code": "ungeprueft",
+                  "label": "Fundstelle ungeprüft",
+                  "tone": "grau",
+                  "detail": "Der Gesetzestext liegt vor und ist unverändert übernommen — gegengelesen am Original hat ihn niemand aus dem Team."
+                },
+                "aufgeloest": true,
+                "kernaussage": null,
+                "text": "Bestimmungen in Allgemeinen Geschäftsbedingungen sind unwirksam, wenn sie den Vertragspartner des Verwenders entgegen den Geboten von Treu und Glauben unangemessen benachteiligen. Eine unangemessene Benachteiligung kann sich auch daraus ergeben, dass die Bestimmung nicht klar und verständlich ist. Eine unangemessene Benachteiligung ist im Zweifel anzunehmen, wenn eine Bestimmung 1. mit wesentlichen Grundgedanken der gesetzlichen Regelung, von der abgewichen wird, nicht zu vereinbaren ist oder 2. wesentliche Rechte oder Pflichten, die sich aus der Natur des Vertrags ergeben, so einschränkt, dass die Erreichung des Vertragszwecks gefährdet ist.",
+                "url": "https://www.gesetze-im-internet.de/bgb/__307.html",
+                "stand": "2026-08-18"
+              }
+            ],
+            "verwendet": [],
+            "fehlt": [
+              "agb.senkungspflicht",
+              "agb.kostenbezug"
+            ],
+            "owner": {
+              "code": "verbraucher",
+              "label": "Verbraucherseite",
+              "tone": "grau",
+              "detail": null
+            },
+            "wertungsfrage": "Ist die Senkungsregel eine echte Pflicht oder nur ein Ermessen, und knüpft die Klausel an Kosten an?",
+            "llm_befund": false,
+            "geprueft_von": [
+              {
+                "wer": "Franz",
+                "am": "2026-08-23",
+                "beleg": "Runde 3, Aufgabe 2 Nr. 3",
+                "umfang": "Die fehlende Symmetrie bleibt ein eigener tragender Prüfungspunkt und geht nicht in der Transparenzprüfung auf.",
+                "vorbehalt": null
+              }
+            ],
+            "frist": null,
+            "betrag": null,
+            "override": null,
+            "inaktiv_grund": null,
+            "hinweis_abmahnung": null,
+            "normrang": null
+          }
+        ]
+      },
+      {
+        "stufe_id": "S4",
+        "titel": "Stufe 4 — Ausübung formell",
+        "zustand": {
+          "code": "JA",
+          "label": "erfüllt",
+          "tone": "gruen",
+          "detail": null
+        },
+        "pruefpunkte": [
+          {
+            "pruefpunkt_id": "P10",
+            "titel": "Formalien des Erhöhungsschreibens",
+            "proposition": "Das Schreiben ist in zumutbarer Form und rechtzeitig zugegangen, nennt was sich ab wann ändert, und weist auf ein bestehendes Kündigungsrecht hin.",
+            "zustand": {
+              "code": "JA",
+              "label": "erfüllt",
+              "tone": "gruen",
+              "detail": null
+            },
+            "rolle": {
+              "code": "tragend",
+              "label": "tragend",
+              "tone": "grau",
+              "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+            },
+            "typ": {
+              "code": "fakt",
+              "label": "Tatsache",
+              "tone": "grau",
+              "detail": "Eine Tatsache aus den Unterlagen (Datum, Betrag, ob etwas genannt ist) — das Programm prüft sie nach Regel."
+            },
+            "herkunft": {
+              "code": "angenommen",
+              "label": "angenommen",
+              "tone": "gelb",
+              "detail": "Ein Wert dieses Punkts ist eine ausgewiesene Annahme, kein Beleg."
+            },
+            "badge": null,
+            "grund": "Das Schreiben nennt, was sich ab wann ändert; ein Kündigungshinweis fehlt nicht, wo er nötig wäre.",
+            "zitate": [
+              {
+                "dok_id": "D1",
+                "seite": 1,
+                "zitat": "Augsburg, 05.08.2026",
+                "feld_id": null
+              },
+              {
+                "dok_id": "D1",
+                "seite": 1,
+                "zitat": "ab dem 01.10.2026",
+                "feld_id": null
+              },
+              {
+                "dok_id": "D1",
+                "seite": 1,
+                "zitat": "Nordlicht Sportclub GmbH · Schießgrabenstraße 9 · 86152 Augsburg",
+                "feld_id": null
+              },
+              {
+                "dok_id": "D1",
+                "seite": 1,
+                "zitat": "Der Einzug erfolgt wie gewohnt zum Monatsersten. Ihre Mitgliedschaft läuft im Übrigen unverändert weiter.",
+                "feld_id": null
+              }
+            ],
+            "anker": [],
+            "verwendet": [
+              {
+                "feld_id": "erhoehungsschreiben.datum",
+                "feld_label": "Datum des Schreibens",
+                "wert_anzeige": "05.08.2026",
+                "herkunft": {
+                  "code": "explizit",
+                  "label": "im Dokument belegt",
+                  "tone": "gruen",
+                  "detail": "Der Wert steht so in den Unterlagen; das Zitat daneben ist die Stelle."
+                },
+                "badge": {
+                  "code": "verifiziert",
+                  "label": "Zitat verifiziert",
+                  "tone": "gruen",
+                  "detail": "Das Zitat wurde Zeichen für Zeichen im Dokument wiedergefunden."
+                },
+                "verifiziert": true,
+                "zitat": {
+                  "dok_id": "D1",
+                  "seite": 1,
+                  "zitat": "Augsburg, 05.08.2026",
+                  "feld_id": null
+                },
+                "annahme_anzeige": null
+              },
+              {
+                "feld_id": "erhoehungsschreiben.zugang",
+                "feld_label": "Zugang des Schreibens",
+                "wert_anzeige": "08.08.2026",
+                "herkunft": {
+                  "code": "angenommen",
+                  "label": "angenommen",
+                  "tone": "gelb",
+                  "detail": "Ein Wert dieses Punkts ist eine ausgewiesene Annahme, kein Beleg."
+                },
+                "badge": {
+                  "code": "angenommen",
+                  "label": "angenommen",
+                  "tone": "gelb",
+                  "detail": "Ein Wert dieses Punkts ist eine ausgewiesene Annahme, kein Beleg."
+                },
+                "verifiziert": null,
+                "zitat": null,
+                "annahme_anzeige": "Zugang: angenommen (mangels Angabe) — rechtlich zählt der Tag des Einwurfs, § 130 BGB"
+              },
+              {
+                "feld_id": "erhoehungsschreiben.wirksam_ab",
+                "feld_label": "Erhöhung soll gelten ab",
+                "wert_anzeige": "01.10.2026",
+                "herkunft": {
+                  "code": "explizit",
+                  "label": "im Dokument belegt",
+                  "tone": "gruen",
+                  "detail": "Der Wert steht so in den Unterlagen; das Zitat daneben ist die Stelle."
+                },
+                "badge": {
+                  "code": "verifiziert",
+                  "label": "Zitat verifiziert",
+                  "tone": "gruen",
+                  "detail": "Das Zitat wurde Zeichen für Zeichen im Dokument wiedergefunden."
+                },
+                "verifiziert": true,
+                "zitat": {
+                  "dok_id": "D1",
+                  "seite": 1,
+                  "zitat": "ab dem 01.10.2026",
+                  "feld_id": null
+                },
+                "annahme_anzeige": null
+              },
+              {
+                "feld_id": "erhoehungsschreiben.form",
+                "feld_label": "Form der Mitteilung",
+                "wert_anzeige": "Brief",
+                "herkunft": {
+                  "code": "explizit",
+                  "label": "im Dokument belegt",
+                  "tone": "gruen",
+                  "detail": "Der Wert steht so in den Unterlagen; das Zitat daneben ist die Stelle."
+                },
+                "badge": {
+                  "code": "verifiziert",
+                  "label": "Zitat verifiziert",
+                  "tone": "gruen",
+                  "detail": "Das Zitat wurde Zeichen für Zeichen im Dokument wiedergefunden."
+                },
+                "verifiziert": true,
+                "zitat": {
+                  "dok_id": "D1",
+                  "seite": 1,
+                  "zitat": "Nordlicht Sportclub GmbH · Schießgrabenstraße 9 · 86152 Augsburg",
+                  "feld_id": null
+                },
+                "annahme_anzeige": null
+              },
+              {
+                "feld_id": "erhoehungsschreiben.kuendigungshinweis",
+                "feld_label": "Kündigungshinweis",
+                "wert_anzeige": "nein",
+                "herkunft": {
+                  "code": "explizit",
+                  "label": "im Dokument belegt",
+                  "tone": "gruen",
+                  "detail": "Der Wert steht so in den Unterlagen; das Zitat daneben ist die Stelle."
+                },
+                "badge": {
+                  "code": "verifiziert",
+                  "label": "Zitat verifiziert",
+                  "tone": "gruen",
+                  "detail": "Das Zitat wurde Zeichen für Zeichen im Dokument wiedergefunden."
+                },
+                "verifiziert": true,
+                "zitat": {
+                  "dok_id": "D1",
+                  "seite": 1,
+                  "zitat": "Der Einzug erfolgt wie gewohnt zum Monatsersten. Ihre Mitgliedschaft läuft im Übrigen unverändert weiter.",
+                  "feld_id": null
+                },
+                "annahme_anzeige": null
+              }
+            ],
+            "fehlt": [],
+            "owner": null,
+            "wertungsfrage": null,
+            "llm_befund": false,
+            "geprueft_von": [
+              {
+                "wer": "Franz",
+                "am": "2026-08-23",
+                "beleg": "Runde 3, Aufgabe 3",
+                "umfang": "Es gibt keine pauschale gesetzliche Vorlauffrist. Die vertraglich vereinbarte Frist gilt, und ihr Unterschreiten ist eine Vertragsverletzung, die keiner Bewertung mehr bedarf.",
+                "vorbehalt": "Das Programm rechnet hier noch gegen eine feste Zahl von 30 Tagen. Nach seiner Antwort gibt es die gar nicht — maßgeblich ist die Frist, die der Vertrag selbst nennt. Steht dort eine, gilt sie."
+              }
+            ],
+            "frist": {
+              "name": "Vorlaufzeit",
+              "wert": "54 Tage · Stand 27.08.2026",
+              "stand": "2026-08-27",
+              "annahmen": [
+                "Zugang: angenommen (mangels Angabe) — rechtlich zählt der Tag des Einwurfs, § 130 BGB"
+              ]
+            },
+            "betrag": null,
+            "override": null,
+            "inaktiv_grund": null,
+            "hinweis_abmahnung": null,
+            "normrang": null
+          }
+        ]
+      },
+      {
+        "stufe_id": "S5",
+        "titel": "Stufe 5 — Ausübung materiell",
+        "zustand": {
+          "code": "FEHLT",
+          "label": "Angabe fehlt",
+          "tone": "gelb",
+          "detail": null
+        },
+        "pruefpunkte": [
+          {
+            "pruefpunkt_id": "P11",
+            "titel": "Ausübungskontrolle § 315",
+            "proposition": "Die Höhe der Erhöhung ist durch die Kostenentwicklung gerechtfertigt.",
+            "zustand": {
+              "code": "FEHLT",
+              "label": "Angabe fehlt",
+              "tone": "gelb",
+              "detail": null
+            },
+            "rolle": {
+              "code": "ergaenzend",
+              "label": "ergänzend",
+              "tone": "grau",
+              "detail": "Hinweis für das Gespräch — ändert die Einordnung nicht."
+            },
+            "typ": {
+              "code": "wertung",
+              "label": "Wertung",
+              "tone": "grau",
+              "detail": "Einschätzung der Beraterin — das Programm stellt die Frage, entscheidet sie aber nicht."
+            },
+            "herkunft": {
+              "code": "fehlt",
+              "label": "nicht belegt",
+              "tone": "gelb",
+              "detail": "Der Wert steht in keiner vorliegenden Unterlage."
+            },
+            "badge": null,
+            "grund": "Es fehlt: die Kostenkalkulation des Studios",
+            "zitate": [],
+            "anker": [
+              {
+                "key": "bgb_315_3",
+                "label": "§ 315 Abs. 3 BGB",
+                "ebene": {
+                  "code": "gesetz",
+                  "label": "Gesetz",
+                  "tone": "grau",
+                  "detail": null
+                },
+                "status": null,
+                "geprueft": false,
+                "pruefstand": {
+                  "code": "ungeprueft",
+                  "label": "Fundstelle ungeprüft",
+                  "tone": "grau",
+                  "detail": "Der Gesetzestext liegt vor und ist unverändert übernommen — gegengelesen am Original hat ihn niemand aus dem Team."
+                },
+                "aufgeloest": true,
+                "kernaussage": null,
+                "text": "Soll die Bestimmung nach billigem Ermessen erfolgen, so ist die getroffene Bestimmung für den anderen Teil nur verbindlich, wenn sie der Billigkeit entspricht. Entspricht sie nicht der Billigkeit, so wird die Bestimmung durch Urteil getroffen; das Gleiche gilt, wenn die Bestimmung verzögert wird.",
+                "url": "https://www.gesetze-im-internet.de/bgb/__315.html",
+                "stand": "2026-08-18"
+              },
+              {
+                "key": "bgh_viii_zr_138_07",
+                "label": "BGH, VIII ZR 138/07 (2008-11-19)",
+                "ebene": {
+                  "code": "rechtsanwendung",
+                  "label": "Rechtsanwendung",
+                  "tone": "grau",
+                  "detail": null
+                },
+                "status": {
+                  "code": "gefestigt",
+                  "label": "gefestigt",
+                  "tone": "grau",
+                  "detail": null
+                },
+                "geprueft": false,
+                "pruefstand": {
+                  "code": "ungeprueft",
+                  "label": "Fundstelle ungeprüft",
+                  "tone": "grau",
+                  "detail": "Der Gesetzestext liegt vor und ist unverändert übernommen — gegengelesen am Original hat ihn niemand aus dem Team."
+                },
+                "aufgeloest": true,
+                "kernaussage": "Wer sich auf ein einseitiges Preisanpassungsrecht beruft, trägt die Darlegungs- und Beweislast dafür, dass die Erhöhung auf Steigerungen der eigenen Kosten beruht und ihnen keine Einsparungen in anderen Kostenpositionen gegenüberstehen (§ 315 Abs. 3 BGB). Energieversorgung; Übertragbarkeit auf Fitness: zu prüfen.",
+                "text": null,
+                "url": "https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=19.11.2008&Aktenzeichen=VIII+ZR+138/07",
+                "stand": null
+              }
+            ],
+            "verwendet": [],
+            "fehlt": [
+              "kostenkalkulation.vorhanden"
+            ],
+            "owner": {
+              "code": "unternehmen",
+              "label": "Unternehmensseite",
+              "tone": "grau",
+              "detail": null
+            },
+            "wertungsfrage": null,
+            "llm_befund": false,
+            "geprueft_von": [],
+            "frist": null,
+            "betrag": null,
+            "override": null,
+            "inaktiv_grund": null,
+            "hinweis_abmahnung": null,
+            "normrang": null
+          }
+        ]
+      },
+      {
+        "stufe_id": "S6",
+        "titel": "Hinweise",
+        "zustand": {
+          "code": "JA",
+          "label": "erfüllt",
+          "tone": "gruen",
+          "detail": null
+        },
+        "pruefpunkte": [
+          {
+            "pruefpunkt_id": "P8b",
+            "titel": "Leistungsänderungsrecht (Hinweis)",
+            "proposition": "Die AGB enthalten kein Leistungsänderungsrecht ohne triftigen Grund.",
+            "zustand": {
+              "code": "JA",
+              "label": "erfüllt",
+              "tone": "gruen",
+              "detail": null
+            },
+            "rolle": {
+              "code": "ergaenzend",
+              "label": "ergänzend",
+              "tone": "grau",
+              "detail": "Hinweis für das Gespräch — ändert die Einordnung nicht."
+            },
+            "typ": {
+              "code": "fakt",
+              "label": "Tatsache",
+              "tone": "grau",
+              "detail": "Eine Tatsache aus den Unterlagen (Datum, Betrag, ob etwas genannt ist) — das Programm prüft sie nach Regel."
+            },
+            "herkunft": {
+              "code": "fehlt",
+              "label": "nicht belegt",
+              "tone": "gelb",
+              "detail": "Der Wert steht in keiner vorliegenden Unterlage."
+            },
+            "badge": null,
+            "grund": "Nach den vorliegenden Unterlagen enthalten die AGB kein Leistungsänderungsrecht ohne triftigen Grund.",
+            "zitate": [],
+            "anker": [
+              {
+                "key": "bgb_308_4",
+                "label": "§ 308 Nr. 4 BGB",
+                "ebene": {
+                  "code": "gesetz",
+                  "label": "Gesetz",
+                  "tone": "grau",
+                  "detail": null
+                },
+                "status": null,
+                "geprueft": false,
+                "pruefstand": {
+                  "code": "ungeprueft",
+                  "label": "Fundstelle ungeprüft",
+                  "tone": "grau",
+                  "detail": "Der Gesetzestext liegt vor und ist unverändert übernommen — gegengelesen am Original hat ihn niemand aus dem Team."
+                },
+                "aufgeloest": true,
+                "kernaussage": null,
+                "text": "4. (Änderungsvorbehalt) die Vereinbarung eines Rechts des Verwenders, die versprochene Leistung zu ändern oder von ihr abzuweichen, wenn nicht die Vereinbarung der Änderung oder Abweichung unter Berücksichtigung der Interessen des Verwenders für den anderen Vertragsteil zumutbar ist;",
+                "url": "https://www.gesetze-im-internet.de/bgb/__308.html",
+                "stand": "2026-08-18"
+              }
+            ],
+            "verwendet": [],
+            "fehlt": [],
+            "owner": null,
+            "wertungsfrage": null,
+            "llm_befund": false,
+            "geprueft_von": [],
+            "frist": null,
+            "betrag": null,
+            "override": null,
+            "inaktiv_grund": null,
+            "hinweis_abmahnung": null,
+            "normrang": {
+              "code": "wertungsfrei",
+              "label": "wertungsfrei",
+              "tone": "grau",
+              "detail": "Ein Verstoß gegen § 309 oder § 308 BGB gilt ohne Wertung — prozessual belastbarer als die Abwägung nach § 307."
+            }
+          },
+          {
+            "pruefpunkt_id": "P8d",
+            "titel": "Laufzeit und Verlängerung (§ 309 Nr. 9, Hinweis)",
+            "proposition": "Die Laufzeit- und Verlängerungsregel des Vertrags verstößt nicht gegen § 309 Nr. 9 BGB.",
+            "zustand": {
+              "code": "JA",
+              "label": "erfüllt",
+              "tone": "gruen",
+              "detail": null
+            },
+            "rolle": {
+              "code": "ergaenzend",
+              "label": "ergänzend",
+              "tone": "grau",
+              "detail": "Hinweis für das Gespräch — ändert die Einordnung nicht."
+            },
+            "typ": {
+              "code": "fakt",
+              "label": "Tatsache",
+              "tone": "grau",
+              "detail": "Eine Tatsache aus den Unterlagen (Datum, Betrag, ob etwas genannt ist) — das Programm prüft sie nach Regel."
+            },
+            "herkunft": {
+              "code": "fehlt",
+              "label": "nicht belegt",
+              "tone": "gelb",
+              "detail": "Der Wert steht in keiner vorliegenden Unterlage."
+            },
+            "badge": null,
+            "grund": "Nach den vorliegenden Unterlagen überschreitet die Laufzeit 24 Monate nicht, und eine Verlängerungsklausel liegt nicht vor.",
+            "zitate": [],
+            "anker": [
+              {
+                "key": "bgb_309_9",
+                "label": "§ 309 Nr. 9 BGB (Fassung seit 01.03.2022)",
+                "ebene": {
+                  "code": "gesetz",
+                  "label": "Gesetz",
+                  "tone": "grau",
+                  "detail": null
+                },
+                "status": null,
+                "geprueft": false,
+                "pruefstand": {
+                  "code": "ungeprueft",
+                  "label": "Fundstelle ungeprüft",
+                  "tone": "grau",
+                  "detail": "Der Gesetzestext liegt vor und ist unverändert übernommen — gegengelesen am Original hat ihn niemand aus dem Team."
+                },
+                "aufgeloest": true,
+                "kernaussage": null,
+                "text": "9. bei einem Vertragsverhältnis, das die regelmäßige Lieferung von Waren oder die regelmäßige Erbringung von Dienst- oder Werkleistungen durch den Verwender zum Gegenstand hat, a) eine den anderen Vertragsteil länger als zwei Jahre bindende Laufzeit des Vertrags, b) eine den anderen Vertragsteil bindende stillschweigende Verlängerung des Vertragsverhältnisses, es sei denn das Vertragsverhältnis wird nur auf unbestimmte Zeit verlängert und dem anderen Vertragsteil wird das Recht eingeräumt, das verlängerte Vertragsverhältnis jederzeit mit einer Frist von höchstens einem Monat zu kündigen, oder c) eine zu Lasten des anderen Vertragsteils längere Kündigungsfrist als einen Monat vor Ablauf der zunächst vorgesehenen Vertragsdauer; dies gilt nicht für Verträge über die Lieferung zusammengehörig verkaufter Sachen sowie für Versicherungsverträge;",
+                "url": "https://www.gesetze-im-internet.de/bgb/__309.html",
+                "stand": "2026-08-18"
+              }
+            ],
+            "verwendet": [],
+            "fehlt": [],
+            "owner": null,
+            "wertungsfrage": null,
+            "llm_befund": false,
+            "geprueft_von": [],
+            "frist": null,
+            "betrag": null,
+            "override": null,
+            "inaktiv_grund": null,
+            "hinweis_abmahnung": null,
+            "normrang": {
+              "code": "wertungsfrei",
+              "label": "wertungsfrei",
+              "tone": "grau",
+              "detail": "Ein Verstoß gegen § 309 oder § 308 BGB gilt ohne Wertung — prozessual belastbarer als die Abwägung nach § 307."
+            }
+          },
+          {
+            "pruefpunkt_id": "P14",
+            "titel": "Langes widerspruchsloses Zahlen (Wertungsfrage)",
+            "proposition": "In der widerspruchslosen Zahlung des erhöhten Beitrags liegt keine konkludente Zustimmung.",
+            "zustand": {
+              "code": "JA",
+              "label": "erfüllt",
+              "tone": "gruen",
+              "detail": null
+            },
+            "rolle": {
+              "code": "ergaenzend",
+              "label": "ergänzend",
+              "tone": "grau",
+              "detail": "Hinweis für das Gespräch — ändert die Einordnung nicht."
+            },
+            "typ": {
+              "code": "wertung",
+              "label": "Wertung",
+              "tone": "grau",
+              "detail": "Einschätzung der Beraterin — das Programm stellt die Frage, entscheidet sie aber nicht."
+            },
+            "herkunft": {
+              "code": "fehlt",
+              "label": "nicht belegt",
+              "tone": "gelb",
+              "detail": "Der Wert steht in keiner vorliegenden Unterlage."
+            },
+            "badge": null,
+            "grund": "Die Wertungsfrage stellt sich hier nicht: nach den vorliegenden Angaben sind sechs Monate widerspruchslosen Zahlens nicht erreicht.",
+            "zitate": [],
+            "anker": [],
+            "verwendet": [],
+            "fehlt": [],
+            "owner": null,
+            "wertungsfrage": null,
+            "llm_befund": false,
+            "geprueft_von": [],
+            "frist": null,
+            "betrag": null,
+            "override": null,
+            "inaktiv_grund": null,
+            "hinweis_abmahnung": null,
+            "normrang": null
+          }
+        ]
+      }
+    ],
+    "ableitungen": [
+      {
+        "pruefpunkt_id": "P12",
+        "titel": "Rechtsfolgen bei Unwirksamkeit",
+        "proposition": "",
+        "zustand": {
+          "code": "INAKTIV",
+          "label": "nicht geprüft",
+          "tone": "grau",
+          "detail": "Bei dieser Einordnung spielt der Punkt keine Rolle; er wurde nicht geprüft."
+        },
+        "rolle": {
+          "code": "ableitung",
+          "label": "Ableitung",
+          "tone": "grau",
+          "detail": "Folgt aus der Einordnung, wird nicht selbst geprüft."
+        },
+        "typ": null,
+        "herkunft": {
+          "code": "fehlt",
+          "label": "nicht belegt",
+          "tone": "gelb",
+          "detail": "Der Wert steht in keiner vorliegenden Unterlage."
+        },
+        "badge": null,
+        "grund": "Diese Ableitung greift bei dieser Einordnung nicht.",
+        "zitate": [],
+        "anker": [],
+        "verwendet": [],
+        "fehlt": [],
+        "owner": null,
+        "wertungsfrage": null,
+        "llm_befund": false,
+        "geprueft_von": [],
+        "frist": null,
+        "betrag": null,
+        "override": null,
+        "inaktiv_grund": "greift bei dieser Einordnung nicht",
+        "hinweis_abmahnung": null,
+        "normrang": null
+      },
+      {
+        "pruefpunkt_id": "P13",
+        "titel": "Nächster Schritt",
+        "proposition": "",
+        "zustand": {
+          "code": "INAKTIV",
+          "label": "nicht geprüft",
+          "tone": "grau",
+          "detail": "Bei dieser Einordnung spielt der Punkt keine Rolle; er wurde nicht geprüft."
+        },
+        "rolle": {
+          "code": "strategie",
+          "label": "Strategie",
+          "tone": "grau",
+          "detail": "Nächster Schritt mit der Verbraucherin, keine Rechtsfrage."
+        },
+        "typ": null,
+        "herkunft": {
+          "code": "fehlt",
+          "label": "nicht belegt",
+          "tone": "gelb",
+          "detail": "Der Wert steht in keiner vorliegenden Unterlage."
+        },
+        "badge": null,
+        "grund": "Wird im Gesprächsleitfaden gefragt.",
+        "zitate": [],
+        "anker": [],
+        "verwendet": [],
+        "fehlt": [],
+        "owner": null,
+        "wertungsfrage": null,
+        "llm_befund": false,
+        "geprueft_von": [],
+        "frist": null,
+        "betrag": null,
+        "override": null,
+        "inaktiv_grund": null,
+        "hinweis_abmahnung": null,
+        "normrang": null
+      }
+    ],
+    "baum": {
+      "knoten_id": "root",
+      "art": {
+        "code": "wurzel",
+        "label": "Gesamtergebnis",
+        "tone": "grau",
+        "detail": null
+      },
+      "titel": "Preiserhöhung wirksam?",
+      "op": {
+        "code": "AND",
+        "label": "alle müssen halten",
+        "tone": "grau",
+        "detail": "Diese Stufe hält nur, wenn jeder ihrer Prüfpunkte hält — ein einziger nicht erfüllter tragender Punkt reißt sie."
+      },
+      "zustand": {
+        "code": "FEHLT",
+        "label": "Angabe fehlt",
+        "tone": "gelb",
+        "detail": null
+      },
+      "rolle": null,
+      "gerissen": false,
+      "marker": null,
+      "inaktiv_durch": null,
+      "anzahl_pruefpunkte": 17,
+      "norm_kurz": null,
+      "kurzwort": null,
+      "kurzwort_quelle": null,
+      "kinder": [
+        {
+          "knoten_id": "S0",
+          "art": {
+            "code": "stufe",
+            "label": "Stufe",
+            "tone": "grau",
+            "detail": null
+          },
+          "titel": "Stufe 0 — Anwendungsbereich",
+          "op": {
+            "code": "AND",
+            "label": "alle müssen halten",
+            "tone": "grau",
+            "detail": "Diese Stufe hält nur, wenn jeder ihrer Prüfpunkte hält — ein einziger nicht erfüllter tragender Punkt reißt sie."
+          },
+          "zustand": {
+            "code": "JA",
+            "label": "erfüllt",
+            "tone": "gruen",
+            "detail": null
+          },
+          "rolle": null,
+          "gerissen": false,
+          "marker": null,
+          "inaktiv_durch": null,
+          "anzahl_pruefpunkte": 1,
+          "norm_kurz": null,
+          "kurzwort": null,
+          "kurzwort_quelle": null,
+          "kinder": [
+            {
+              "knoten_id": "P0",
+              "art": {
+                "code": "pruefpunkt",
+                "label": "Prüfpunkt",
+                "tone": "grau",
+                "detail": null
+              },
+              "titel": "Anwendungsbereich / Regime",
+              "op": null,
+              "zustand": {
+                "code": "JA",
+                "label": "erfüllt",
+                "tone": "gruen",
+                "detail": null
+              },
+              "rolle": {
+                "code": "gate",
+                "label": "Vorfrage",
+                "tone": "grau",
+                "detail": "Vorfrage: muss zuerst passen, sonst wird nicht weitergeprüft."
+              },
+              "gerissen": false,
+              "marker": null,
+              "inaktiv_durch": null,
+              "anzahl_pruefpunkte": 0,
+              "norm_kurz": "§ 310 III BGB",
+              "kurzwort": "Anwendungsbereich",
+              "kurzwort_quelle": "amtlich",
+              "kinder": []
+            }
+          ]
+        },
+        {
+          "knoten_id": "S1",
+          "art": {
+            "code": "stufe",
+            "label": "Stufe",
+            "tone": "grau",
+            "detail": null
+          },
+          "titel": "Stufe 1 — Rechtsgrundlage",
+          "op": {
+            "code": "AND",
+            "label": "alle müssen halten",
+            "tone": "grau",
+            "detail": "Diese Stufe hält nur, wenn jeder ihrer Prüfpunkte hält — ein einziger nicht erfüllter tragender Punkt reißt sie."
+          },
+          "zustand": {
+            "code": "JA",
+            "label": "erfüllt",
+            "tone": "gruen",
+            "detail": null
+          },
+          "rolle": null,
+          "gerissen": false,
+          "marker": null,
+          "inaktiv_durch": null,
+          "anzahl_pruefpunkte": 2,
+          "norm_kurz": null,
+          "kurzwort": null,
+          "kurzwort_quelle": null,
+          "kinder": [
+            {
+              "knoten_id": "P1a",
+              "art": {
+                "code": "pruefpunkt",
+                "label": "Prüfpunkt",
+                "tone": "grau",
+                "detail": null
+              },
+              "titel": "Erhöhung überhaupt erklärt",
+              "op": null,
+              "zustand": {
+                "code": "JA",
+                "label": "erfüllt",
+                "tone": "gruen",
+                "detail": null
+              },
+              "rolle": {
+                "code": "tragend",
+                "label": "tragend",
+                "tone": "grau",
+                "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+              },
+              "gerissen": false,
+              "marker": null,
+              "inaktiv_durch": null,
+              "anzahl_pruefpunkte": 0,
+              "norm_kurz": "§ 812 I 1 BGB",
+              "kurzwort": "Erhöhung überhaupt erklärt",
+              "kurzwort_quelle": "titel",
+              "kinder": []
+            },
+            {
+              "knoten_id": "P1",
+              "art": {
+                "code": "pruefpunkt",
+                "label": "Prüfpunkt",
+                "tone": "grau",
+                "detail": null
+              },
+              "titel": "Rechtsgrundlage der Erhöhung",
+              "op": null,
+              "zustand": {
+                "code": "JA",
+                "label": "erfüllt",
+                "tone": "gruen",
+                "detail": null
+              },
+              "rolle": {
+                "code": "tragend",
+                "label": "tragend",
+                "tone": "grau",
+                "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+              },
+              "gerissen": false,
+              "marker": null,
+              "inaktiv_durch": null,
+              "anzahl_pruefpunkte": 0,
+              "norm_kurz": null,
+              "kurzwort": "Rechtsgrundlage der Erhöhung",
+              "kurzwort_quelle": "titel",
+              "kinder": []
+            }
+          ]
+        },
+        {
+          "knoten_id": "S2",
+          "art": {
+            "code": "stufe",
+            "label": "Stufe",
+            "tone": "grau",
+            "detail": null
+          },
+          "titel": "Stufe 2 — Einbeziehung",
+          "op": {
+            "code": "AND",
+            "label": "alle müssen halten",
+            "tone": "grau",
+            "detail": "Diese Stufe hält nur, wenn jeder ihrer Prüfpunkte hält — ein einziger nicht erfüllter tragender Punkt reißt sie."
+          },
+          "zustand": {
+            "code": "FEHLT",
+            "label": "Angabe fehlt",
+            "tone": "gelb",
+            "detail": null
+          },
+          "rolle": null,
+          "gerissen": false,
+          "marker": null,
+          "inaktiv_durch": null,
+          "anzahl_pruefpunkte": 3,
+          "norm_kurz": null,
+          "kurzwort": null,
+          "kurzwort_quelle": null,
+          "kinder": [
+            {
+              "knoten_id": "P2",
+              "art": {
+                "code": "pruefpunkt",
+                "label": "Prüfpunkt",
+                "tone": "grau",
+                "detail": null
+              },
+              "titel": "Einbeziehung der Preisklausel",
+              "op": null,
+              "zustand": {
+                "code": "WERTUNG",
+                "label": "Bewertung nötig",
+                "tone": "gelb",
+                "detail": "Das Programm kann diesen Punkt nicht allein entscheiden — die Beraterin bewertet, das Ergebnis bleibt bis dahin offen."
+              },
+              "rolle": {
+                "code": "tragend",
+                "label": "tragend",
+                "tone": "grau",
+                "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+              },
+              "gerissen": false,
+              "marker": null,
+              "inaktiv_durch": null,
+              "anzahl_pruefpunkte": 0,
+              "norm_kurz": "§ 305 II BGB",
+              "kurzwort": "Einbeziehung Allgemeiner Geschäftsbedingungen",
+              "kurzwort_quelle": "amtlich",
+              "kinder": []
+            },
+            {
+              "knoten_id": "P3",
+              "art": {
+                "code": "pruefpunkt",
+                "label": "Prüfpunkt",
+                "tone": "grau",
+                "detail": null
+              },
+              "titel": "Vorrang der Individualabrede / Preisgarantie",
+              "op": null,
+              "zustand": {
+                "code": "FEHLT",
+                "label": "Angabe fehlt",
+                "tone": "gelb",
+                "detail": null
+              },
+              "rolle": {
+                "code": "tragend",
+                "label": "tragend",
+                "tone": "grau",
+                "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+              },
+              "gerissen": false,
+              "marker": null,
+              "inaktiv_durch": null,
+              "anzahl_pruefpunkte": 0,
+              "norm_kurz": "§ 305b BGB",
+              "kurzwort": "Vorrang der Individualabrede",
+              "kurzwort_quelle": "amtlich",
+              "kinder": []
+            },
+            {
+              "knoten_id": "P4",
+              "art": {
+                "code": "pruefpunkt",
+                "label": "Prüfpunkt",
+                "tone": "grau",
+                "detail": null
+              },
+              "titel": "Überraschende Klausel / Unklarheit",
+              "op": null,
+              "zustand": {
+                "code": "FEHLT",
+                "label": "Angabe fehlt",
+                "tone": "gelb",
+                "detail": null
+              },
+              "rolle": {
+                "code": "tragend",
+                "label": "tragend",
+                "tone": "grau",
+                "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+              },
+              "gerissen": false,
+              "marker": null,
+              "inaktiv_durch": null,
+              "anzahl_pruefpunkte": 0,
+              "norm_kurz": "§ 305c BGB",
+              "kurzwort": "Überraschende und mehrdeutige Klauseln",
+              "kurzwort_quelle": "amtlich",
+              "kinder": []
+            }
+          ]
+        },
+        {
+          "knoten_id": "S3",
+          "art": {
+            "code": "stufe",
+            "label": "Stufe",
+            "tone": "grau",
+            "detail": null
+          },
+          "titel": "Stufe 3 — Inhaltskontrolle",
+          "op": {
+            "code": "AND",
+            "label": "alle müssen halten",
+            "tone": "grau",
+            "detail": "Diese Stufe hält nur, wenn jeder ihrer Prüfpunkte hält — ein einziger nicht erfüllter tragender Punkt reißt sie."
+          },
+          "zustand": {
+            "code": "FEHLT",
+            "label": "Angabe fehlt",
+            "tone": "gelb",
+            "detail": null
+          },
+          "rolle": null,
+          "gerissen": false,
+          "marker": null,
+          "inaktiv_durch": null,
+          "anzahl_pruefpunkte": 6,
+          "norm_kurz": null,
+          "kurzwort": null,
+          "kurzwort_quelle": null,
+          "kinder": [
+            {
+              "knoten_id": "P8",
+              "art": {
+                "code": "pruefpunkt",
+                "label": "Prüfpunkt",
+                "tone": "grau",
+                "detail": null
+              },
+              "titel": "Erklärungsfiktion (§ 308 Nr. 5)",
+              "op": null,
+              "zustand": {
+                "code": "JA",
+                "label": "erfüllt",
+                "tone": "gruen",
+                "detail": null
+              },
+              "rolle": {
+                "code": "tragend",
+                "label": "tragend",
+                "tone": "grau",
+                "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+              },
+              "gerissen": false,
+              "marker": null,
+              "inaktiv_durch": null,
+              "anzahl_pruefpunkte": 0,
+              "norm_kurz": "§ 308 Nr. 5 BGB",
+              "kurzwort": "Erklärungsfiktion",
+              "kurzwort_quelle": "titel",
+              "kinder": []
+            },
+            {
+              "knoten_id": "P8c",
+              "art": {
+                "code": "pruefpunkt",
+                "label": "Prüfpunkt",
+                "tone": "grau",
+                "detail": null
+              },
+              "titel": "Formerfordernis für den Widerspruch (§ 309 Nr. 13 lit. b)",
+              "op": null,
+              "zustand": {
+                "code": "JA",
+                "label": "erfüllt",
+                "tone": "gruen",
+                "detail": null
+              },
+              "rolle": {
+                "code": "tragend",
+                "label": "tragend",
+                "tone": "grau",
+                "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+              },
+              "gerissen": false,
+              "marker": null,
+              "inaktiv_durch": null,
+              "anzahl_pruefpunkte": 0,
+              "norm_kurz": "§ 309 Nr. 13 b BGB",
+              "kurzwort": "Form von Anzeigen und Erklärungen",
+              "kurzwort_quelle": "amtlich",
+              "kinder": []
+            },
+            {
+              "knoten_id": "P9",
+              "art": {
+                "code": "pruefpunkt",
+                "label": "Prüfpunkt",
+                "tone": "grau",
+                "detail": null
+              },
+              "titel": "Zustimmungsfiktion",
+              "op": null,
+              "zustand": {
+                "code": "JA",
+                "label": "erfüllt",
+                "tone": "gruen",
+                "detail": null
+              },
+              "rolle": {
+                "code": "tragend",
+                "label": "tragend",
+                "tone": "grau",
+                "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+              },
+              "gerissen": false,
+              "marker": null,
+              "inaktiv_durch": null,
+              "anzahl_pruefpunkte": 0,
+              "norm_kurz": "§ 308 Nr. 5 BGB",
+              "kurzwort": "Zustimmungsfiktion",
+              "kurzwort_quelle": "titel",
+              "kinder": []
+            },
+            {
+              "knoten_id": "P5",
+              "art": {
+                "code": "pruefpunkt",
+                "label": "Prüfpunkt",
+                "tone": "grau",
+                "detail": null
+              },
+              "titel": "Kontrollfähigkeit",
+              "op": null,
+              "zustand": {
+                "code": "FEHLT",
+                "label": "Angabe fehlt",
+                "tone": "gelb",
+                "detail": null
+              },
+              "rolle": {
+                "code": "gate",
+                "label": "Vorfrage",
+                "tone": "grau",
+                "detail": "Vorfrage: muss zuerst passen, sonst wird nicht weitergeprüft."
+              },
+              "gerissen": false,
+              "marker": null,
+              "inaktiv_durch": null,
+              "anzahl_pruefpunkte": 0,
+              "norm_kurz": "§ 307 III BGB",
+              "kurzwort": "Inhaltskontrolle (Kontrollfähigkeit)",
+              "kurzwort_quelle": "amtlich",
+              "kinder": []
+            },
+            {
+              "knoten_id": "P6",
+              "art": {
+                "code": "pruefpunkt",
+                "label": "Prüfpunkt",
+                "tone": "grau",
+                "detail": null
+              },
+              "titel": "Transparenzgebot",
+              "op": null,
+              "zustand": {
+                "code": "FEHLT",
+                "label": "Angabe fehlt",
+                "tone": "gelb",
+                "detail": null
+              },
+              "rolle": {
+                "code": "tragend",
+                "label": "tragend",
+                "tone": "grau",
+                "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+              },
+              "gerissen": false,
+              "marker": null,
+              "inaktiv_durch": null,
+              "anzahl_pruefpunkte": 0,
+              "norm_kurz": "§ 307 I 2 BGB",
+              "kurzwort": "Inhaltskontrolle (Transparenz)",
+              "kurzwort_quelle": "amtlich",
+              "kinder": []
+            },
+            {
+              "knoten_id": "P7",
+              "art": {
+                "code": "pruefpunkt",
+                "label": "Prüfpunkt",
+                "tone": "grau",
+                "detail": null
+              },
+              "titel": "Symmetrie- und Kostenweitergabegebot",
+              "op": null,
+              "zustand": {
+                "code": "FEHLT",
+                "label": "Angabe fehlt",
+                "tone": "gelb",
+                "detail": null
+              },
+              "rolle": {
+                "code": "tragend",
+                "label": "tragend",
+                "tone": "grau",
+                "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+              },
+              "gerissen": false,
+              "marker": null,
+              "inaktiv_durch": null,
+              "anzahl_pruefpunkte": 0,
+              "norm_kurz": "§ 307 I 1 BGB",
+              "kurzwort": "Inhaltskontrolle (Symmetrie)",
+              "kurzwort_quelle": "amtlich",
+              "kinder": []
+            }
+          ]
+        },
+        {
+          "knoten_id": "S4",
+          "art": {
+            "code": "stufe",
+            "label": "Stufe",
+            "tone": "grau",
+            "detail": null
+          },
+          "titel": "Stufe 4 — Ausübung formell",
+          "op": {
+            "code": "AND",
+            "label": "alle müssen halten",
+            "tone": "grau",
+            "detail": "Diese Stufe hält nur, wenn jeder ihrer Prüfpunkte hält — ein einziger nicht erfüllter tragender Punkt reißt sie."
+          },
+          "zustand": {
+            "code": "JA",
+            "label": "erfüllt",
+            "tone": "gruen",
+            "detail": null
+          },
+          "rolle": null,
+          "gerissen": false,
+          "marker": null,
+          "inaktiv_durch": null,
+          "anzahl_pruefpunkte": 1,
+          "norm_kurz": null,
+          "kurzwort": null,
+          "kurzwort_quelle": null,
+          "kinder": [
+            {
+              "knoten_id": "P10",
+              "art": {
+                "code": "pruefpunkt",
+                "label": "Prüfpunkt",
+                "tone": "grau",
+                "detail": null
+              },
+              "titel": "Formalien des Erhöhungsschreibens",
+              "op": null,
+              "zustand": {
+                "code": "JA",
+                "label": "erfüllt",
+                "tone": "gruen",
+                "detail": null
+              },
+              "rolle": {
+                "code": "tragend",
+                "label": "tragend",
+                "tone": "grau",
+                "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+              },
+              "gerissen": false,
+              "marker": null,
+              "inaktiv_durch": null,
+              "anzahl_pruefpunkte": 0,
+              "norm_kurz": null,
+              "kurzwort": "Formalien des Erhöhungsschreibens",
+              "kurzwort_quelle": "titel",
+              "kinder": []
+            }
+          ]
+        },
+        {
+          "knoten_id": "S5",
+          "art": {
+            "code": "stufe",
+            "label": "Stufe",
+            "tone": "grau",
+            "detail": null
+          },
+          "titel": "Stufe 5 — Ausübung materiell",
+          "op": {
+            "code": "AND",
+            "label": "alle müssen halten",
+            "tone": "grau",
+            "detail": "Diese Stufe hält nur, wenn jeder ihrer Prüfpunkte hält — ein einziger nicht erfüllter tragender Punkt reißt sie."
+          },
+          "zustand": {
+            "code": "FEHLT",
+            "label": "Angabe fehlt",
+            "tone": "gelb",
+            "detail": null
+          },
+          "rolle": null,
+          "gerissen": false,
+          "marker": null,
+          "inaktiv_durch": null,
+          "anzahl_pruefpunkte": 1,
+          "norm_kurz": null,
+          "kurzwort": null,
+          "kurzwort_quelle": null,
+          "kinder": [
+            {
+              "knoten_id": "P11",
+              "art": {
+                "code": "pruefpunkt",
+                "label": "Prüfpunkt",
+                "tone": "grau",
+                "detail": null
+              },
+              "titel": "Ausübungskontrolle § 315",
+              "op": null,
+              "zustand": {
+                "code": "FEHLT",
+                "label": "Angabe fehlt",
+                "tone": "gelb",
+                "detail": null
+              },
+              "rolle": {
+                "code": "ergaenzend",
+                "label": "ergänzend",
+                "tone": "grau",
+                "detail": "Hinweis für das Gespräch — ändert die Einordnung nicht."
+              },
+              "gerissen": false,
+              "marker": null,
+              "inaktiv_durch": null,
+              "anzahl_pruefpunkte": 0,
+              "norm_kurz": "§ 315 III BGB",
+              "kurzwort": "Bestimmung der Leistung",
+              "kurzwort_quelle": "amtlich",
+              "kinder": []
+            }
+          ]
+        },
+        {
+          "knoten_id": "S6",
+          "art": {
+            "code": "stufe",
+            "label": "Stufe",
+            "tone": "grau",
+            "detail": null
+          },
+          "titel": "Hinweise",
+          "op": {
+            "code": "AND",
+            "label": "alle müssen halten",
+            "tone": "grau",
+            "detail": "Diese Stufe hält nur, wenn jeder ihrer Prüfpunkte hält — ein einziger nicht erfüllter tragender Punkt reißt sie."
+          },
+          "zustand": {
+            "code": "JA",
+            "label": "erfüllt",
+            "tone": "gruen",
+            "detail": null
+          },
+          "rolle": null,
+          "gerissen": false,
+          "marker": null,
+          "inaktiv_durch": null,
+          "anzahl_pruefpunkte": 3,
+          "norm_kurz": null,
+          "kurzwort": null,
+          "kurzwort_quelle": null,
+          "kinder": [
+            {
+              "knoten_id": "P8b",
+              "art": {
+                "code": "pruefpunkt",
+                "label": "Prüfpunkt",
+                "tone": "grau",
+                "detail": null
+              },
+              "titel": "Leistungsänderungsrecht (Hinweis)",
+              "op": null,
+              "zustand": {
+                "code": "JA",
+                "label": "erfüllt",
+                "tone": "gruen",
+                "detail": null
+              },
+              "rolle": {
+                "code": "ergaenzend",
+                "label": "ergänzend",
+                "tone": "grau",
+                "detail": "Hinweis für das Gespräch — ändert die Einordnung nicht."
+              },
+              "gerissen": false,
+              "marker": null,
+              "inaktiv_durch": null,
+              "anzahl_pruefpunkte": 0,
+              "norm_kurz": "§ 308 Nr. 4 BGB",
+              "kurzwort": "Änderungsvorbehalt",
+              "kurzwort_quelle": "amtlich",
+              "kinder": []
+            },
+            {
+              "knoten_id": "P8d",
+              "art": {
+                "code": "pruefpunkt",
+                "label": "Prüfpunkt",
+                "tone": "grau",
+                "detail": null
+              },
+              "titel": "Laufzeit und Verlängerung (§ 309 Nr. 9, Hinweis)",
+              "op": null,
+              "zustand": {
+                "code": "JA",
+                "label": "erfüllt",
+                "tone": "gruen",
+                "detail": null
+              },
+              "rolle": {
+                "code": "ergaenzend",
+                "label": "ergänzend",
+                "tone": "grau",
+                "detail": "Hinweis für das Gespräch — ändert die Einordnung nicht."
+              },
+              "gerissen": false,
+              "marker": null,
+              "inaktiv_durch": null,
+              "anzahl_pruefpunkte": 0,
+              "norm_kurz": "§ 309 Nr. 9 BGB",
+              "kurzwort": "Laufzeit und Verlängerung",
+              "kurzwort_quelle": "titel",
+              "kinder": []
+            },
+            {
+              "knoten_id": "P14",
+              "art": {
+                "code": "pruefpunkt",
+                "label": "Prüfpunkt",
+                "tone": "grau",
+                "detail": null
+              },
+              "titel": "Langes widerspruchsloses Zahlen (Wertungsfrage)",
+              "op": null,
+              "zustand": {
+                "code": "JA",
+                "label": "erfüllt",
+                "tone": "gruen",
+                "detail": null
+              },
+              "rolle": {
+                "code": "ergaenzend",
+                "label": "ergänzend",
+                "tone": "grau",
+                "detail": "Hinweis für das Gespräch — ändert die Einordnung nicht."
+              },
+              "gerissen": false,
+              "marker": null,
+              "inaktiv_durch": null,
+              "anzahl_pruefpunkte": 0,
+              "norm_kurz": null,
+              "kurzwort": "Langes widerspruchsloses Zahlen",
+              "kurzwort_quelle": "titel",
+              "kinder": []
+            }
+          ]
+        }
+      ]
+    },
+    "legende": [
+      {
+        "code": "tragend",
+        "label": "tragend",
+        "tone": "grau",
+        "detail": "Kann den Fall allein kippen: ist dieser Punkt nicht erfüllt, lautet die Einordnung „wahrscheinlich unwirksam“."
+      },
+      {
+        "code": "gate",
+        "label": "Vorfrage",
+        "tone": "grau",
+        "detail": "Vorfrage: muss zuerst passen, sonst wird nicht weitergeprüft."
+      },
+      {
+        "code": "ergaenzend",
+        "label": "ergänzend",
+        "tone": "grau",
+        "detail": "Hinweis für das Gespräch — ändert die Einordnung nicht."
+      },
+      {
+        "code": "AND",
+        "label": "alle müssen halten",
+        "tone": "grau",
+        "detail": "Diese Stufe hält nur, wenn jeder ihrer Prüfpunkte hält — ein einziger nicht erfüllter tragender Punkt reißt sie."
+      },
+      {
+        "code": "WERTUNG",
+        "label": "Bewertung nötig",
+        "tone": "gelb",
+        "detail": "Das Programm kann diesen Punkt nicht allein entscheiden — die Beraterin bewertet, das Ergebnis bleibt bis dahin offen."
+      }
+    ]
+  },
+  "musterbrief": {
+    "rechtsbehelf_id": "nachforderung",
+    "titel": "Unterlagen nachfordern",
+    "text": "Sehr geehrte/r Sabine Kortmann,\n\nvielen Dank für Ihre Anfrage zu Ihrem Vertrag bei Nordlicht Sportclub.\n\nDamit ich Ihren Fall abschließend beurteilen kann, fehlen mir noch Unterlagen. Bitte senden Sie mir Folgendes zu:\n\n- die AGB, die bei Vertragsschluss galten\n  Daraus ergibt sich, ob das Studio den Beitrag überhaupt einseitig ändern darf und unter welchen Bedingungen.\n  Wo Sie es finden: Mitgliedsvertrag (Rückseite/Anlage), Studio-Website, Studio-App\n- den Mitgliedsvertrag oder das Anmeldeformular\n  Daraus ergeben sich Vertragsdatum, Laufzeit, der vereinbarte Beitrag und eine mögliche Preisgarantie.\n  Wo Sie es finden: Unterlagen vom Vertragsschluss, Kundenkonto im Studio\n\nFalls Sie etwas davon nicht zur Hand haben: Sie können es bei Nordlicht Sportclub anfordern — eine kurze Nachricht per E-Mail genügt. Kommt nichts zurück, sagen Sie mir bitte Bescheid.\n\nAm einfachsten ist es, wenn Sie auf diese Anfrage mit Anhang antworten. Ein gut lesbares Foto oder ein Scan genügt; mehrseitige Unterlagen bitte vollständig, also alle Seiten.\n\nSobald mir die Unterlagen vorliegen, melde ich mich mit einer Einschätzung bei Ihnen. Bis dahin bitte ich Sie um etwas Geduld — sollten Sie die Unterlagen bis zum 10.09.2026 nicht beschaffen können, geben Sie mir bitte kurz Bescheid, dann besprechen wir das weitere Vorgehen.\n\nMit freundlichen Grüßen\n\nIhre Verbraucherzentrale\n27.08.2026\n",
+    "status": {
+      "code": "entwurf",
+      "label": "Entwurf",
+      "tone": "gelb",
+      "detail": null
+    },
+    "template_id": "nachforderung_vbs",
+    "variante": null,
+    "quelle": {
+      "code": "eigen",
+      "label": "Eigener Entwurf (nicht juristisch geprüft)",
+      "tone": "gelb",
+      "detail": null
+    },
+    "quelle_url": null,
+    "empfaenger": {
+      "code": "verbraucher",
+      "label": "an die Verbraucherin",
+      "tone": "grau",
+      "detail": null
+    },
+    "platzhalter": {
+      "[NAME]": "Sabine Kortmann",
+      "[ANBIETER]": "Nordlicht Sportclub",
+      "[HEUTE]": "27.08.2026",
+      "[FRIST_ENDE]": "10.09.2026",
+      "[FEHLENDE_UNTERLAGEN_LISTE]": "- die AGB, die bei Vertragsschluss galten\n  Daraus ergibt sich, ob das Studio den Beitrag überhaupt einseitig ändern darf und unter welchen Bedingungen.\n  Wo Sie es finden: Mitgliedsvertrag (Rückseite/Anlage), Studio-Website, Studio-App\n- den Mitgliedsvertrag oder das Anmeldeformular\n  Daraus ergeben sich Vertragsdatum, Laufzeit, der vereinbarte Beitrag und eine mögliche Preisgarantie.\n  Wo Sie es finden: Unterlagen vom Vertragsschluss, Kundenkonto im Studio"
+    },
+    "geprueft": false,
+    "vorschlaege": [
+      {
+        "rechtsbehelf_id": "nachforderung",
+        "titel": "Unterlagen nachfordern",
+        "hauptvorschlag": true,
+        "geprueft": false
+      },
+      {
+        "rechtsbehelf_id": "bestreiten_nachweise_verlangen",
+        "titel": "Nachweise vom Unternehmen verlangen",
+        "hauptvorschlag": false,
+        "geprueft": false
+      }
+    ]
+  },
+  "nachforderungen": [
+    {
+      "id": "N1",
+      "kanal": {
+        "code": "vbs",
+        "label": "schriftlich (VBS)",
+        "tone": "grau",
+        "detail": "Virtuelle Beratungsstelle — die Anfrage kam schriftlich über das Online-Ticket der Verbraucherzentrale."
+      },
+      "dokumente": [
+        {
+          "code": "agb",
+          "label": "AGB",
+          "tone": "grau",
+          "detail": null
+        },
+        {
+          "code": "vertrag",
+          "label": "Vertrag",
+          "tone": "grau",
+          "detail": null
+        }
+      ],
+      "text": "Sehr geehrte/r Sabine Kortmann,\n\nvielen Dank für Ihre Anfrage zu Ihrem Vertrag bei Nordlicht Sportclub.\n\nDamit ich Ihren Fall abschließend beurteilen kann, fehlen mir noch Unterlagen. Bitte senden Sie mir Folgendes zu:\n\n- die AGB, die bei Vertragsschluss galten\n  Daraus ergibt sich, ob das Studio den Beitrag überhaupt einseitig ändern darf und unter welchen Bedingungen.\n  Wo Sie es finden: Mitgliedsvertrag (Rückseite/Anlage), Studio-Website, Studio-App\n- den Mitgliedsvertrag oder das Anmeldeformular\n  Daraus ergeben sich Vertragsdatum, Laufzeit, der vereinbarte Beitrag und eine mögliche Preisgarantie.\n  Wo Sie es finden: Unterlagen vom Vertragsschluss, Kundenkonto im Studio\n\nFalls Sie etwas davon nicht zur Hand haben: Sie können es bei Nordlicht Sportclub anfordern — eine kurze Nachricht per E-Mail genügt. Kommt nichts zurück, sagen Sie mir bitte Bescheid.\n\nAm einfachsten ist es, wenn Sie auf diese Anfrage mit Anhang antworten. Ein gut lesbares Foto oder ein Scan genügt; mehrseitige Unterlagen bitte vollständig, also alle Seiten.\n\nSobald mir die Unterlagen vorliegen, melde ich mich mit einer Einschätzung bei Ihnen. Bis dahin bitte ich Sie um etwas Geduld — sollten Sie die Unterlagen bis zum 10.09.2026 nicht beschaffen können, geben Sie mir bitte kurz Bescheid, dann besprechen wir das weitere Vorgehen.\n\nMit freundlichen Grüßen\n\nIhre Verbraucherzentrale\n27.08.2026\n",
+      "status": {
+        "code": "offen",
+        "label": "offen",
+        "tone": "gelb",
+        "detail": null
+      },
+      "zeit": "2026-08-20T09:00:00+02:00"
+    }
+  ],
+  "laeufe": [
+    {
+      "run_id": "R-1",
+      "trigger": {
+        "code": "initial",
+        "label": "Ersteingang",
+        "tone": "grau",
+        "detail": null
+      },
+      "zeit": "2026-08-20T09:00:00+02:00",
+      "einordnung": "unklar – es fehlt: die AGB, die bei Vertragsschluss galten, den Mitgliedsvertrag oder das Anmeldeformular",
+      "einordnung_tone": "gelb",
+      "gerissene_stufe": null,
+      "gerissene_stufe_titel": null,
+      "aktuell": true,
+      "gate3_bestaetigt": false,
+      "gate3_gueltig": true
+    }
+  ],
+  "leitfaden": {
+    "fragen": [
+      {
+        "pruefpunkt_id": "P0",
+        "pruefpunkt_titel": "Anwendungsbereich / Regime",
+        "text": "Haben Sie der Erhöhung aktiv zugestimmt — unterschrieben, geklickt, am Terminal bestätigt?",
+        "typ": "ja_nein",
+        "fuellt": [
+          "gespraech.zustimmung_aktiv_belegt"
+        ],
+        "werte": {},
+        "feld_labels": {},
+        "wert_labels": {},
+        "hinweis": null,
+        "status": {
+          "code": "offen",
+          "label": "offen",
+          "tone": "gelb",
+          "detail": null
+        },
+        "grund": "noch nicht belegt",
+        "antwort": {},
+        "zustand": {
+          "code": "JA",
+          "label": "erfüllt",
+          "tone": "gruen",
+          "detail": null
+        }
+      },
+      {
+        "pruefpunkt_id": "P2",
+        "pruefpunkt_titel": "Einbeziehung der Preisklausel",
+        "text": "Haben Sie beim Vertragsschluss die AGB bekommen oder unterschrieben, dass Sie sie kennen?",
+        "typ": "ja_nein",
+        "fuellt": [
+          "vertrag.agb_einbezogen_hinweis"
+        ],
+        "werte": {},
+        "feld_labels": {},
+        "wert_labels": {},
+        "hinweis": null,
+        "status": {
+          "code": "offen",
+          "label": "offen",
+          "tone": "gelb",
+          "detail": null
+        },
+        "grund": "der Prüfpunkt steht auf WERTUNG — die Antwort kann ihn bewegen",
+        "antwort": {},
+        "zustand": {
+          "code": "WERTUNG",
+          "label": "Bewertung nötig",
+          "tone": "gelb",
+          "detail": "Das Programm kann diesen Punkt nicht allein entscheiden — die Beraterin bewertet, das Ergebnis bleibt bis dahin offen."
+        }
+      },
+      {
+        "pruefpunkt_id": "P9",
+        "pruefpunkt_titel": "Zustimmungsfiktion",
+        "text": "Sind Sie nach dem Schreiben weiter ins Studio gegangen?",
+        "typ": "ja_nein",
+        "fuellt": [
+          "gespraech.weiternutzung_erfolgt"
+        ],
+        "werte": {},
+        "feld_labels": {},
+        "wert_labels": {},
+        "hinweis": "ändert die Einordnung nicht; relevant für Rückforderung und Gespräch",
+        "status": {
+          "code": "offen",
+          "label": "offen",
+          "tone": "gelb",
+          "detail": null
+        },
+        "grund": "noch nicht belegt",
+        "antwort": {},
+        "zustand": {
+          "code": "JA",
+          "label": "erfüllt",
+          "tone": "gruen",
+          "detail": null
+        }
+      },
+      {
+        "pruefpunkt_id": "P14",
+        "pruefpunkt_titel": "Langes widerspruchsloses Zahlen (Wertungsfrage)",
+        "text": "Seit wie vielen Monaten zahlen Sie den erhöhten Beitrag?",
+        "typ": "zahl",
+        "fuellt": [
+          "gespraech.monate_erhoeht_gezahlt"
+        ],
+        "werte": {},
+        "feld_labels": {},
+        "wert_labels": {},
+        "hinweis": null,
+        "status": {
+          "code": "offen",
+          "label": "offen",
+          "tone": "gelb",
+          "detail": null
+        },
+        "grund": "noch nicht belegt",
+        "antwort": {},
+        "zustand": {
+          "code": "JA",
+          "label": "erfüllt",
+          "tone": "gruen",
+          "detail": null
+        }
+      },
+      {
+        "pruefpunkt_id": "P13",
+        "pruefpunkt_titel": "Nächster Schritt",
+        "text": "Möchten Sie im Studio bleiben und nur den alten Beitrag zahlen — oder kündigen? Und sollen zu viel gezahlte Beträge zurückgefordert werden?",
+        "typ": "mehrfach",
+        "fuellt": [
+          "gespraech.strategie",
+          "gespraech.rueckforderung_gewuenscht"
+        ],
+        "werte": {
+          "gespraech.strategie": [
+            "bleiben",
+            "kuendigen",
+            "offen"
+          ]
+        },
+        "feld_labels": {
+          "gespraech.strategie": "Bleiben oder kündigen?",
+          "gespraech.rueckforderung_gewuenscht": "Rückforderung gewünscht?"
+        },
+        "wert_labels": {
+          "gespraech.strategie": {
+            "bleiben": "bleiben",
+            "kuendigen": "kündigen",
+            "offen": "noch offen"
+          }
+        },
+        "hinweis": null,
+        "status": {
+          "code": "offen",
+          "label": "offen",
+          "tone": "gelb",
+          "detail": null
+        },
+        "grund": "noch nicht belegt",
+        "antwort": {},
+        "zustand": {
+          "code": "INAKTIV",
+          "label": "nicht geprüft",
+          "tone": "grau",
+          "detail": "Bei dieser Einordnung spielt der Punkt keine Rolle; er wurde nicht geprüft."
+        }
+      }
+    ],
+    "offen": 5
+  },
+  "beratungshinweise": [
+    {
+      "id": "H1",
+      "art": {
+        "code": "warnung",
+        "label": "davon abraten",
+        "tone": "gelb",
+        "detail": null
+      },
+      "titel": "Die Lastschrift nicht zurückgeben lassen",
+      "text": "Sagen Sie der Kundin, bevor sie danach fragt: Die erste erhöhte Abbuchung nicht über die Bank zurückgehen lassen. Das Geld kommt nicht über die Rücklastschrift zurück, sondern über einen Rückzahlungsanspruch gegen das Unternehmen. Eine zurückgegebene Lastschrift setzt sie dagegen in Verzug, kostet eine Rücklastschriftpauschale (im Bestand 3,50 € und 12,00 €) und führt im schlechtesten Fall zu genau dem Inkassoverfahren, vor dem sie Angst hat. Der bessere Weg: unter Vorbehalt weiterzahlen und zurückfordern.",
+      "anker": [
+        {
+          "key": "bgb_286",
+          "label": "§ 286 BGB",
+          "ebene": {
+            "code": "gesetz",
+            "label": "Gesetz",
+            "tone": "grau",
+            "detail": null
+          },
+          "status": null,
+          "geprueft": false,
+          "pruefstand": {
+            "code": "ungeprueft",
+            "label": "Fundstelle ungeprüft",
+            "tone": "grau",
+            "detail": "Der Gesetzestext liegt vor und ist unverändert übernommen — gegengelesen am Original hat ihn niemand aus dem Team."
+          },
+          "aufgeloest": true,
+          "kernaussage": null,
+          "text": "(1) Leistet der Schuldner auf eine Mahnung des Gläubigers nicht, die nach dem Eintritt der Fälligkeit erfolgt, so kommt er durch die Mahnung in Verzug. Der Mahnung stehen die Erhebung der Klage auf die Leistung sowie die Zustellung eines Mahnbescheids im Mahnverfahren gleich. (2) Der Mahnung bedarf es nicht, wenn 1. für die Leistung eine Zeit nach dem Kalender bestimmt ist, 2. der Leistung ein Ereignis vorauszugehen hat und eine angemessene Zeit für die Leistung in der Weise bestimmt ist, dass sie sich von dem Ereignis an nach dem Kalender berechnen lässt, 3. der Schuldner die Leistung ernsthaft und endgültig verweigert, 4. aus besonderen Gründen unter Abwägung der beiderseitigen Interessen der sofortige Eintritt des Verzugs gerechtfertigt ist. (3) Der Schuldner einer Entgeltforderung kommt spätestens in Verzug, wenn er nicht innerhalb von 30 Tagen nach Fälligkeit und Zugang einer Rechnung oder gleichwertigen Zahlungsaufstellung leistet; dies gilt gegenüber einem Schuldner, der Verbraucher ist, nur, wenn auf diese Folgen in der Rechnung oder Zahlungsaufstellung besonders hingewiesen worden ist. Wenn der Zeitpunkt des Zugangs der Rechnung oder Zahlungsaufstellung unsicher ist, kommt der Schuldner, der nicht Verbraucher ist, spätestens 30 Tage nach Fälligkeit und Empfang der Gegenleistung in Verzug. (4) Der Schuldner kommt nicht in Verzug, solange die Leistung infolge eines Umstands unterbleibt, den er nicht zu vertreten hat. (5) Für eine von den Absätzen 1 bis 3 abweichende Vereinbarung über den Eintritt des Verzugs gilt § 271a Absatz 1 bis 5 entsprechend.",
+          "url": "https://www.gesetze-im-internet.de/bgb/__286.html",
+          "stand": "2026-08-18"
+        }
+      ],
+      "geprueft_von": [
+        {
+          "wer": "Franz",
+          "am": "2026-08-23",
+          "beleg": "Runde 3, Aufgabe 1",
+          "umfang": "Der Rückerhalt läuft nicht über den Widerruf gegenüber der Bank, sondern über einen Rückzahlungsanspruch gegen den Empfänger.",
+          "vorbehalt": null
+        }
+      ]
+    },
+    {
+      "id": "H5",
+      "art": {
+        "code": "hebel",
+        "label": "zusätzliches Argument",
+        "tone": "gelb",
+        "detail": null
+      },
+      "titel": "Zahlung unter Vorbehalt — zweimal, nicht einmal",
+      "text": "Wenn die Kundin weiterzahlt, gehören zwei Dinge zusammen: der Satz im Schreiben an das Unternehmen (steht im Musterschreiben) und der Verwendungszweck der Überweisung. Lassen Sie sie dort „Zahlung unter Vorbehalt“ eintragen. Der Grund ist nicht Förmlichkeit: bestünde die Forderung am Ende doch, gerät sie ohne den Vorbehalt in Bedrängnis wegen Mahngebühren und Verzug — und mit ihm nicht.",
+      "anker": [],
+      "geprueft_von": [
+        {
+          "wer": "Franz",
+          "am": "2026-08-23",
+          "beleg": "Runde 3, Aufgabe 1",
+          "umfang": "Zahlung unter Vorbehalt gehört in den Verwendungszweck und/oder in ein Schreiben an den Zahlungsempfänger, ausdrücklich ohne Anerkennung einer Rechtspflicht und unter Vorbehalt der Rückforderung — sonst drohen Mahngebühren, falls die Forderung doch besteht.",
+          "vorbehalt": null
+        }
+      ]
+    },
+    {
+      "id": "H2",
+      "art": {
+        "code": "hebel",
+        "label": "zusätzliches Argument",
+        "tone": "gelb",
+        "detail": null
+      },
+      "titel": "Die Darlegungslast liegt beim Verwender",
+      "text": "Die Kundin muss nichts beweisen. Wer sich auf eine Klausel in Allgemeinen Geschäftsbedingungen beruft, muss darlegen, dass sie einbezogen wurde und wie sie lautete. Das Auskunftsverlangen darf das ausdrücklich sagen — ohne Paragraf, so wie die Musterbriefe der Verbraucherzentrale es auch tun.",
+      "anker": [],
+      "geprueft_von": [
+        {
+          "wer": "Franz",
+          "am": "2026-08-23",
+          "beleg": "Runde 2, Gutachten zu Fall 3",
+          "umfang": "Auch ohne die fehlende AGB-Seite steht fest, dass die Darlegungslast beim Verwender liegt.",
+          "vorbehalt": null
+        }
+      ]
+    },
+    {
+      "id": "H8",
+      "art": {
+        "code": "hebel",
+        "label": "zusätzliches Argument",
+        "tone": "gelb",
+        "detail": null
+      },
+      "titel": "Die Unterlagen kann die Kundin beim Anbieter verlangen",
+      "text": "Wenn die Kundin ihre AGB oder ihren Vertrag nicht mehr hat, ist sie nicht darauf angewiesen, sie wiederzufinden — sie kann sie beim Anbieter anfordern. Aus dem laufenden Vertrag folgt die Nebenpflicht, ihr die eigenen Vertragsunterlagen zugänglich zu machen (§ 241 Abs. 2 BGB); gibt der Anbieter sie nicht heraus, ist das eine Pflichtverletzung. Im Brief an die Kundin steht davon nur der praktische Schritt und kein Paragraf — so wie die Musterbriefe der Verbraucherzentrale es auch tun. Der Paragraf steht hier, damit Sie ihn nennen können, wenn das Studio mauert.",
+      "anker": [
+        {
+          "key": "bgb_241_2",
+          "label": "§ 241 Abs. 2 BGB",
+          "ebene": {
+            "code": "gesetz",
+            "label": "Gesetz",
+            "tone": "grau",
+            "detail": null
+          },
+          "status": null,
+          "geprueft": false,
+          "pruefstand": {
+            "code": "ungeprueft",
+            "label": "Fundstelle ungeprüft",
+            "tone": "grau",
+            "detail": "Der Gesetzestext liegt vor und ist unverändert übernommen — gegengelesen am Original hat ihn niemand aus dem Team."
+          },
+          "aufgeloest": true,
+          "kernaussage": null,
+          "text": "Das Schuldverhältnis kann nach seinem Inhalt jeden Teil zur Rücksicht auf die Rechte, Rechtsgüter und Interessen des anderen Teils verpflichten.",
+          "url": "https://www.gesetze-im-internet.de/bgb/__241.html",
+          "stand": "2026-08-18"
+        }
+      ],
+      "geprueft_von": [
+        {
+          "wer": "Franz",
+          "am": "2026-08-26",
+          "beleg": "Runde 4, Redigat des Nachforderungsbriefs",
+          "umfang": "Die Nichtbereitstellung der Vertragsunterlagen ist eine Verletzung der vertraglichen Nebenpflicht aus § 241 Abs. 2 BGB.",
+          "vorbehalt": "Er wollte den Paragrafen in den Brief an die Kundin schreiben. Paulina hat am selben Tag an den acht Musterbriefen der Verbraucherzentrale abgelesen, dass dort keine Paragrafen stehen. Deshalb steht der Inhalt im Brief und der Paragraf auf diesem Schirm — die Entscheidung ist unsere, nicht seine."
+        }
+      ]
+    },
+    {
+      "id": "H3",
+      "art": {
+        "code": "hebel",
+        "label": "zusätzliches Argument",
+        "tone": "gelb",
+        "detail": null
+      },
+      "titel": "Zwei Hebel — sehen Sie im Vertrag nach, das Programm kann es nicht?",
+      "text": "Wenn Sie Unterlagen beim Unternehmen statt bei der Kundin holen wollen, lohnen zwei Blicke in den Vertrag, die das Programm nicht selbst prüfen kann. Erstens: Steht im Unterschriftsblock eine Bestätigung, die AGB erhalten zu haben, und ist sie mit SEPA-Mandat und Widerrufsbelehrung zu einer einzigen Unterschrift gebündelt? Dann ist sie als Beweislastumkehr angreifbar (§ 309 Nr. 12 lit. b BGB); die Ausnahme für gesondert unterschriebene Empfangsbekenntnisse greift bei einer gebündelten Unterschrift nicht. Zweitens: Nennt das Formular als Ort der Unterzeichnung die Wohnung der Kundin? Dann besteht ein zweiter, unabhängiger Anspruch auf die vollständigen Vertragsbedingungen (§ 312f Abs. 1 BGB).",
+      "anker": [],
+      "geprueft_von": [
+        {
+          "wer": "Franz",
+          "am": "2026-08-23",
+          "beleg": "Runde 2, Gutachten zu Fall 3",
+          "umfang": "Beide Hebel benannt und begründet, ausdrücklich als Argumente für die Nachforderung und nicht als Prüfpunkte.",
+          "vorbehalt": "Ob sie hier greifen, hängt an zwei Tatsachen, die wir nicht extrahieren: ob es eine gebündelte Bestätigungsklausel gibt und wo unterschrieben wurde. Deshalb steht hier eine Frage an Sie und keine Feststellung."
+        }
+      ]
+    }
+  ],
+  "referat": {
+    "kriterien": [
+      {
+        "id": "neuigkeitswert",
+        "label": "hoher Neuigkeitswert",
+        "angehakt": false,
+        "evidenz": null
+      },
+      {
+        "id": "dauerbrenner",
+        "label": "Dauerbrenner",
+        "angehakt": false,
+        "evidenz": null
+      },
+      {
+        "id": "verletzliche_zielgruppe",
+        "label": "besonders verletzliche Zielgruppe",
+        "angehakt": false,
+        "evidenz": null
+      },
+      {
+        "id": "dreist_ungewoehnlich",
+        "label": "äußerst dreiste oder ungewöhnliche Sachverhalte",
+        "angehakt": false,
+        "evidenz": null
+      },
+      {
+        "id": "schadenshoehe",
+        "label": "bedeutsame Schadenshöhe",
+        "angehakt": false,
+        "evidenz": "Erhöhung 4,40 € im Monat"
+      },
+      {
+        "id": "rechtliche_relevanz",
+        "label": "besondere rechtliche Relevanz",
+        "angehakt": false,
+        "evidenz": null
+      }
+    ],
+    "notiz": "",
+    "markiert": false,
+    "hinweis": "Die sechs Kriterien sind die veröffentlichten Kriterien der Marktbeobachtung des vzbv (Methodik-Seite) — wortgleich übernommen, keine eigene Taxonomie. Nichts wird automatisch angehakt; die Beraterin entscheidet."
+  },
+  "abschluss": {
+    "basis_export_erzeugt": false,
+    "basis_text": null,
+    "wiedervorlagen": [],
+    "geschlossen": false
+  },
+  "dokumente": [
+    {
+      "dok_id": "T0",
+      "dokumenttyp": {
+        "code": "ticket",
+        "label": "Anliegen (Ticket)",
+        "tone": "grau",
+        "detail": null
+      },
+      "dateiname": "Schilderung Ihres Anliegens",
+      "quelle": {
+        "code": "verbraucher",
+        "label": "Verbraucherseite",
+        "tone": "grau",
+        "detail": null
+      },
+      "eingegangen": "mit dem Ersteingang",
+      "typ_bestaetigt": true,
+      "seiten": [
+        {
+          "nr": 1,
+          "text_original": "Mein Sportclub hat mir einen Brief geschickt, dass mein Beitrag ab Oktober von 27,50 auf 31,90 Euro steigt. Der Brief nennt eine Ziffer aus den AGB, aber die AGB habe ich gerade nicht zur Hand — ich weiß auch nicht mehr, ob ich sie damals überhaupt bekommen habe. Den Brief hänge ich an. Ist das so in Ordnung?"
+        }
+      ]
+    },
+    {
+      "dok_id": "D1",
+      "dokumenttyp": {
+        "code": "erhoehungsschreiben",
+        "label": "Erhöhungsschreiben",
+        "tone": "grau",
+        "detail": null
+      },
+      "dateiname": "schreiben.pdf",
+      "quelle": {
+        "code": "verbraucher",
+        "label": "Verbraucherseite",
+        "tone": "grau",
+        "detail": null
+      },
+      "eingegangen": "mit dem Ersteingang",
+      "typ_bestaetigt": true,
+      "seiten": [
+        {
+          "nr": 1,
+          "text_original": "Nordlicht Sportclub GmbH · Schießgrabenstraße 9 · 86152 Augsburg\n\nFrau\nSabine Kortmann\nBahnhofstraße 45\n86150 Augsburg\n\nAugsburg, 05.08.2026\n\nIhr Mitgliedsbeitrag ab Oktober — Mitgliedsnummer AB-771904\n\nSehr geehrte Frau Kortmann,\n\ndie Energiekosten für unsere Trainingsflächen und die Sauna sind im vergangenen Jahr deutlich gestiegen. Wir passen deshalb die Beiträge an.\n\nNach Ziffer 7.2 unserer Allgemeinen Geschäftsbedingungen („Wir behalten uns vor, die Beiträge anzupassen.“) beträgt Ihr monatlicher Beitrag ab dem 01.10.2026 statt bisher 27,50 EUR nunmehr 31,90 EUR.\n\nDer Einzug erfolgt wie gewohnt zum Monatsersten. Ihre Mitgliedschaft läuft im Übrigen unverändert weiter.\n\nBei Fragen erreichen Sie unser Serviceteam während der Öffnungszeiten an der Rezeption.\n\nMit freundlichen Grüßen\n\nNordlicht Sportclub GmbH"
+        }
+      ]
+    }
+  ],
+  "protokoll": [
+    {
+      "zeit": "2026-08-20T09:00:00+02:00",
+      "akteur": "Beraterin",
+      "aktion": {
+        "code": "l0_pseudonymisiert",
+        "label": "Identitäten pseudonymisiert",
+        "tone": "grau",
+        "detail": null
+      },
+      "schritt": {
+        "code": "eingang",
+        "label": "Eingang",
+        "tone": "grau",
+        "detail": null
+      },
+      "beschreibung": "8 Identitätsangaben ersetzt"
+    },
+    {
+      "zeit": "2026-08-20T09:01:00+02:00",
+      "akteur": "Beraterin",
+      "aktion": {
+        "code": "dokument_klassifiziert",
+        "label": "Dokument eingeordnet",
+        "tone": "grau",
+        "detail": null
+      },
+      "schritt": {
+        "code": "extraktion",
+        "label": "Extraktion",
+        "tone": "grau",
+        "detail": null
+      },
+      "beschreibung": "D1 → Erhöhungsschreiben"
+    },
+    {
+      "zeit": "2026-08-20T09:02:00+02:00",
+      "akteur": "Beraterin",
+      "aktion": {
+        "code": "pruefung_gelaufen",
+        "label": "Prüfung gelaufen",
+        "tone": "grau",
+        "detail": null
+      },
+      "schritt": {
+        "code": "pruefung",
+        "label": "Prüfung",
+        "tone": "grau",
+        "detail": null
+      },
+      "beschreibung": "Auslöser: Ersteingang"
+    },
+    {
+      "zeit": "2026-08-20T09:03:00+02:00",
+      "akteur": "Beraterin",
+      "aktion": {
+        "code": "brief_erzeugt",
+        "label": "Musterschreiben erzeugt",
+        "tone": "grau",
+        "detail": null
+      },
+      "schritt": {
+        "code": "rechtsbehelf",
+        "label": "Rechtsbehelf · Gate 4",
+        "tone": "grau",
+        "detail": null
+      },
+      "beschreibung": "Nachforderung von Unterlagen (schriftliche Anfrage)"
+    },
+    {
+      "zeit": "2026-08-20T09:04:00+02:00",
+      "akteur": "Beraterin",
+      "aktion": {
+        "code": "gate1_nachforderung_erzeugt",
+        "label": "Nachforderung erzeugt",
+        "tone": "grau",
+        "detail": null
+      },
+      "schritt": {
+        "code": "nachforderung",
+        "label": "Nachforderung · Gate 1",
+        "tone": "grau",
+        "detail": null
+      },
+      "beschreibung": "schriftlich (VBS) · AGB, Vertrag"
+    }
+  ],
+  "fusszeile": {
+    "disclaimer": "Ersteinschätzung auf Basis der vorliegenden Unterlagen — keine Rechtsberatung im Einzelfall. Die Beraterin entscheidet.",
+    "ki_hinweis": "KI-gestützt: Ein Sprachmodell hat die Dokumente gelesen und Felder vorgeschlagen. Einordnung, Fristen und Schreiben berechnet das Programm nach hinterlegten Regeln.",
+    "schema_version": "0.7.0",
+    "schema_stand": "2026-08-25",
+    "stand": "2026-08-27",
+    "stichtag": "2026-08-27",
+    "stichtag_modus": "demo",
+    "betriebskosten_cent": 1.75,
+    "fachpruefung_bestaetigt": 7,
+    "fachpruefung_gesamt": 19,
+    "normbasis_modus": "dev"
+  }
+}

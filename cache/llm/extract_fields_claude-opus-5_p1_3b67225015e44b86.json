@@ -1,0 +1,237 @@
+{
+  "aufgabe": "extract_fields",
+  "modell": "claude-opus-5",
+  "prompt_version": "p1",
+  "eingabe": {
+    "dokumenttyp": "agb",
+    "seiten": [
+      {
+        "nr": 1,
+        "text": "Allgemeine Geschäftsbedingungen der Nordlicht Sportclub GmbH\nFassung vom 15.01.2023\n\n1. Geltungsbereich\n\n1.1 Diese Bedingungen gelten für alle Mitgliedschaften der Nordlicht Sportclub GmbH.\n\n2. Vertragsschluss\n\n2.1 Der Vertrag kommt mit Unterzeichnung des Mitgliedsvertrages zustande.\n\n3. Leistungen\n\n3.1 Der Club stellt die in der Clubbeschreibung genannten Trainingsflächen, Kurse und den Saunabereich zur Verfügung.\n\n4. Öffnungszeiten\n\n4.1 Die Öffnungszeiten werden im Club ausgehängt.\n\n5. Trainingsbetrieb\n\n5.1 Das Mitglied trainiert auf eigene Verantwortung und beachtet die Einweisung des Personals.\n\n6. Gastkarten\n\n6.1 Mitglieder können gegen Entgelt Gastkarten erwerben."
+      },
+      {
+        "nr": 2,
+        "text": "7. Beiträge\n\n7.1 Der bei Vertragsschluss vereinbarte Beitrag ist monatlich im Voraus zum Monatsersten fällig.\n\n7.2 Wir behalten uns vor, die Beiträge anzupassen. Die Anpassung wird dem Mitglied mitgeteilt.\n\n7.3 Die Zahlung erfolgt per SEPA-Lastschrift. Bei einer Rücklastschrift, die das Mitglied zu vertreten hat, wird eine Bearbeitungspauschale erhoben.\n\n8. Laufzeit\n\n8.1 Die Mindestlaufzeit ergibt sich aus dem Mitgliedsvertrag.\n\n9. Hausordnung\n\n9.1 Die im Club ausgehängte Hausordnung ist Bestandteil des Vertrages."
+      }
+    ],
+    "felder": [
+      {
+        "feld_id": "agb.fassung_datum",
+        "typ": "datum",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.preisklausel_text",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": "Wortlaut der Preisanpassungsklausel — die ganze Klausel mit allen Sätzen (Anlass, Voraussetzungen, Umfang bzw. Kappung), nicht nur der erste Satz; ohne ihn gilt das Dokument als unvollständig",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.preisklausel_ziffer",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.klausel_ueberschrift",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.nennt_anlass",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "Anlass der Erhöhung in der Klausel",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.nennt_voraussetzungen",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "Voraussetzungen der Erhöhung in der Klausel",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.nennt_umfang",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "Umfang der Erhöhung in der Klausel",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.kostenbezug",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "knüpft die Erhöhung an Kostenentwicklung?",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.senkungspflicht",
+        "typ": "enum",
+        "werte": [
+          "pflicht",
+          "ermessen",
+          "keine"
+        ],
+        "beschreibung": "Regelung zur Weitergabe von Kostensenkungen",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.kuendigungsrecht_bei_erhoehung",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.erklaerungsfiktion_text",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.erklaerungsfiktion_frist_und_hinweis",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "nennt die Fiktionsklausel Frist und Hinweispflicht (§ 308 Nr. 5)?",
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.widerspruchsfrist_tage",
+        "typ": "zahl",
+        "werte": null,
+        "beschreibung": "Frist in Tagen, innerhalb derer die AGB einen Widerspruch gegen die Anpassung verlangen (zwei Wochen = 14); nur wenn die AGB eine solche Frist nennen",
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.widerspruch_formerfordernis",
+        "typ": "enum",
+        "werte": [
+          "schriftform",
+          "textform",
+          "formfrei",
+          "keine_angabe"
+        ],
+        "beschreibung": "Welche Form verlangen die AGB für den Widerspruch gegen die Anpassung? „schriftlich“ ohne Zusatz = schriftform; „in Textform“ / „per E-Mail“ = textform",
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.leistungsaenderungsrecht",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.leistungsaenderung_mit_grund",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      }
+    ]
+  },
+  "ausgabe": {
+    "felder": [
+      {
+        "feld_id": "agb.fassung_datum",
+        "wert": "2023-01-15",
+        "zitat": "Fassung vom 15.01.2023",
+        "seite": 1
+      },
+      {
+        "feld_id": "agb.preisklausel_text",
+        "wert": "Wir behalten uns vor, die Beiträge anzupassen.",
+        "zitat": "Wir behalten uns vor, die Beiträge anzupassen.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.preisklausel_ziffer",
+        "wert": "7.2",
+        "zitat": "7.2 Wir behalten uns vor",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.klausel_ueberschrift",
+        "wert": "Beiträge",
+        "zitat": "7. Beiträge",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.nennt_anlass",
+        "wert": false,
+        "zitat": "7.2 Wir behalten uns vor, die Beiträge anzupassen. Die Anpassung wird dem Mitglied mitgeteilt.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.nennt_voraussetzungen",
+        "wert": false,
+        "zitat": "7.2 Wir behalten uns vor, die Beiträge anzupassen. Die Anpassung wird dem Mitglied mitgeteilt.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.nennt_umfang",
+        "wert": false,
+        "zitat": "7.2 Wir behalten uns vor, die Beiträge anzupassen. Die Anpassung wird dem Mitglied mitgeteilt.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.kostenbezug",
+        "wert": false,
+        "zitat": "7.2 Wir behalten uns vor, die Beiträge anzupassen. Die Anpassung wird dem Mitglied mitgeteilt.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.senkungspflicht",
+        "wert": "keine",
+        "zitat": "7.2 Wir behalten uns vor, die Beiträge anzupassen. Die Anpassung wird dem Mitglied mitgeteilt.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.kuendigungsrecht_bei_erhoehung",
+        "wert": false,
+        "zitat": "7.2 Wir behalten uns vor, die Beiträge anzupassen. Die Anpassung wird dem Mitglied mitgeteilt.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.widerspruch_formerfordernis",
+        "wert": "keine_angabe",
+        "zitat": "7.2 Wir behalten uns vor, die Beiträge anzupassen. Die Anpassung wird dem Mitglied mitgeteilt.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.leistungsaenderungsrecht",
+        "wert": false,
+        "zitat": "3.1 Der Club stellt die in der Clubbeschreibung genannten Trainingsflächen, Kurse und den Saunabereich zur Verfügung.",
+        "seite": 1
+      }
+    ]
+  },
+  "dauer_ms": 4200,
+  "kosten_cent": 1.1,
+  "zeit": null,
+  "aus_cache": false
+}

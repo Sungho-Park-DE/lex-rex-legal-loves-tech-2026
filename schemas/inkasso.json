@@ -1,0 +1,1465 @@
+{
+  "fallgruppe_id": "inkasso",
+  "name": "Untergeschobener Vertrag + Inkasso",
+  "stufe": "B",
+  "version": "0.3.0",
+  "stand": "2026-08-23",
+  "geprueft_von": [],
+  "regelsprache": "v1",
+  "kommentar": "Contract §3. Dokumenten-Soll v0.2 = Paulinas Aufgabe 4.1/4.2 (Runde 2, data/eingang/paulina_runde2_unterlagen_soll_feldliste.pdf), übersetzt in die Vertragsform; die feld_id-Namen und die pflicht-Flags sind unsere Zuordnung, nicht ihr Wortlaut — Rückfragen in analysis/22 §5. Zwei ihrer Unterlagenarten fehlen hier noch, weil das Vokabular keine Werte dafür hat (Widerruf/Widerspruch, Wortprotokoll) — 22 §4. pruefpunkte bleibt leer, bis ihre Liste zu §8 eintrifft; Stufe B→A = stufe auf \"A\" setzen und geprueft_von füllen — sonst ändert sich nichts (15 §13). Prüfpunkte v0.3 = Paulinas 14 Punkte (22 §11, data/eingang/paulina_runde2_pruefpunkte_inkasso.pdf), Rollen nach der Zuordnung in 22 §12. Ihre Nummerierung 1-14 ist unverändert P1-P14. Alle Anker geprueft:false.",
+  "annahmen": [],
+  "dokumenten_soll": {
+    "gruppen": [
+      {
+        "id": "vertragsgrundlage",
+        "mindestens_eines": [
+          "auftragsbestaetigung",
+          "vertrag"
+        ],
+        "anzeigename": "die Vertragsgrundlage — Auftragsbestätigung oder Vertrag"
+      }
+    ],
+    "dokumente": [
+      {
+        "dokumenttyp": "inkassoschreiben",
+        "pflicht": "immer",
+        "quelle": "verbraucher",
+        "anzeigename": "das Inkassoschreiben",
+        "begruendung_satz": "Daraus ergibt sich, wer was aus welchem Grund fordert und bis wann.",
+        "beschaffungsweg": "Brief oder E-Mail des Inkassobüros",
+        "felder": [
+          {
+            "feld_id": "inkassoschreiben.absender",
+            "typ": "text",
+            "pflicht": true
+          },
+          {
+            "feld_id": "inkassoschreiben.auftraggeber",
+            "typ": "text",
+            "pflicht": true,
+            "zitat_pflicht": true
+          },
+          {
+            "feld_id": "inkassoschreiben.aktenzeichen",
+            "typ": "text",
+            "pflicht": false
+          },
+          {
+            "feld_id": "inkassoschreiben.gesamtbetrag",
+            "typ": "betrag",
+            "pflicht": true
+          },
+          {
+            "feld_id": "inkassoschreiben.hauptforderung",
+            "typ": "betrag",
+            "pflicht": true,
+            "beschreibung": "Paulina 4.1: die Berechnungsgrundlage muss im Schreiben selbst stehen; fehlt sie, ist das Schreiben formell mangelhaft — deshalb pflicht, damit ein Fehlen als FEHLT sichtbar wird"
+          },
+          {
+            "feld_id": "inkassoschreiben.zinsen",
+            "typ": "betrag",
+            "pflicht": false
+          },
+          {
+            "feld_id": "inkassoschreiben.kosten",
+            "typ": "betrag",
+            "pflicht": true,
+            "beschreibung": "Paulina 4.1: Teil der Berechnungsgrundlage — siehe hauptforderung"
+          },
+          {
+            "feld_id": "inkassoschreiben.zahlungsfrist",
+            "typ": "datum",
+            "pflicht": false
+          },
+          {
+            "feld_id": "inkassoschreiben.datum",
+            "typ": "datum",
+            "pflicht": true
+          },
+          {
+            "feld_id": "inkassoschreiben.abtretung_erwaehnt",
+            "typ": "bool",
+            "pflicht": true,
+            "zitat_pflicht": true
+          },
+          {
+            "feld_id": "inkassoschreiben.rechnung_erwaehnt",
+            "typ": "bool",
+            "pflicht": false,
+            "zitat_pflicht": true
+          },
+          {
+            "feld_id": "inkassoschreiben.registereintrag_angabe",
+            "typ": "text",
+            "pflicht": false
+          },
+          {
+            "feld_id": "inkassoschreiben.zitierte_fundstellen",
+            "typ": "liste_text",
+            "pflicht": false,
+            "zitat_pflicht": true
+          }
+        ]
+      },
+      {
+        "dokumenttyp": "rechnung",
+        "pflicht": "immer",
+        "quelle": "verbraucher",
+        "anzeigename": "die Rechnung, auf die sich die Forderung stützt",
+        "begruendung_satz": "Daraus ergibt sich, welche Leistung überhaupt abgerechnet wird — sie ist die Berechnungsgrundlage des Inkassoschreibens.",
+        "beschaffungsweg": "Post, E-Mail-Postfach, Kundenkonto",
+        "felder": [
+          {
+            "feld_id": "rechnung.aussteller",
+            "typ": "text",
+            "pflicht": true,
+            "zitat_pflicht": true,
+            "beschreibung": "Anbieter oder Inkassobüro? — Paulina 4.2"
+          },
+          {
+            "feld_id": "rechnung.datum",
+            "typ": "datum",
+            "pflicht": true
+          },
+          {
+            "feld_id": "rechnung.rechnungsnummer",
+            "typ": "text",
+            "pflicht": false
+          },
+          {
+            "feld_id": "rechnung.kundennummer",
+            "typ": "text",
+            "pflicht": false
+          },
+          {
+            "feld_id": "rechnung.vertragsbezug",
+            "typ": "text",
+            "pflicht": false
+          },
+          {
+            "feld_id": "rechnung.hauptforderung",
+            "typ": "betrag",
+            "pflicht": true
+          },
+          {
+            "feld_id": "rechnung.zinsen",
+            "typ": "betrag",
+            "pflicht": false,
+            "beschreibung": "separat ausgewiesen? — Paulina 4.2 verweist auf ihren Prüfpunkt 7"
+          },
+          {
+            "feld_id": "rechnung.leistungszeitraum",
+            "typ": "text",
+            "pflicht": false
+          }
+        ]
+      },
+      {
+        "dokumenttyp": "auftragsbestaetigung",
+        "pflicht": "immer",
+        "gruppe": "vertragsgrundlage",
+        "quelle": "verbraucher",
+        "anzeigename": "die Auftrags- oder Vertragsbestätigung",
+        "begruendung_satz": "Daraus ergibt sich, ob und wann ein Vertrag zustande gekommen sein soll.",
+        "beschaffungsweg": "E-Mail-Postfach, Post",
+        "felder": [
+          {
+            "feld_id": "auftragsbestaetigung.vertragsdatum",
+            "typ": "datum",
+            "pflicht": true
+          },
+          {
+            "feld_id": "auftragsbestaetigung.laufzeit",
+            "typ": "text",
+            "pflicht": false
+          },
+          {
+            "feld_id": "auftragsbestaetigung.betrag",
+            "typ": "betrag",
+            "pflicht": false
+          },
+          {
+            "feld_id": "auftragsbestaetigung.widerrufsbelehrung_text",
+            "typ": "text",
+            "pflicht": false,
+            "zitat_pflicht": true
+          },
+          {
+            "feld_id": "auftragsbestaetigung.widerrufsfrist_angabe",
+            "typ": "text",
+            "pflicht": false,
+            "zitat_pflicht": true
+          },
+          {
+            "feld_id": "auftragsbestaetigung.kontaktweg",
+            "typ": "text",
+            "pflicht": false
+          }
+        ]
+      },
+      {
+        "dokumenttyp": "vertrag",
+        "pflicht": "bedingt",
+        "bedingung": {
+          "dok_fehlt": "auftragsbestaetigung"
+        },
+        "gruppe": "vertragsgrundlage",
+        "quelle": "verbraucher",
+        "anzeigename": "der Vertrag",
+        "begruendung_satz": "Daraus ergibt sich, was genau vereinbart wurde — und ob die AGB dabei einbezogen wurden.",
+        "beschaffungsweg": "Unterlagen der ratsuchenden Person, E-Mail-Postfach",
+        "felder": [
+          {
+            "feld_id": "vertrag.parteien",
+            "typ": "text",
+            "pflicht": true,
+            "beschreibung": "Name und Anschrift beider Seiten"
+          },
+          {
+            "feld_id": "vertrag.datum",
+            "typ": "datum",
+            "pflicht": true
+          },
+          {
+            "feld_id": "vertrag.gegenstand",
+            "typ": "text",
+            "pflicht": true,
+            "zitat_pflicht": true
+          },
+          {
+            "feld_id": "vertrag.preis",
+            "typ": "betrag",
+            "pflicht": true,
+            "beschreibung": "inkl. Steuern"
+          },
+          {
+            "feld_id": "vertrag.zahlungskonditionen",
+            "typ": "text",
+            "pflicht": false
+          },
+          {
+            "feld_id": "vertrag.laufzeit",
+            "typ": "text",
+            "pflicht": false
+          },
+          {
+            "feld_id": "vertrag.lieferzeitpunkt",
+            "typ": "text",
+            "pflicht": false
+          },
+          {
+            "feld_id": "vertrag.kuendigungsfrist",
+            "typ": "text",
+            "pflicht": false
+          },
+          {
+            "feld_id": "vertrag.agb_verweis",
+            "typ": "bool",
+            "pflicht": false,
+            "zitat_pflicht": true
+          }
+        ]
+      },
+      {
+        "dokumenttyp": "widerrufsbelehrung",
+        "pflicht": "erwartet_wenn_vorhanden",
+        "quelle": "verbraucher",
+        "anzeigename": "die Widerrufsbelehrung",
+        "begruendung_satz": "Fehlt sie, beginnt die Widerrufsfrist gar nicht erst zu laufen.",
+        "beschaffungsweg": "Anlage zur Auftragsbestätigung",
+        "felder": [
+          {
+            "feld_id": "widerrufsbelehrung.vorhanden",
+            "typ": "bool",
+            "pflicht": true,
+            "beschreibung": "Paulina 4.2: fehlt sie ganz, ist das selbst schon ein Mangel — nicht bloß eine Nachforderung. Trennung „nie erteilt\" vs. „nur nicht mitgeschickt\" gehört in eine gespraech-Frage, siehe 22 §4"
+          },
+          {
+            "feld_id": "widerrufsbelehrung.frist_angabe",
+            "typ": "text",
+            "pflicht": true,
+            "zitat_pflicht": true
+          },
+          {
+            "feld_id": "widerrufsbelehrung.fristbeginn_angabe",
+            "typ": "text",
+            "pflicht": true,
+            "zitat_pflicht": true,
+            "beschreibung": "ab welchem Datum oder Ereignis?"
+          },
+          {
+            "feld_id": "widerrufsbelehrung.form",
+            "typ": "enum",
+            "werte": [
+              "papier",
+              "email",
+              "im_vertragsdokument",
+              "unbekannt"
+            ],
+            "wert_labels": {
+              "papier": "auf Papier",
+              "email": "per E-Mail",
+              "im_vertragsdokument": "im Vertragsdokument",
+              "unbekannt": "unbekannt"
+            },
+            "pflicht": false
+          },
+          {
+            "feld_id": "widerrufsbelehrung.musterformular_beigefuegt",
+            "typ": "bool",
+            "pflicht": false
+          },
+          {
+            "feld_id": "widerrufsbelehrung.kontaktangaben",
+            "typ": "text",
+            "pflicht": true,
+            "zitat_pflicht": true,
+            "beschreibung": "Anschrift, Fax, E-Mail für den Widerruf"
+          },
+          {
+            "feld_id": "widerrufsbelehrung.datum",
+            "typ": "datum",
+            "pflicht": false
+          }
+        ]
+      },
+      {
+        "dokumenttyp": "anschreiben",
+        "pflicht": "bedingt",
+        "bedingung": {
+          "feld": "gespraech.ausloeser_brief_vorhanden",
+          "op": "==",
+          "wert": true
+        },
+        "quelle": "verbraucher",
+        "anzeigename": "den Brief, mit dem alles anfing",
+        "begruendung_satz": "Daraus ergibt sich, wie der Vertrag angebahnt wurde.",
+        "beschaffungsweg": "Post",
+        "felder": [
+          {
+            "feld_id": "anschreiben.absender",
+            "typ": "text",
+            "pflicht": true
+          },
+          {
+            "feld_id": "anschreiben.absender_rolle",
+            "typ": "enum",
+            "werte": [
+              "anbieter",
+              "vertreter",
+              "callcenter",
+              "unbekannt"
+            ],
+            "wert_labels": {
+              "anbieter": "der Anbieter selbst",
+              "vertreter": "ein Vertreter",
+              "callcenter": "ein Callcenter",
+              "unbekannt": "unbekannt"
+            },
+            "pflicht": false
+          },
+          {
+            "feld_id": "anschreiben.datum",
+            "typ": "datum",
+            "pflicht": false
+          },
+          {
+            "feld_id": "anschreiben.aufmachung",
+            "typ": "enum",
+            "werte": [
+              "gewinnspiel",
+              "kostenlose_probe",
+              "umfrage",
+              "rechnungsaehnlich",
+              "sonstiges",
+              "unbekannt"
+            ],
+            "wert_labels": {
+              "gewinnspiel": "als Gewinnspiel",
+              "kostenlose_probe": "als kostenlose Probe",
+              "umfrage": "als Umfrage",
+              "rechnungsaehnlich": "rechnungsähnlich",
+              "sonstiges": "anders",
+              "unbekannt": "unbekannt"
+            },
+            "pflicht": true,
+            "zitat_pflicht": true,
+            "beschreibung": "Wie wurde das Angebot dargestellt? — Paulina 4.2"
+          },
+          {
+            "feld_id": "anschreiben.gestaltung_auffaelligkeiten",
+            "typ": "text",
+            "pflicht": false,
+            "zitat_pflicht": true,
+            "beschreibung": "Kleingedrucktes, irreführendes Layout, versteckte Kostenpflicht. Paulina 4.2 ausdrücklich: „eher als Bewertungsfrage betrachten\" — das Modell sammelt nur den Befund samt Zitat, entschieden wird der Punkt nie automatisch"
+          },
+          {
+            "feld_id": "anschreiben.enthaelt_vertragsbedingungen",
+            "typ": "bool",
+            "pflicht": true,
+            "beschreibung": "Preis, Laufzeit bereits im Anschreiben?"
+          }
+        ]
+      },
+      {
+        "dokumenttyp": "abtretungsurkunde",
+        "pflicht": "bedingt",
+        "bedingung": {
+          "feld": "inkassoschreiben.abtretung_erwaehnt",
+          "op": "==",
+          "wert": true
+        },
+        "quelle": "unternehmen",
+        "anzeigename": "die Abtretungsurkunde",
+        "begruendung_satz": "Nur damit ließe sich prüfen, ob das Inkassobüro die Forderung überhaupt innehat.",
+        "beschaffungsweg": "Auskunftsverlangen an das Inkassobüro — nie Nachforderung beim Verbraucher",
+        "felder": [
+          {
+            "feld_id": "abtretungsurkunde.datum",
+            "typ": "datum",
+            "pflicht": true
+          },
+          {
+            "feld_id": "abtretungsurkunde.zedent",
+            "typ": "text",
+            "pflicht": true,
+            "zitat_pflicht": true,
+            "beschreibung": "ursprünglicher Gläubiger"
+          },
+          {
+            "feld_id": "abtretungsurkunde.zessionar",
+            "typ": "text",
+            "pflicht": true,
+            "zitat_pflicht": true,
+            "beschreibung": "neuer Gläubiger"
+          },
+          {
+            "feld_id": "abtretungsurkunde.forderung_bezeichnung",
+            "typ": "text",
+            "pflicht": true,
+            "zitat_pflicht": true,
+            "beschreibung": "welche konkrete Forderung?"
+          },
+          {
+            "feld_id": "abtretungsurkunde.betrag",
+            "typ": "betrag",
+            "pflicht": false
+          },
+          {
+            "feld_id": "abtretungsurkunde.unterschrift_vorhanden",
+            "typ": "bool",
+            "pflicht": true
+          },
+          {
+            "feld_id": "abtretungsurkunde.vertragsbezug",
+            "typ": "text",
+            "pflicht": false,
+            "beschreibung": "Bezug zu Kundennummer oder Vertrag erkennbar?"
+          }
+        ]
+      },
+      {
+        "dokumenttyp": "vollmacht",
+        "pflicht": "bedingt",
+        "bedingung": {
+          "feld": "inkassoschreiben.abtretung_erwaehnt",
+          "op": "==",
+          "wert": false
+        },
+        "quelle": "unternehmen",
+        "anzeigename": "die Inkassovollmacht",
+        "begruendung_satz": "Nur damit ließe sich prüfen, ob das Inkassobüro für den Gläubiger auftreten darf.",
+        "beschaffungsweg": "Auskunftsverlangen an das Inkassobüro — nie Nachforderung beim Verbraucher",
+        "felder": [
+          {
+            "feld_id": "vollmacht.datum",
+            "typ": "datum",
+            "pflicht": true
+          },
+          {
+            "feld_id": "vollmacht.vollmachtgeber",
+            "typ": "text",
+            "pflicht": true,
+            "zitat_pflicht": true
+          },
+          {
+            "feld_id": "vollmacht.bevollmaechtigter",
+            "typ": "text",
+            "pflicht": true,
+            "zitat_pflicht": true
+          },
+          {
+            "feld_id": "vollmacht.umfang_forderung",
+            "typ": "text",
+            "pflicht": true,
+            "zitat_pflicht": true,
+            "beschreibung": "für welche konkrete Forderung?"
+          },
+          {
+            "feld_id": "vollmacht.art_der_vertretung",
+            "typ": "text",
+            "pflicht": false
+          },
+          {
+            "feld_id": "vollmacht.unterschrift_vorhanden",
+            "typ": "bool",
+            "pflicht": true
+          },
+          {
+            "feld_id": "vollmacht.im_original_vorgelegt",
+            "typ": "bool",
+            "pflicht": false,
+            "beschreibung": "Paulinas „Wozu\" zielt auf die Zurückweisung mangels Vollmachtsvorlage — dort hängt die Rechtsfolge an „unverzüglich\", also an einer Frist. Norm noch nicht benannt (vermutlich § 174 BGB), Anwendbarkeit auf eine Zahlungsaufforderung offen: 22 §5 Frage 2"
+          }
+        ]
+      },
+      {
+        "dokumenttyp": "email",
+        "pflicht": "bedingt",
+        "bedingung": {
+          "feld": "gespraech.emailverkehr_vorhanden",
+          "op": "==",
+          "wert": true
+        },
+        "quelle": "verbraucher",
+        "anzeigename": "den E-Mail-Verkehr mit dem Anbieter",
+        "begruendung_satz": "Daraus ergibt sich, was Sie bereits erklärt haben.",
+        "beschaffungsweg": "E-Mail-Postfach",
+        "felder": [
+          {
+            "feld_id": "email.verlauf",
+            "typ": "liste_text",
+            "pflicht": false,
+            "zitat_pflicht": true,
+            "beschreibung": "chronologisch: Datum, Absender, Kerninhalt je Nachricht — Paulina 4.2"
+          },
+          {
+            "feld_id": "email.enthaelt_widerruf",
+            "typ": "bool",
+            "pflicht": true,
+            "zitat_pflicht": true,
+            "beschreibung": "Enthält eine Nachricht bereits einen Widerruf oder Widerspruch?"
+          },
+          {
+            "feld_id": "email.widerruf_datum",
+            "typ": "datum",
+            "pflicht": false
+          },
+          {
+            "feld_id": "email.zusagen_anbieter",
+            "typ": "text",
+            "pflicht": false,
+            "zitat_pflicht": true,
+            "beschreibung": "Zusagen, Kulanzangebote oder Eingeständnisse des Anbieters"
+          },
+          {
+            "feld_id": "email.empfangsbestaetigung",
+            "typ": "bool",
+            "pflicht": false,
+            "beschreibung": "Empfangs- oder Lesebestätigung vorhanden?"
+          }
+        ]
+      }
+    ]
+  },
+  "baum": {
+    "id": "root",
+    "op": "AND",
+    "titel": "Ist die Inkassoforderung berechtigt?",
+    "kinder": [
+      {
+        "id": "S0",
+        "op": "AND",
+        "titel": "Stufe 0 — Anwendungsbereich",
+        "kinder": [
+          "P1"
+        ]
+      },
+      {
+        "id": "S1",
+        "op": "AND",
+        "titel": "Stufe 1 — Vertragsgrundlage",
+        "kinder": [
+          "P2"
+        ]
+      },
+      {
+        "id": "S2",
+        "op": "AND",
+        "titel": "Stufe 2 — Widerrufsrecht",
+        "kinder": [
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ]
+      },
+      {
+        "id": "S3",
+        "op": "AND",
+        "titel": "Stufe 3 — Willensmängel",
+        "kinder": [
+          "P8"
+        ]
+      },
+      {
+        "id": "S4",
+        "op": "AND",
+        "titel": "Stufe 4 — Ist die Forderung belegt?",
+        "kinder": [
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "S5",
+        "op": "AND",
+        "titel": "Stufe 5 — Das Inkassobüro selbst",
+        "kinder": [
+          "P11",
+          "P12",
+          "P13"
+        ]
+      },
+      {
+        "id": "S6",
+        "op": "AND",
+        "titel": "Stufe 6 — Strategie",
+        "kinder": [
+          "P14"
+        ]
+      }
+    ]
+  },
+  "pruefpunkte": [
+    {
+      "id": "P1",
+      "titel": "Art der Forderung",
+      "rolle": "gate",
+      "typ": "fakt",
+      "proposition": "Es liegt eine Inkassoforderung vor, die nach diesem Schema geprüft werden kann.",
+      "eingaben": [
+        {
+          "feld": "gespraech.forderungsart",
+          "pflicht": false
+        },
+        {
+          "feld": "inkassoschreiben.absender",
+          "pflicht": true
+        }
+      ],
+      "regel": {
+        "NEIN_wenn": {
+          "dok_fehlt": "inkassoschreiben"
+        },
+        "sonst": "JA"
+      },
+      "anker": [],
+      "bei_NEIN": {
+        "schema_stopp": true,
+        "text": "Ohne das Inkassoschreiben lässt sich nicht prüfen, wer was aus welchem Grund fordert."
+      },
+      "leitfaden_frage": {
+        "text": "Worum geht es: um einen Vertrag, den Sie so nie abschließen wollten, um eine offene Rechnung, oder um Schadensersatz?",
+        "typ": "mehrfach",
+        "fuellt": "gespraech.forderungsart",
+        "werte": {
+          "gespraech.forderungsart": [
+            "untergeschoben",
+            "offene_rechnung",
+            "schadensersatz",
+            "unklar"
+          ]
+        }
+      },
+      "satz_nein": "Es liegt kein Inkassoschreiben vor.",
+      "plain_grund": "Ohne das Schreiben des Inkassobüros fehlt der Ausgangspunkt der Prüfung."
+    },
+    {
+      "id": "P2",
+      "titel": "Ist überhaupt ein Vertrag zustande gekommen?",
+      "rolle": "tragend",
+      "typ": "fakt",
+      "proposition": "Ein Vertrag ist wirksam zustande gekommen.",
+      "eingaben": [
+        {
+          "feld": "gespraech.vertragsschluss_bestritten",
+          "pflicht": false
+        },
+        {
+          "feld": "auftragsbestaetigung.vertragsdatum",
+          "pflicht": false
+        },
+        {
+          "feld": "vertrag.datum",
+          "pflicht": false
+        },
+        {
+          "feld": "anschreiben.enthaelt_vertragsbedingungen",
+          "pflicht": false
+        }
+      ],
+      "regel": {
+        "NEIN_wenn": {
+          "alle": [
+            {
+              "feld": "gespraech.vertragsschluss_bestritten",
+              "op": "==",
+              "wert": true
+            },
+            {
+              "dok_fehlt": "vertrag"
+            },
+            {
+              "dok_fehlt": "auftragsbestaetigung"
+            }
+          ]
+        },
+        "WERTUNG_wenn": {
+          "feld": "gespraech.vertragsschluss_bestritten",
+          "op": "==",
+          "wert": true
+        },
+        "sonst": "JA"
+      },
+      "anker": [
+        {
+          "norm": "§ 145 BGB",
+          "key": "bgb_145",
+          "ebene": "gesetz",
+          "geprueft": false
+        },
+        {
+          "norm": "§ 147 BGB",
+          "key": "bgb_147",
+          "ebene": "gesetz",
+          "geprueft": false
+        },
+        {
+          "norm": "§ 151 BGB",
+          "key": "bgb_151",
+          "ebene": "gesetz",
+          "geprueft": false
+        }
+      ],
+      "wertungsfrage": "Die Verbraucherin bestreitet den Vertragsschluss, es liegt aber eine Vertragsgrundlage in der Akte — reicht sie als Nachweis eines Angebots und einer Annahme?",
+      "leitfaden_frage": {
+        "text": "Haben Sie diesen Vertrag bewusst abgeschlossen — bestellt, unterschrieben, zugesagt? Oder stand er plötzlich im Raum?",
+        "typ": "ja_nein",
+        "fuellt": "gespraech.vertragsschluss_bestritten",
+        "hinweis": "Ja hier heisst: die Verbraucherin sagt, sie hat dem Vertrag nie zugestimmt."
+      },
+      "rechtsbehelf_bei_NEIN": "bestreiten_nachweise_verlangen",
+      "satz_nein": "Die Verbraucherin bestreitet den Vertragsschluss, und die Akte enthält weder Vertrag noch Auftragsbestätigung.",
+      "plain_grund": "Wer nichts bestellt hat, schuldet nichts — Schweigen allein ist keine Zustimmung."
+    },
+    {
+      "id": "P3",
+      "titel": "Fernabsatz oder außerhalb von Geschäftsräumen?",
+      "rolle": "gate",
+      "typ": "fakt",
+      "proposition": "Der Vertrag wurde im Fernabsatz oder außerhalb von Geschäftsräumen geschlossen.",
+      "eingaben": [
+        {
+          "feld": "gespraech.abschlusssituation",
+          "pflicht": false
+        }
+      ],
+      "regel": {
+        "FEHLT_wenn": {
+          "fehlt": "gespraech.abschlusssituation"
+        },
+        "NEIN_wenn": {
+          "feld": "gespraech.abschlusssituation",
+          "op": "==",
+          "wert": "geschaeftsraum"
+        },
+        "sonst": "JA"
+      },
+      "anker": [
+        {
+          "norm": "§ 312b BGB",
+          "key": "bgb_312b",
+          "ebene": "gesetz",
+          "geprueft": false
+        },
+        {
+          "norm": "§ 312c BGB",
+          "key": "bgb_312c",
+          "ebene": "gesetz",
+          "geprueft": false
+        }
+      ],
+      "bei_NEIN": {
+        "deaktiviert": [
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "text": "Der Vertrag wurde in Geschäftsräumen geschlossen — ein gesetzliches Widerrufsrecht besteht dann nicht, die vier Widerrufspunkte werden nicht geprüft."
+      },
+      "leitfaden_frage": {
+        "text": "Wie kam der Vertrag zustande — am Telefon, im Internet, an der Haustür oder auf der Straße, oder in einem Ladengeschäft?",
+        "typ": "mehrfach",
+        "fuellt": "gespraech.abschlusssituation",
+        "werte": {
+          "gespraech.abschlusssituation": [
+            "fernabsatz",
+            "haustuer",
+            "geschaeftsraum",
+            "unklar"
+          ]
+        }
+      },
+      "satz_nein": "Der Vertrag wurde in Geschäftsräumen geschlossen — die Widerrufsprüfung entfällt.",
+      "plain_grund": "Im Laden gilt kein gesetzliches Widerrufsrecht."
+    },
+    {
+      "id": "P4",
+      "titel": "Besteht ein Widerrufsrecht?",
+      "rolle": "tragend",
+      "typ": "fakt",
+      "proposition": "Der Verbraucherin steht ein Widerrufsrecht zu.",
+      "eingaben": [
+        {
+          "feld": "gespraech.abschlusssituation",
+          "pflicht": false
+        },
+        {
+          "feld": "vertrag.gegenstand",
+          "pflicht": false
+        },
+        {
+          "feld": "auftragsbestaetigung.laufzeit",
+          "pflicht": false
+        }
+      ],
+      "regel": {
+        "JA_wenn": {
+          "feld": "gespraech.abschlusssituation",
+          "op": "in",
+          "wert": [
+            "fernabsatz",
+            "haustuer"
+          ]
+        },
+        "sonst": "FEHLT"
+      },
+      "anker": [
+        {
+          "norm": "§ 312g BGB",
+          "key": "bgb_312g",
+          "ebene": "gesetz",
+          "geprueft": false
+        },
+        {
+          "norm": "§ 355 BGB",
+          "key": "bgb_355",
+          "ebene": "gesetz",
+          "geprueft": false
+        }
+      ],
+      "rechtsbehelf_bei_NEIN": "bestreiten_nachweise_verlangen",
+      "satz_nein": "Für diesen Vertrag ist kein Widerrufsrecht feststellbar.",
+      "plain_grund": "Bei Verträgen am Telefon, im Netz oder an der Haustür gibt es in der Regel ein Widerrufsrecht."
+    },
+    {
+      "id": "P5",
+      "titel": "Widerrufsbelehrung ordnungsgemäß?",
+      "rolle": "tragend",
+      "typ": "text",
+      "proposition": "Die Widerrufsbelehrung nennt Frist, Fristbeginn und einen Kontaktweg.",
+      "eingaben": [
+        {
+          "feld": "widerrufsbelehrung.frist_angabe",
+          "pflicht": false
+        },
+        {
+          "feld": "widerrufsbelehrung.fristbeginn_angabe",
+          "pflicht": false
+        },
+        {
+          "feld": "widerrufsbelehrung.kontaktangaben",
+          "pflicht": false
+        },
+        {
+          "feld": "auftragsbestaetigung.widerrufsbelehrung_text",
+          "pflicht": false
+        }
+      ],
+      "regel": {
+        "FEHLT_wenn": {
+          "alle": [
+            {
+              "dok_fehlt": "widerrufsbelehrung"
+            },
+            {
+              "fehlt": "auftragsbestaetigung.widerrufsbelehrung_text"
+            }
+          ]
+        },
+        "NEIN_wenn": {
+          "eine": [
+            {
+              "fehlt": "widerrufsbelehrung.frist_angabe"
+            },
+            {
+              "fehlt": "widerrufsbelehrung.fristbeginn_angabe"
+            },
+            {
+              "fehlt": "widerrufsbelehrung.kontaktangaben"
+            }
+          ]
+        },
+        "sonst": "JA"
+      },
+      "anker": [
+        {
+          "norm": "§ 355 BGB",
+          "key": "bgb_355",
+          "ebene": "gesetz",
+          "geprueft": false
+        },
+        {
+          "norm": "§ 356 BGB",
+          "key": "bgb_356",
+          "ebene": "gesetz",
+          "geprueft": false
+        }
+      ],
+      "rechtsbehelf_bei_NEIN": "widerruf",
+      "satz_nein": "Die Widerrufsbelehrung ist unvollständig — es fehlt mindestens eine der drei Pflichtangaben (Frist, Fristbeginn, Kontaktweg).",
+      "plain_grund": "Wenn die Belehrung nicht stimmt, beginnt die Widerrufsfrist nicht zu laufen."
+    },
+    {
+      "id": "P6",
+      "titel": "Läuft die Widerrufsfrist noch?",
+      "rolle": "tragend",
+      "typ": "fakt",
+      "proposition": "Die Widerrufsfrist ist noch nicht abgelaufen.",
+      "eingaben": [
+        {
+          "feld": "auftragsbestaetigung.vertragsdatum",
+          "pflicht": false
+        },
+        {
+          "feld": "vertrag.datum",
+          "pflicht": false
+        },
+        {
+          "feld": "widerrufsbelehrung.datum",
+          "pflicht": false
+        }
+      ],
+      "parameter": {
+        "widerrufsfrist_tage": 14,
+        "geprueft": false
+      },
+      "regel": {
+        "FEHLT_wenn": {
+          "alle": [
+            {
+              "fehlt": "auftragsbestaetigung.vertragsdatum"
+            },
+            {
+              "fehlt": "vertrag.datum"
+            }
+          ]
+        },
+        "JA_wenn": {
+          "prim": "tage_zwischen",
+          "args": {
+            "a": [
+              "auftragsbestaetigung.vertragsdatum",
+              "vertrag.datum"
+            ],
+            "b": "heute"
+          },
+          "op": "<=",
+          "param": "widerrufsfrist_tage"
+        },
+        "WERTUNG_wenn": {
+          "feld": "pruefpunkt.P5.zustand",
+          "op": "==",
+          "wert": "NEIN"
+        },
+        "sonst": "NEIN"
+      },
+      "anker": [
+        {
+          "norm": "§ 355 BGB",
+          "key": "bgb_355",
+          "ebene": "gesetz",
+          "geprueft": false
+        },
+        {
+          "norm": "§ 356 BGB",
+          "key": "bgb_356",
+          "ebene": "gesetz",
+          "geprueft": false
+        }
+      ],
+      "wertungsfrage": "Die Widerrufsbelehrung ist fehlerhaft — um wie viel verlängert sich die Frist dadurch, und läuft sie hier noch?",
+      "rechtsbehelf_bei_NEIN": "bestreiten_nachweise_verlangen",
+      "satz_nein": "Die reguläre Widerrufsfrist von {widerrufsfrist_tage} Tagen ist abgelaufen.",
+      "plain_grund": "Die normale Widerrufsfrist ist vorbei — bei fehlerhafter Belehrung kann sie aber länger laufen."
+    },
+    {
+      "id": "P7",
+      "titel": "Wurde bereits wirksam widerrufen?",
+      "rolle": "tragend",
+      "typ": "fakt",
+      "proposition": "Ein Widerruf ist noch nicht erklärt worden.",
+      "eingaben": [
+        {
+          "feld": "email.enthaelt_widerruf",
+          "pflicht": false
+        },
+        {
+          "feld": "email.widerruf_datum",
+          "pflicht": false
+        },
+        {
+          "feld": "email.empfangsbestaetigung",
+          "pflicht": false
+        }
+      ],
+      "regel": {
+        "NEIN_wenn": {
+          "feld": "email.enthaelt_widerruf",
+          "op": "==",
+          "wert": true
+        },
+        "sonst": "JA"
+      },
+      "anker": [
+        {
+          "norm": "§ 355 BGB",
+          "key": "bgb_355",
+          "ebene": "gesetz",
+          "geprueft": false
+        }
+      ],
+      "rechtsbehelf_bei_NEIN": "widerruf",
+      "satz_nein": "Die Verbraucherin hat den Widerruf bereits erklärt — die Textform der E-Mail genügt § 355 Abs. 1 S. 2 BGB.",
+      "plain_grund": "Sie haben schon widerrufen; eine E-Mail reicht dafür aus."
+    },
+    {
+      "id": "P8",
+      "titel": "Anfechtung wegen arglistiger Täuschung?",
+      "rolle": "tragend",
+      "typ": "wertung",
+      "proposition": "Der Vertrag ist nicht durch arglistige Täuschung zustande gekommen.",
+      "eingaben": [
+        {
+          "feld": "anschreiben.aufmachung",
+          "pflicht": false
+        },
+        {
+          "feld": "anschreiben.gestaltung_auffaelligkeiten",
+          "pflicht": false
+        },
+        {
+          "feld": "anschreiben.absender_rolle",
+          "pflicht": false
+        },
+        {
+          "feld": "email.zusagen_anbieter",
+          "pflicht": false
+        }
+      ],
+      "regel": {
+        "WERTUNG_wenn": {
+          "eine": [
+            {
+              "vorhanden": "anschreiben.gestaltung_auffaelligkeiten"
+            },
+            {
+              "vorhanden": "email.zusagen_anbieter"
+            }
+          ]
+        },
+        "sonst": "JA"
+      },
+      "anker": [
+        {
+          "norm": "§ 123 BGB",
+          "key": "bgb_123",
+          "ebene": "gesetz",
+          "geprueft": false
+        }
+      ],
+      "wertungsfrage": "Die Aufmachung bzw. die Zusagen des Anbieters weichen vom tatsächlichen Vertragsinhalt ab — liegt darin eine arglistige Täuschung?",
+      "rechtsbehelf_bei_NEIN": "anfechtung_taeuschung",
+      "satz_nein": "Der Vertragsschluss beruht auf einer Täuschung.",
+      "plain_grund": "Wer über den Inhalt getäuscht wurde, kann den Vertrag anfechten."
+    },
+    {
+      "id": "P9",
+      "titel": "Hauptforderung belegt? Informationspflicht erfüllt?",
+      "rolle": "tragend",
+      "typ": "fakt",
+      "proposition": "Das Inkassoschreiben legt Grund und Höhe der Hauptforderung offen.",
+      "eingaben": [
+        {
+          "feld": "inkassoschreiben.hauptforderung",
+          "pflicht": true
+        },
+        {
+          "feld": "inkassoschreiben.auftraggeber",
+          "pflicht": true
+        },
+        {
+          "feld": "rechnung.hauptforderung",
+          "pflicht": false
+        },
+        {
+          "feld": "rechnung.vertragsbezug",
+          "pflicht": false
+        }
+      ],
+      "regel": {
+        "FEHLT_wenn": {
+          "eine": [
+            {
+              "fehlt": "inkassoschreiben.hauptforderung"
+            },
+            {
+              "fehlt": "inkassoschreiben.auftraggeber"
+            }
+          ]
+        },
+        "NEIN_wenn": {
+          "alle": [
+            {
+              "dok_fehlt": "rechnung"
+            },
+            {
+              "feld": "inkassoschreiben.rechnung_erwaehnt",
+              "op": "!=",
+              "wert": true
+            }
+          ]
+        },
+        "sonst": "JA"
+      },
+      "anker": [
+        {
+          "norm": "§ 13a RDG",
+          "key": "rdg_13a",
+          "ebene": "gesetz",
+          "geprueft": false
+        }
+      ],
+      "rechtsbehelf_bei_NEIN": "bestreiten_nachweise_verlangen",
+      "satz_nein": "Das Schreiben nennt keine Rechnung und keinen belegten Grund für die Hauptforderung.",
+      "plain_grund": "Ein Inkassobüro muss sagen, woher die Forderung kommt und wie sie sich errechnet."
+    },
+    {
+      "id": "P10",
+      "titel": "Ist der Verzug schlüssig dargelegt?",
+      "rolle": "tragend",
+      "typ": "fakt",
+      "proposition": "Der Verzug ist nachvollziehbar dargelegt.",
+      "eingaben": [
+        {
+          "feld": "rechnung.datum",
+          "pflicht": false
+        },
+        {
+          "feld": "inkassoschreiben.datum",
+          "pflicht": true
+        },
+        {
+          "feld": "inkassoschreiben.zinsen",
+          "pflicht": false
+        }
+      ],
+      "regel": {
+        "FEHLT_wenn": {
+          "dok_fehlt": "rechnung"
+        },
+        "NEIN_wenn": {
+          "alle": [
+            {
+              "vorhanden": "inkassoschreiben.zinsen"
+            },
+            {
+              "fehlt": "rechnung.datum"
+            }
+          ]
+        },
+        "sonst": "JA"
+      },
+      "anker": [
+        {
+          "norm": "§ 280 Abs. 1 BGB",
+          "key": "bgb_280_1",
+          "ebene": "gesetz",
+          "geprueft": false
+        },
+        {
+          "norm": "§ 286 BGB",
+          "key": "bgb_286",
+          "ebene": "gesetz",
+          "geprueft": false
+        }
+      ],
+      "rechtsbehelf_bei_NEIN": "bestreiten_nachweise_verlangen",
+      "satz_nein": "Es werden Verzugszinsen verlangt, ohne dass ein Rechnungsdatum den Verzugsbeginn belegt.",
+      "plain_grund": "Zinsen und Kosten setzen voraus, dass Sie überhaupt in Verzug geraten sind."
+    },
+    {
+      "id": "P11",
+      "titel": "Berechtigung des Inkassobüros nachgewiesen?",
+      "rolle": "tragend",
+      "typ": "fakt",
+      "proposition": "Das Inkassobüro hat seine Berechtigung nachgewiesen.",
+      "eingaben": [
+        {
+          "feld": "inkassoschreiben.abtretung_erwaehnt",
+          "pflicht": true
+        },
+        {
+          "feld": "abtretungsurkunde.zedent",
+          "pflicht": false
+        },
+        {
+          "feld": "abtretungsurkunde.unterschrift_vorhanden",
+          "pflicht": false
+        },
+        {
+          "feld": "vollmacht.bevollmaechtigter",
+          "pflicht": false
+        },
+        {
+          "feld": "vollmacht.unterschrift_vorhanden",
+          "pflicht": false
+        }
+      ],
+      "regel": {
+        "NEIN_wenn": {
+          "alle": [
+            {
+              "dok_fehlt": "abtretungsurkunde"
+            },
+            {
+              "dok_fehlt": "vollmacht"
+            }
+          ]
+        },
+        "sonst": "JA"
+      },
+      "anker": [
+        {
+          "norm": "§ 10 RDG",
+          "key": "rdg_10",
+          "ebene": "gesetz",
+          "geprueft": false
+        }
+      ],
+      "rechtsbehelf_bei_NEIN": "bestreiten_nachweise_verlangen",
+      "satz_nein": "Weder eine Abtretungsurkunde noch eine Vollmacht liegt vor.",
+      "plain_grund": "Das Inkassobüro muss belegen, dass es die Forderung überhaupt einziehen darf."
+    },
+    {
+      "id": "P12",
+      "titel": "Höhe der Inkassokosten nachvollziehbar und zulässig?",
+      "rolle": "tragend",
+      "typ": "wertung",
+      "proposition": "Die geltend gemachten Inkassokosten sind der Höhe nach nicht zu beanstanden.",
+      "eingaben": [
+        {
+          "feld": "inkassoschreiben.kosten",
+          "pflicht": true
+        },
+        {
+          "feld": "inkassoschreiben.hauptforderung",
+          "pflicht": true
+        }
+      ],
+      "regel": {
+        "FEHLT_wenn": {
+          "eine": [
+            {
+              "fehlt": "inkassoschreiben.kosten"
+            },
+            {
+              "fehlt": "inkassoschreiben.hauptforderung"
+            }
+          ]
+        },
+        "WERTUNG_wenn": {
+          "vorhanden": "inkassoschreiben.kosten"
+        },
+        "sonst": "JA"
+      },
+      "anker": [],
+      "wertungsfrage": "Inkassokosten von {inkassoschreiben.kosten} bei einer Hauptforderung von {inkassoschreiben.hauptforderung} — liegt das im zulässigen Rahmen?",
+      "rechtsbehelf_bei_NEIN": "bestreiten_nachweise_verlangen",
+      "satz_nein": "Die Inkassokosten übersteigen den zulässigen Rahmen.",
+      "plain_grund": "Inkassokosten dürfen nur in begrenzter Höhe weitergegeben werden.",
+      "kommentar": "Ohne verifizierte Norm: Paulina nennt nur RDG / RVG / Inkassocheck VZ, ohne Paragrafen. Bis die Norm benannt ist, entscheidet die Beraterin — eine erfundene Gebührenschwelle wäre schlimmer als eine offene Frage (22 §13)."
+    },
+    {
+      "id": "P13",
+      "titel": "Im Rechtsdienstleistungsregister eingetragen?",
+      "rolle": "tragend",
+      "typ": "fakt",
+      "proposition": "Das Inkassobüro ist als registrierter Rechtsdienstleister ausgewiesen.",
+      "eingaben": [
+        {
+          "feld": "inkassoschreiben.registereintrag_angabe",
+          "pflicht": false
+        },
+        {
+          "feld": "inkassoschreiben.absender",
+          "pflicht": true
+        }
+      ],
+      "regel": {
+        "NEIN_wenn": {
+          "fehlt": "inkassoschreiben.registereintrag_angabe"
+        },
+        "sonst": "JA"
+      },
+      "anker": [
+        {
+          "norm": "§ 10 RDG",
+          "key": "rdg_10",
+          "ebene": "gesetz",
+          "geprueft": false
+        }
+      ],
+      "rechtsbehelf_bei_NEIN": "bestreiten_nachweise_verlangen",
+      "satz_nein": "Das Schreiben weist keine Registrierung nach dem RDG aus.",
+      "plain_grund": "Nur registrierte Inkassodienstleister dürfen Forderungen einziehen; das Register ist öffentlich."
+    },
+    {
+      "id": "P14",
+      "titel": "Welcher Rechtsbehelf passt?",
+      "rolle": "strategie",
+      "proposition": "Der passende Rechtsbehelf ist gewählt.",
+      "eingaben": [
+        {
+          "feld": "gespraech.strategie_inkasso",
+          "pflicht": false
+        }
+      ],
+      "anker": [],
+      "leitfaden_frage": {
+        "text": "Wollen Sie die Forderung zurückweisen und Nachweise verlangen, den Vertrag widerrufen, oder ihn wegen Täuschung anfechten?",
+        "typ": "mehrfach",
+        "fuellt": "gespraech.strategie_inkasso",
+        "werte": {
+          "gespraech.strategie_inkasso": [
+            "bestreiten",
+            "widerrufen",
+            "anfechten",
+            "offen"
+          ]
+        }
+      }
+    }
+  ],
+  "aggregation": {
+    "nur_rolle": [
+      "tragend"
+    ]
+  },
+  "rechtsbehelfe": {
+    "garantie_pro_zweig": {
+      "wahrscheinlich unwirksam": [
+        "bestreiten_nachweise_verlangen"
+      ],
+      "unklar – es fehlt …": [
+        "nachforderung",
+        "bestreiten_nachweise_verlangen"
+      ],
+      "wirksam": [
+        "bestreiten_nachweise_verlangen"
+      ]
+    },
+    "liste": [
+      {
+        "id": "widerruf",
+        "titel": "Widerruf erklären",
+        "wenn": {
+          "feld": "gerissene_stufe",
+          "op": "in",
+          "wert": [
+            "S2"
+          ]
+        },
+        "musterbrief": "musterbrief_inkasso_widerruf",
+        "geprueft": false
+      },
+      {
+        "id": "anfechtung_taeuschung",
+        "titel": "Anfechtung wegen arglistiger Täuschung",
+        "wenn": {
+          "feld": "gerissene_stufe",
+          "op": "in",
+          "wert": [
+            "S3"
+          ]
+        },
+        "musterbrief": "musterbrief_inkasso_bestreiten",
+        "variante": "anfechtung",
+        "geprueft": false
+      },
+      {
+        "id": "bestreiten_nachweise_verlangen",
+        "titel": "Forderung bestreiten und Nachweise verlangen",
+        "wenn": {
+          "eine": [
+            {
+              "feld": "gerissene_stufe",
+              "op": "in",
+              "wert": [
+                "S1",
+                "S4",
+                "S5"
+              ]
+            },
+            {
+              "feld": "einordnung",
+              "op": "==",
+              "wert": "unklar – es fehlt …"
+            }
+          ]
+        },
+        "musterbrief": "musterbrief_inkasso_bestreiten",
+        "geprueft": false
+      },
+      {
+        "id": "nachforderung",
+        "titel": "Unterlagen nachfordern",
+        "wenn": {
+          "alle": [
+            {
+              "feld": "einordnung",
+              "op": "==",
+              "wert": "unklar – es fehlt …"
+            },
+            {
+              "feld": "fehlt_verbraucher",
+              "op": "!=",
+              "wert": []
+            }
+          ]
+        },
+        "musterbrief": "nachforderung_{kanal}",
+        "geprueft": false
+      }
+    ],
+    "kommentar": "Reservierte ids: widerruf, anfechtung_taeuschung, bestreiten_nachweise_verlangen (15 §3). Die drei VZ-Musterbriefe liegen vor (22 §7), sind aber noch nicht als Template geschrieben."
+  },
+  "plain_saetze": {
+    "wahrscheinlich unwirksam": "Die Forderung steht auf wackeligen Beinen: {plain_grund_hauptpruefpunkt} Sie müssen nicht zahlen, sollten aber schriftlich widersprechen.",
+    "unklar – es fehlt …": "Ob die Forderung berechtigt ist, lässt sich noch nicht sagen — dazu fehlt {fehlende_liste_plain}.",
+    "wirksam": "Nach den vorliegenden Unterlagen ist die Forderung nicht zu beanstanden."
+  }
+}

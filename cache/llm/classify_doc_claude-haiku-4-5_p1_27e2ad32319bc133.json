@@ -1,0 +1,22 @@
+{
+  "aufgabe": "classify_doc",
+  "modell": "claude-haiku-4-5",
+  "prompt_version": "p1",
+  "eingabe": {
+    "seiten": [
+      {
+        "nr": 1,
+        "text": "Nordlicht Sportclub GmbH · Schießgrabenstraße 9 · 86152 Augsburg\n\nFrau\n@@PERSON_1@@\n@@ADRESSE_1@@\n@@ADRESSE_2@@\n\nAugsburg, 05.08.2026\n\nIhr Mitgliedsbeitrag ab Oktober — Mitgliedsnummer @@KUNDENNR_1@@\n\nSehr geehrte Frau @@PERSON_2@@,\n\ndie Energiekosten für unsere Trainingsflächen und die Sauna sind im vergangenen Jahr deutlich gestiegen. Wir passen deshalb die Beiträge an.\n\nNach Ziffer 7.2 unserer Allgemeinen Geschäftsbedingungen („Wir behalten uns vor, die Beiträge anzupassen.“) beträgt Ihr monatlicher Beitrag ab dem 01.10.2026 statt bisher 27,50 EUR nunmehr 31,90 EUR.\n\nDer Einzug erfolgt wie gewohnt zum Monatsersten. Ihre Mitgliedschaft läuft im Übrigen unverändert weiter.\n\nBei Fragen erreichen Sie unser Serviceteam während der Öffnungszeiten an der Rezeption.\n\nMit freundlichen Grüßen\n\nNordlicht Sportclub GmbH"
+      }
+    ]
+  },
+  "ausgabe": {
+    "dokumenttyp": "erhoehungsschreiben",
+    "konfidenz": 0.95,
+    "begruendung": "Anschreiben eines Sportclubs, das eine Beitragsanpassung zum 01.10.2026 ankündigt und sich auf eine AGB-Ziffer beruft."
+  },
+  "dauer_ms": 610,
+  "kosten_cent": 0.05,
+  "zeit": null,
+  "aus_cache": false
+}

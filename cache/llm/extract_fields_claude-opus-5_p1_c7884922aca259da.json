@@ -1,0 +1,237 @@
+{
+  "aufgabe": "extract_fields",
+  "modell": "claude-opus-5",
+  "prompt_version": "p1",
+  "eingabe": {
+    "dokumenttyp": "agb",
+    "seiten": [
+      {
+        "nr": 1,
+        "text": "Allgemeine Geschäftsbedingungen der AktivPark Fitness GmbH\nFassung vom 01.11.2024\n\n1. Geltungsbereich\n\n1.1 Diese Bedingungen gelten für alle Mitgliedschaften im Studio der AktivPark Fitness GmbH.\n\n2. Vertragsschluss\n\n2.1 Der Vertrag kommt mit Unterzeichnung des Mitgliedsvertrages zustande.\n\n3. Leistungen\n\n3.1 Das Studio hält die in der Studiobeschreibung genannten Geräte und Kurse in dem dort beschriebenen Umfang bereit.\n\n3.2 Fällt ein Kurs aus, bietet das Studio einen gleichwertigen Ersatztermin an.\n\n4. Öffnungszeiten\n\n4.1 Die Öffnungszeiten sind im Studio und auf der Website veröffentlicht.\n\n5. Beiträge\n\n5.1 Der im Mitgliedsvertrag vereinbarte monatliche Beitrag ist im Voraus zum Monatsersten fällig.\n\n5.2 Die Zahlung erfolgt per SEPA-Lastschrift."
+      },
+      {
+        "nr": 2,
+        "text": "6. Beitragsanpassung\n\n6.1 Anlass einer Anpassung des monatlichen Beitrags sind ausschließlich Veränderungen der Kosten, die dem Studio für den Betrieb entstehen, nämlich der Kosten für Energie, Personal, Miete der Studiofläche und Wartung der Trainingsgeräte.\n\n6.2 Voraussetzung einer Erhöhung ist, dass die nach ihrem Anteil an den Betriebskosten gewichtete Summe der in Ziffer 6.1 genannten Kosten seit dem Vertragsschluss oder seit der letzten Anpassung um mehr als 3 Prozent gestiegen ist. Eine Erhöhung ist frühestens zwölf Monate nach Vertragsschluss und danach höchstens einmal in zwölf Monaten zulässig.\n\n6.3 Der Umfang der Erhöhung ist auf den Prozentsatz begrenzt, um den die in Ziffer 6.1 genannten Kosten gestiegen sind, höchstens jedoch auf 5 Prozent des zuletzt geschuldeten Beitrags.\n\n6.4 Sinken die in Ziffer 6.1 genannten Kosten, ist das Studio verpflichtet, den Beitrag nach denselben Maßstäben und im selben Umfang zu senken. Die Senkung erfolgt ohne gesonderte Aufforderung des Mitglieds.\n\n6.5 Das Studio teilt jede Anpassung dem Mitglied spätestens zwei Monate vor ihrem Wirksamwerden in Textform mit und legt die maßgebliche Kostenentwicklung dabei dar. Das Mitglied kann den Vertrag bis zum Wirksamwerden der Anpassung zu diesem Zeitpunkt kündigen. Auf dieses Kündigungsrecht weist das Studio in der Mitteilung hin.\n\n7. Laufzeit und Ende der Mitgliedschaft\n\n7.1 Die Laufzeit der Mitgliedschaft ergibt sich aus dem Mitgliedsvertrag. Die Mitgliedschaft endet mit Ablauf der dort genannten Laufzeit, ohne dass es einer Kündigung bedarf.\n\n7.2 Das Recht zur Kündigung aus wichtigem Grund bleibt unberührt.\n\n8. Hausordnung\n\n8.1 Die im Studio ausgehängte Hausordnung ist Bestandteil des Vertrages."
+      }
+    ],
+    "felder": [
+      {
+        "feld_id": "agb.fassung_datum",
+        "typ": "datum",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.preisklausel_text",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": "Wortlaut der Preisanpassungsklausel — die ganze Klausel mit allen Sätzen (Anlass, Voraussetzungen, Umfang bzw. Kappung), nicht nur der erste Satz; ohne ihn gilt das Dokument als unvollständig",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.preisklausel_ziffer",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.klausel_ueberschrift",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.nennt_anlass",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "Anlass der Erhöhung in der Klausel",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.nennt_voraussetzungen",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "Voraussetzungen der Erhöhung in der Klausel",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.nennt_umfang",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "Umfang der Erhöhung in der Klausel",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.kostenbezug",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "knüpft die Erhöhung an Kostenentwicklung?",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.senkungspflicht",
+        "typ": "enum",
+        "werte": [
+          "pflicht",
+          "ermessen",
+          "keine"
+        ],
+        "beschreibung": "Regelung zur Weitergabe von Kostensenkungen",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.kuendigungsrecht_bei_erhoehung",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.erklaerungsfiktion_text",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.erklaerungsfiktion_frist_und_hinweis",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "nennt die Fiktionsklausel Frist und Hinweispflicht (§ 308 Nr. 5)?",
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.widerspruchsfrist_tage",
+        "typ": "zahl",
+        "werte": null,
+        "beschreibung": "Frist in Tagen, innerhalb derer die AGB einen Widerspruch gegen die Anpassung verlangen (zwei Wochen = 14); nur wenn die AGB eine solche Frist nennen",
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.widerspruch_formerfordernis",
+        "typ": "enum",
+        "werte": [
+          "schriftform",
+          "textform",
+          "formfrei",
+          "keine_angabe"
+        ],
+        "beschreibung": "Welche Form verlangen die AGB für den Widerspruch gegen die Anpassung? „schriftlich“ ohne Zusatz = schriftform; „in Textform“ / „per E-Mail“ = textform",
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.leistungsaenderungsrecht",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.leistungsaenderung_mit_grund",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      }
+    ]
+  },
+  "ausgabe": {
+    "felder": [
+      {
+        "feld_id": "agb.fassung_datum",
+        "wert": "2024-11-01",
+        "zitat": "Fassung vom 01.11.2024",
+        "seite": 1
+      },
+      {
+        "feld_id": "agb.preisklausel_text",
+        "wert": "Der Umfang der Erhöhung ist auf den Prozentsatz begrenzt, um den die in Ziffer 6.1 genannten Kosten gestiegen sind, höchstens jedoch auf 5 Prozent des zuletzt geschuldeten Beitrags.",
+        "zitat": "Der Umfang der Erhöhung ist auf den Prozentsatz begrenzt, um den die in Ziffer 6.1 genannten Kosten gestiegen sind, höchstens jedoch auf 5 Prozent des zuletzt geschuldeten Beitrags.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.preisklausel_ziffer",
+        "wert": "6.3",
+        "zitat": "6.3 Der Umfang der Erhöhung",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.klausel_ueberschrift",
+        "wert": "Beitragsanpassung",
+        "zitat": "6. Beitragsanpassung",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.nennt_anlass",
+        "wert": true,
+        "zitat": "Anlass einer Anpassung des monatlichen Beitrags sind ausschließlich Veränderungen der Kosten, die dem Studio für den Betrieb entstehen, nämlich der Kosten für Energie, Personal, Miete der Studiofläche und Wartung der Trainingsgeräte.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.nennt_voraussetzungen",
+        "wert": true,
+        "zitat": "Voraussetzung einer Erhöhung ist, dass die nach ihrem Anteil an den Betriebskosten gewichtete Summe der in Ziffer 6.1 genannten Kosten seit dem Vertragsschluss oder seit der letzten Anpassung um mehr als 3 Prozent gestiegen ist.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.nennt_umfang",
+        "wert": true,
+        "zitat": "Der Umfang der Erhöhung ist auf den Prozentsatz begrenzt, um den die in Ziffer 6.1 genannten Kosten gestiegen sind, höchstens jedoch auf 5 Prozent des zuletzt geschuldeten Beitrags.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.kostenbezug",
+        "wert": true,
+        "zitat": "Anlass einer Anpassung des monatlichen Beitrags sind ausschließlich Veränderungen der Kosten, die dem Studio für den Betrieb entstehen, nämlich der Kosten für Energie, Personal, Miete der Studiofläche und Wartung der Trainingsgeräte.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.senkungspflicht",
+        "wert": "pflicht",
+        "zitat": "Sinken die in Ziffer 6.1 genannten Kosten, ist das Studio verpflichtet, den Beitrag nach denselben Maßstäben und im selben Umfang zu senken.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.kuendigungsrecht_bei_erhoehung",
+        "wert": true,
+        "zitat": "Das Mitglied kann den Vertrag bis zum Wirksamwerden der Anpassung zu diesem Zeitpunkt kündigen. Auf dieses Kündigungsrecht weist das Studio in der Mitteilung hin.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.widerspruch_formerfordernis",
+        "wert": "keine_angabe",
+        "zitat": "Das Mitglied kann den Vertrag bis zum Wirksamwerden der Anpassung zu diesem Zeitpunkt kündigen. Auf dieses Kündigungsrecht weist das Studio in der Mitteilung hin.",
+        "seite": 2
+      },
+      {
+        "feld_id": "agb.leistungsaenderungsrecht",
+        "wert": false,
+        "zitat": "3.1 Das Studio hält die in der Studiobeschreibung genannten Geräte und Kurse in dem dort beschriebenen Umfang bereit.",
+        "seite": 1
+      }
+    ]
+  },
+  "dauer_ms": 4200,
+  "kosten_cent": 1.1,
+  "zeit": null,
+  "aus_cache": false
+}

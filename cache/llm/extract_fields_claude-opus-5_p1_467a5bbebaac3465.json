@@ -1,0 +1,237 @@
+{
+  "aufgabe": "extract_fields",
+  "modell": "claude-opus-5",
+  "prompt_version": "p1",
+  "eingabe": {
+    "dokumenttyp": "agb",
+    "seiten": [
+      {
+        "nr": 1,
+        "text": "Kraftwerk Fitness GmbH\n\nALLGEMEINE GESCHÄFTSBEDINGUNGEN\nFassung vom 15.01.2025\n\n§ 4 Beiträge\n\n4.1 Der Mitgliedsbeitrag ergibt sich aus dem Mitgliedsvertrag und ist monatlich im Voraus per SEPA-Lastschrift zu entrichten.\n\n4.2 Der Betreiber kann den Beitrag einmal je Kalenderjahr anpassen, wenn und soweit sich die Kosten für Energie, Personal oder Miete erhöht haben. Sinken diese Kosten, ist der Beitrag entsprechend zu senken. Die Anpassung wird dem Mitglied mindestens sechs Wochen vor ihrem Wirksamwerden in Textform mitgeteilt.\n\n4.3 Das Mitglied kann den Vertrag bis zum Wirksamwerden einer Anpassung zu diesem Zeitpunkt kündigen. Auf dieses Recht weist der Betreiber in der Mitteilung hin.\n\n§ 5 Öffnungszeiten\n\n5.1 Die jeweils gültigen Öffnungszeiten hängen im Eingangsbereich aus."
+      },
+      {
+        "nr": 2,
+        "text": "§ 8 Kündigung\n\n8.1 Der Vertrag kann erstmals zum Ablauf der im Mitgliedsvertrag vereinbarten Mindestlaufzeit gekündigt werden, danach jederzeit mit einer Frist von einem Monat.\n\n8.2 Das Recht zur außerordentlichen Kündigung aus wichtigem Grund bleibt unberührt."
+      }
+    ],
+    "felder": [
+      {
+        "feld_id": "agb.fassung_datum",
+        "typ": "datum",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.preisklausel_text",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": "Wortlaut der Preisanpassungsklausel — die ganze Klausel mit allen Sätzen (Anlass, Voraussetzungen, Umfang bzw. Kappung), nicht nur der erste Satz; ohne ihn gilt das Dokument als unvollständig",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.preisklausel_ziffer",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.klausel_ueberschrift",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.nennt_anlass",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "Anlass der Erhöhung in der Klausel",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.nennt_voraussetzungen",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "Voraussetzungen der Erhöhung in der Klausel",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.nennt_umfang",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "Umfang der Erhöhung in der Klausel",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.kostenbezug",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "knüpft die Erhöhung an Kostenentwicklung?",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.senkungspflicht",
+        "typ": "enum",
+        "werte": [
+          "pflicht",
+          "ermessen",
+          "keine"
+        ],
+        "beschreibung": "Regelung zur Weitergabe von Kostensenkungen",
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.kuendigungsrecht_bei_erhoehung",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "agb.erklaerungsfiktion_text",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.erklaerungsfiktion_frist_und_hinweis",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": "nennt die Fiktionsklausel Frist und Hinweispflicht (§ 308 Nr. 5)?",
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.widerspruchsfrist_tage",
+        "typ": "zahl",
+        "werte": null,
+        "beschreibung": "Frist in Tagen, innerhalb derer die AGB einen Widerspruch gegen die Anpassung verlangen (zwei Wochen = 14); nur wenn die AGB eine solche Frist nennen",
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.widerspruch_formerfordernis",
+        "typ": "enum",
+        "werte": [
+          "schriftform",
+          "textform",
+          "formfrei",
+          "keine_angabe"
+        ],
+        "beschreibung": "Welche Form verlangen die AGB für den Widerspruch gegen die Anpassung? „schriftlich“ ohne Zusatz = schriftform; „in Textform“ / „per E-Mail“ = textform",
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.leistungsaenderungsrecht",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "agb.leistungsaenderung_mit_grund",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": false
+      }
+    ]
+  },
+  "ausgabe": {
+    "felder": [
+      {
+        "feld_id": "agb.fassung_datum",
+        "wert": "2025-01-15",
+        "zitat": "Fassung vom 15.01.2025",
+        "seite": 1
+      },
+      {
+        "feld_id": "agb.preisklausel_text",
+        "wert": "Der Betreiber kann den Beitrag einmal je Kalenderjahr anpassen, wenn und soweit sich die Kosten für Energie, Personal oder Miete erhöht haben. Sinken diese Kosten, ist der Beitrag entsprechend zu senken. Die Anpassung wird dem Mitglied mindestens sechs Wochen vor ihrem Wirksamwerden in Textform mitgeteilt.",
+        "zitat": "Der Betreiber kann den Beitrag einmal je Kalenderjahr anpassen, wenn und soweit sich die Kosten für Energie, Personal oder Miete erhöht haben. Sinken diese Kosten, ist der Beitrag entsprechend zu senken. Die Anpassung wird dem Mitglied mindestens sechs Wochen vor ihrem Wirksamwerden in Textform mitgeteilt.",
+        "seite": 1
+      },
+      {
+        "feld_id": "agb.preisklausel_ziffer",
+        "wert": "4.2",
+        "zitat": "4.2 Der Betreiber kann den Beitrag",
+        "seite": 1
+      },
+      {
+        "feld_id": "agb.klausel_ueberschrift",
+        "wert": "Beiträge",
+        "zitat": "§ 4 Beiträge",
+        "seite": 1
+      },
+      {
+        "feld_id": "agb.nennt_anlass",
+        "wert": true,
+        "zitat": "wenn und soweit sich die Kosten für Energie, Personal oder Miete erhöht haben",
+        "seite": 1
+      },
+      {
+        "feld_id": "agb.nennt_voraussetzungen",
+        "wert": true,
+        "zitat": "einmal je Kalenderjahr",
+        "seite": 1
+      },
+      {
+        "feld_id": "agb.nennt_umfang",
+        "wert": false,
+        "zitat": "Der Betreiber kann den Beitrag einmal je Kalenderjahr anpassen, wenn und soweit sich die Kosten für Energie, Personal oder Miete erhöht haben. Sinken diese Kosten, ist der Beitrag entsprechend zu senken. Die Anpassung wird dem Mitglied mindestens sechs Wochen vor ihrem Wirksamwerden in Textform mitgeteilt.",
+        "seite": 1
+      },
+      {
+        "feld_id": "agb.kostenbezug",
+        "wert": true,
+        "zitat": "wenn und soweit sich die Kosten für Energie, Personal oder Miete erhöht haben",
+        "seite": 1
+      },
+      {
+        "feld_id": "agb.senkungspflicht",
+        "wert": "pflicht",
+        "zitat": "Sinken diese Kosten, ist der Beitrag entsprechend zu senken.",
+        "seite": 1
+      },
+      {
+        "feld_id": "agb.kuendigungsrecht_bei_erhoehung",
+        "wert": true,
+        "zitat": "4.3 Das Mitglied kann den Vertrag bis zum Wirksamwerden einer Anpassung zu diesem Zeitpunkt kündigen. Auf dieses Recht weist der Betreiber in der Mitteilung hin.",
+        "seite": 1
+      },
+      {
+        "feld_id": "agb.widerspruch_formerfordernis",
+        "wert": "keine_angabe",
+        "zitat": "Der Betreiber kann den Beitrag einmal je Kalenderjahr anpassen, wenn und soweit sich die Kosten für Energie, Personal oder Miete erhöht haben. Sinken diese Kosten, ist der Beitrag entsprechend zu senken. Die Anpassung wird dem Mitglied mindestens sechs Wochen vor ihrem Wirksamwerden in Textform mitgeteilt.",
+        "seite": 1
+      },
+      {
+        "feld_id": "agb.leistungsaenderungsrecht",
+        "wert": false,
+        "zitat": "5.1 Die jeweils gültigen Öffnungszeiten hängen im Eingangsbereich aus.",
+        "seite": 1
+      }
+    ]
+  },
+  "dauer_ms": 4200,
+  "kosten_cent": 1.1,
+  "zeit": null,
+  "aus_cache": false
+}

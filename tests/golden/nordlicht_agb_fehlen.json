@@ -1,0 +1,101 @@
+{
+  "case_id": "nordlicht_agb_fehlen",
+  "titel": "Nordlicht — AGB fehlen, dann nachgereicht (12 §5 Fälle 2 und 2b): der Fluss-Fall",
+  "quelle": "eigene Fiktion, kein Lösungszettel — Erwartung von Hand aus den Regeln in 15 §2 abgeleitet, nicht aus der Engine-Ausgabe übernommen",
+  "geprueft": false,
+  "gating": false,
+  "stichtag": "2026-08-27",
+  "fall_verzeichnis": "demo/faelle/nordlicht_agb_fehlen",
+  "fallgruppe_id": "preiserhoehung",
+
+  "stufen": [
+    {
+      "name": "initial",
+      "dokumente": ["schreiben.md"],
+      "erwartet": {
+        "einordnung": "unklar – es fehlt …",
+        "fehlt": [
+          {"dokumenttyp": "agb", "quelle": "verbraucher"},
+          {"dokumenttyp": "vertrag", "quelle": "verbraucher"},
+          {"dokumenttyp": "kostenkalkulation", "quelle": "unternehmen"}
+        ],
+        "gekippte_pruefpunkte": [],
+        "hauptvorschlag": "nachforderung",
+        "gerissene_stufe": null,
+        "zustaende": {
+          "P0": "JA", "P1": "JA", "P2": "WERTUNG", "P3": "FEHLT", "P4": "FEHLT",
+          "P5": "FEHLT", "P6": "FEHLT", "P7": "FEHLT", "P8": "JA", "P8c": "JA", "P8d": "JA", "P8b": "JA",
+          "P9": "JA", "P10": "JA", "P11": "FEHLT", "P14": "JA"
+        },
+        "dokumenttypen": {"D1": "erhoehungsschreiben"},
+        "brief_gerendert": true
+      }
+    },
+    {
+      "name": "nachreichung",
+      "dokumente": ["schreiben.md", "agb_nachgereicht.md", "vertrag_nachgereicht.md"],
+      "erwartet": {
+        "einordnung": "wahrscheinlich unwirksam",
+        "fehlt": [{"dokumenttyp": "kostenkalkulation", "quelle": "unternehmen"}],
+        "gekippte_pruefpunkte": ["P6", "P7"],
+        "hauptvorschlag": "widerspruch_rueckforderung",
+        "gerissene_stufe": "S3",
+        "zustaende": {
+          "P0": "JA", "P1": "JA", "P2": "JA", "P3": "JA", "P4": "JA",
+          "P5": "JA", "P6": "NEIN", "P7": "NEIN", "P8": "JA", "P8c": "JA", "P8d": "WERTUNG", "P8b": "JA",
+          "P9": "JA", "P10": "JA", "P11": "FEHLT", "P14": "JA"
+        },
+        "dokumenttypen": {"D1": "erhoehungsschreiben", "D2": "agb", "D3": "vertrag"},
+        "brief_gerendert": true
+      }
+    }
+  ],
+
+  "ableitung_initial": {
+    "P0/P1": "grundlage_genannt = klausel → P0 sonst JA (gate), P1 sonst JA.",
+    "P2": "FEHLT_wenn: kreuzpruefung_klauselverweis() findet weder AGB- noch Vertragstext, das Primitiv liefert None → der Vergleich ist null, feuert nicht. NEIN_wenn: agb.fassung_datum ist null → alle=null. WERTUNG_wenn: eine[fehlt(vertrag.agb_einbezogen_hinweis) → TRUE, …] → feuert → WERTUNG. Wichtig: WERTUNG feuert vor der impliziten FEHLT-Prüfung, deshalb steht hier WERTUNG und nicht FEHLT. Beides führt zu 'unklar', aber nur FEHLT nennt Unterlagen — die nennen in dieser Stufe P3/P4/P5/P6/P7.",
+    "P3": "NEIN_wenn: preisgarantie_monate ist null und monate_zwischen() liefert ohne vertrag.datum None → alle=null, feuert nicht. Keine Bedingung gefeuert, Pflichteingabe vertrag.datum fehlt → implizit FEHLT mit missing=[vertrag.datum].",
+    "P4": "JA_wenn verlangt verifiziert(agb.klausel_ueberschrift) → false, also feuert nichts; Pflichteingabe agb.preisklausel_text (oder vertrag.preisklausel_text) fehlt → implizit FEHLT. Nicht WERTUNG: die implizite FEHLT-Prüfung geht dem 'sonst' vor.",
+    "P5": "Pflichteingabe preisklausel_text fehlt → FEHLT. Ein gate im Zustand FEHLT ist kein gate NEIN — es deaktiviert nichts und stoppt nichts, und es zählt wie jedes gate nicht zur Einordnung.",
+    "P6": "NEIN_wenn enthält verifiziert(agb.preisklausel_text) = false → alle=false; JA_wenn ebenso false. Keine Bedingung gefeuert, drei Pflichteingaben fehlen → FEHLT mit missing=[agb.nennt_anlass, agb.nennt_voraussetzungen, agb.nennt_umfang].",
+    "P7": "wie P6 → FEHLT mit missing=[agb.senkungspflicht, agb.kostenbezug].",
+    "P8": "NEIN_wenn verlangt zustimmungsmechanismus == 'schweigen' — extrahiert ist 'keiner' → false. WERTUNG_wenn: laufzeit_monate null, verlaengerung_text nicht vorhanden → eine[null, false] = null, feuert nicht. Einzige Pflichteingabe (zustimmungsmechanismus) liegt vor → sonst JA.",
+    "P8c": "widerspruch_formerfordernis = keine_angabe (Ziff. 7.2 kennt keine Widerspruchsregel) → NEIN_wenn false → sonst JA. Im Stadium ohne AGB: Eingabe nicht pflicht → kein FEHLT, Vergleich mit abwesendem Feld ist null → sonst JA.",
+    "P8b": "beide Eingaben null, NEIN_wenn=null, keine Pflichteingabe → sonst JA. ergaenzend.",
+    "P9": "'keiner' ∉ [schweigen, weiternutzung] → NEIN_wenn false → sonst JA. Das Schreiben liest in das Weitertrainieren keine Zustimmung hinein — es ist der 'für sich genommen unauffällige' Brief aus 12 §5 Fall 2.",
+    "P10": "NEIN_wenn: agb.kuendigungsrecht_bei_erhoehung ist null → alle=null (der fehlende Kündigungshinweis allein kippt nichts, solange nicht feststeht, dass die Klausel ein Kündigungsrecht einräumt). WERTUNG_wenn: Zugang = 05.08.2026 + 3 = 08.08.2026, tage_zwischen(08.08.2026, 01.10.2026) = 54, nicht < 30; form 'brief' → false → sonst JA.",
+    "P11": "keine Kostenkalkulation → sonst FEHLT, owner unternehmen.",
+    "P14": "gespraech.monate_erhoeht_gezahlt fehlt → sonst JA.",
+    "baum": "S0 INAKTIV. S1 JA. S2 = AND(P2 WERTUNG, P3 FEHLT, P4 FEHLT) → FEHLT (FEHLT schlägt WERTUNG im AND). S3 = AND(P6 FEHLT, P7 FEHLT, P8 JA, P9 JA) → FEHLT (P5 ist gate). S4 JA. S5/S6 INAKTIV. root = FEHLT.",
+    "einordnung": "root == FEHLT → 'unklar – es fehlt: …', benannt mit den fehlenden Eingaben der tragenden FEHLT-Prüfpunkte, nach owner gruppiert.",
+    "gerissene_stufe": "keine Stufe ist NEIN → null. Genau deshalb greift widerspruch_rueckforderung hier nicht: seine Bedingung liest gerissene_stufe.",
+    "hauptvorschlag": "garantie_pro_zweig['unklar – es fehlt …'] = [nachforderung, bestreiten_nachweise_verlangen]; die wenn-Bedingung von nachforderung (einordnung == 'unklar – es fehlt …') trifft → nachforderung, Template nachforderung_vbs (Kanal des Tickets).",
+    "vollstaendigkeit": "verbraucherseitig AGB und Vertrag (beide aus dem Soll: agb ist bedingt und wird gefordert, weil kein Vertrag vorliegt; der Vertrag ist immer Pflicht, und die Gruppe 'klausel' ist von keinem der beiden erfüllt) plus die Feldlücken aus P3–P7; unternehmensseitig die Kostenkalkulation."
+  },
+
+  "ableitung_nachreichung": {
+    "was sich ändert": "Die Nachforderung hat AGB und Vertrag angefordert, beide kommen an. Damit liegen alle verbraucherseitigen Pflichtdokumente vor, und die Prüfpunkte, die vorher FEHLT waren, können erstmals entscheiden.",
+    "P2": "kreuzpruefung_klauselverweis(): 'Ziffer 7.2' → Kurzform '7.2' steht im AGB-Text → true, FEHLT_wenn feuert nicht. NEIN_wenn: agb.fassung_datum 15.01.2023 > vertrag.datum 03.11.2025 ist falsch. WERTUNG_wenn: agb_einbezogen_hinweis liegt jetzt vor (nicht fehlt) und das Datumsverhältnis ist falsch → eine=false. Pflichteingaben vollständig → sonst JA.",
+    "P3": "Der Vertrag enthält keine Preisgarantie → NEIN_wenn null, Pflichteingaben vollständig → sonst JA.",
+    "P4": "klausel_ueberschrift 'Beiträge' verifiziert und in der Werteliste → JA. Bewusst so gebaut: der Mangel dieser Klausel ist ihre Unbestimmtheit, nicht ihre Platzierung — sonst wäre nicht mehr zuzuordnen, woran der Fall kippt.",
+    "P5": "preisklausel_text liegt vor, gespraech.klausel_ist_urspruenglicher_preis fehlt → sonst JA.",
+    "P6": "NEIN_wenn: eine[nennt_anlass==false, nennt_voraussetzungen==false, nennt_umfang==false] ist true (alle drei false) UND verifiziert(agb.preisklausel_text) ist true → NEIN. 'Wir behalten uns vor, die Beiträge anzupassen.' nennt weder Anlass noch Voraussetzung noch Umfang. Das ist der von Franz vermutete Kipppunkt (12 §5, Fall 2b).",
+    "P7": "senkungspflicht = 'keine' ∈ [ermessen, keine] und verifiziert → NEIN. Unvermeidlich mitgekippt: eine Klausel ohne jeden Kostenbezug kann auch keine Senkungspflicht enthalten. Franz nennt nur Prüfpunkt 6; P7 kommt hinzu und ändert an Einordnung, Stufe und Rechtsbehelf nichts.",
+    "P8": "NEIN_wenn verlangt weiterhin 'schweigen' → false. WERTUNG_wenn: laufzeit_monate 12 > 24 falsch, aber vorhanden(vertrag.verlaengerung_text) ist jetzt true → WERTUNG. Der Vertrag verlängert sich um 12 Monate — die Laufzeitfrage nach § 309 Nr. 9 bleibt offen und steht im Prüfumfang-Kasten.",
+    "P9/P10/P11/P14": "P9 unverändert JA. P10: agb.kuendigungsrecht_bei_erhoehung ist jetzt false, damit ist NEIN_wenn endgültig false (nicht mehr null); Vorlaufzeit 54 Tage und Form 'brief' → JA. P11 weiterhin FEHLT (unternehmen). P14 JA.",
+    "baum": "S1 JA. S2 = AND(JA, JA, JA) = JA. S3 = AND(P6 NEIN, P7 NEIN, P8 WERTUNG, P9 JA) = NEIN. S4 JA. root = NEIN.",
+    "einordnung": "root == NEIN → 'wahrscheinlich unwirksam'. Das ist der Flip: dieselben Regeln, dieselbe Datei, ein Dokument mehr.",
+    "gerissene_stufe": "erste Stufe S1…S4 mit NEIN = S3 (S2 ist jetzt JA).",
+    "hauptvorschlag": "garantie_pro_zweig['wahrscheinlich unwirksam'] = [widerspruch_rueckforderung]; die wenn-Bedingung (gerissene_stufe ∈ S1,S2,S3) trifft. Der in Stufe 1 gewählte Rechtsbehelf 'nachforderung' steht nicht mehr zur Auswahl und wird verworfen.",
+    "brief": "musterbrief_fitness_widerspruch_rueckforderung mit den Varianten 'intransparent' (P6 NEIN), 'keine_senkungspflicht' (P7 NEIN) und 'ohne_rueckforderung' (kein Kontoauszug, also keine berechnete Summe).",
+    "vollstaendigkeit": "verbraucherseitig nichts mehr offen; unternehmensseitig weiterhin die Kostenkalkulation."
+  },
+
+  "annahmen": [
+    "Die Nachreichung liefert AGB **und** Vertrag, nicht nur die AGB. Franz' Aufgabenpaket beschreibt 2b als 'die nachgereichten AGB'. Wir reichen beides nach, weil die Nachforderung aus Stufe 1 beides anfordert — eine Nachreichung, die weniger liefert als der eigene Brief verlangt hat, wäre in der Vorführung eine offene Flanke. Kommt Franz' Datei, ersetzt sie die AGB-Datei 1:1; der Vertrag bliebe dann als zweite Datei bestehen.",
+    "P2 = WERTUNG in Stufe 1 (statt FEHLT) folgt aus der Reihenfolge der Regelauswertung, nicht aus einer inhaltlichen Wertung: {fehlt: vertrag.agb_einbezogen_hinweis} ist wahr, sobald kein Vertrag vorliegt, und WERTUNG_wenn wird vor der impliziten FEHLT-Prüfung geprüft. Das ist als Contract-Beobachtung in 18 notiert.",
+    "P8 = WERTUNG nach der Nachreichung hängt allein an der Verlängerungsklausel des Fiktionsvertrags. Sie ist bewusst drin: ein Fitnessvertrag ohne Verlängerungsregel wäre unrealistisch, und der Prüfumfang-Kasten soll auch im geflippten Zustand etwas Offenes zeigen.",
+    "P10 = JA in beiden Stufen hängt an frist_min_tage = 30 (geprueft:false). Bei 54 Tagen Vorlauf ist der Abstand groß genug, dass eine Korrektur des Parameters den Fall nicht kippt.",
+    "Die gesamte Erwartung ist unsere eigene Lesart (geprueft:false, 15 §11) — advisory, nicht gating."
+  ]
+}

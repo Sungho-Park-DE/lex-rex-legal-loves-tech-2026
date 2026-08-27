@@ -1,0 +1,63 @@
+{
+  "case_id": "drehkreuz",
+  "titel": "Drehkreuz — Preisgarantie + Zustimmungsfiktion (14 §7 happy path)",
+  "quelle": "eigene Fiktion, keine Lösungszettel — Erwartung von Hand aus den Regeln in 15 §2 abgeleitet, nicht aus der Engine-Ausgabe übernommen",
+  "geprueft": false,
+  "gating": false,
+  "stichtag": "2026-08-27",
+  "fall_verzeichnis": "demo/faelle/drehkreuz",
+  "fallgruppe_id": "preiserhoehung",
+
+  "stufen": [
+    {
+      "name": "initial",
+      "dokumente": ["schreiben.md", "agb.md", "vertrag.md"],
+      "erwartet": {
+        "einordnung": "wahrscheinlich unwirksam",
+        "fehlt": [{"dokumenttyp": "kostenkalkulation", "quelle": "unternehmen"}],
+        "gekippte_pruefpunkte": ["P3", "P6", "P7", "P9"],
+        "hauptvorschlag": "widerspruch_rueckforderung",
+        "gerissene_stufe": "S2",
+        "zustaende": {
+          "P0": "JA", "P1": "JA", "P2": "JA", "P3": "NEIN", "P4": "JA",
+          "P5": "JA", "P6": "NEIN", "P7": "NEIN", "P8": "JA", "P8c": "JA", "P8d": "WERTUNG", "P8b": "JA",
+          "P9": "NEIN", "P10": "JA", "P11": "FEHLT", "P14": "JA"
+        },
+        "dokumenttypen": {"D1": "erhoehungsschreiben", "D2": "agb", "D3": "vertrag"},
+        "brief_gerendert": true
+      }
+    }
+  ],
+
+  "ableitung": {
+    "P0": "grundlage_genannt = klausel → weder NEIN_wenn (verlangt zustimmung_aktiv + Beleg) noch WERTUNG_wenn (neue_entgeltposition); Pflichteingabe vorhanden → sonst JA. gate, zählt nicht zur Einordnung.",
+    "P1": "grundlage_genannt != 'keine' → sonst JA.",
+    "P2": "FEHLT_wenn verlangt kreuzpruefung_klauselverweis()==false; NEIN_wenn verlangt agb.fassung_datum > vertrag.datum (01.05.2021 > 01.10.2025 = falsch); WERTUNG_wenn verlangt fehlendes agb_einbezogen_hinweis (liegt vor) oder dasselbe Datumsverhältnis → sonst JA.",
+    "P3": "preisgarantie_monate 12 > 0 UND monate_zwischen(01.10.2025, 01.09.2026) = 11 < 12 → NEIN. Das ist der Prüfpunkt, den die Fiktion gezielt auslöst (14 §7).",
+    "P4": "JA_wenn: klausel_ueberschrift verifiziert UND in der Liste [Preise, Beiträge, …] → 'Beiträge' trifft → JA.",
+    "P5": "gespraech.klausel_ist_urspruenglicher_preis fehlt → NEIN_wenn ist null, feuert nicht; Pflichteingabe preisklausel_text liegt vor → sonst JA. gate, deaktiviert nichts.",
+    "P6": "nennt_anlass/voraussetzungen/umfang alle false UND preisklausel_text verifiziert → NEIN.",
+    "P7": "senkungspflicht = 'keine' ∈ [ermessen, keine] UND verifiziert → NEIN.",
+    "P8": "NEIN_wenn verlangt zustimmungsmechanismus == 'schweigen' (hier 'weiternutzung') → feuert nicht. WERTUNG_wenn: laufzeit 24 > 24 ist falsch, aber vorhanden(vertrag.verlaengerung_text) ist wahr → WERTUNG.",
+    "P8c": "Kein Widerspruchs-Formerfordernis in diesen AGB (widerspruch_formerfordernis = keine_angabe, Beleg Ziff. 5.2) → NEIN_wenn verlangt 'schriftform' → false → sonst JA. Der Punkt feuert im Bestand nur bei Franz' Fall 1 (Ziff. 7.4 „schriftlich“), der nicht verdrahtet ist.",
+    "P8b": "leistungsaenderungsrecht = false → NEIN_wenn feuert nicht → sonst JA. ergaenzend.",
+    "P9": "zustimmungsmechanismus = 'weiternutzung' ∈ [schweigen, weiternutzung] UND verifiziert → NEIN.",
+    "P10": "NEIN_wenn verlangt agb.kuendigungsrecht_bei_erhoehung == true (ist false) → feuert nicht. WERTUNG_wenn: tage_zwischen(23.07.2026, 01.09.2026) = 40, nicht < 30; form 'brief' ∉ [aushang, website] → sonst JA.",
+    "P11": "WERTUNG_wenn verlangt dok_vorhanden(kostenkalkulation) → keine vorhanden → sonst FEHLT, fehlt_owner = unternehmen. ergaenzend, ändert die Einordnung nicht.",
+    "P14": "gespraech.monate_erhoeht_gezahlt fehlt → WERTUNG_wenn ist null → sonst JA. Konsistent: die Erhöhung soll erst ab 01.09.2026 gelten.",
+    "baum": "S0 = INAKTIV (einziges Kind ist ein gate, gates zählen nie). S1 JA. S2 = NEIN (P3). S3 = NEIN (P6/P7/P9; P8 WERTUNG wird von NEIN geschlagen). S4 JA. S5/S6 = INAKTIV (nur ergaenzend). root AND mit einem NEIN → NEIN.",
+    "einordnung": "root == NEIN → 'wahrscheinlich unwirksam'.",
+    "gerissene_stufe": "erste Stufe S1…S4 mit NEIN = S2 (nicht S3 — S2 kommt im Baum zuerst).",
+    "hauptvorschlag": "garantie_pro_zweig['wahrscheinlich unwirksam'] = [widerspruch_rueckforderung]; dessen wenn-Bedingung (gerissene_stufe ∈ S1,S2,S3) trifft ebenfalls zu.",
+    "vollstaendigkeit": "kostenkalkulation steht doppelt an — einmal aus dem Soll (pflicht 'hinweis', quelle unternehmen) und einmal aus P11 FEHLT. Erwartet wird ein Eintrag; die Engine dedupliziert."
+  },
+
+  "annahmen": [
+    "P8 = WERTUNG hängt allein daran, dass der Fiktionsvertrag eine Verlängerungsklausel enthält. Ohne sie wäre P8 = JA und die Fallakte hätte keinen offenen Punkt. Bewusst drin gelassen: ein Fitnessvertrag ohne Verlängerungsregel wäre unrealistisch, und der Prüfumfang-Kasten soll im Demo etwas zu zeigen haben.",
+    "P10 = JA hängt am Parameter frist_min_tage = 30, der im Schema geprueft:false trägt (Franz' offene Frage, 15 §14). Sinkt er nicht unter 40, bleibt JA.",
+    "P10 = JA hängt außerdem an der Annahme zugang_plus_3 (Zugang = Briefdatum + 3 Tage). Ohne sie fehlte erhoehungsschreiben.zugang und tage_zwischen wäre null → WERTUNG_wenn feuerte nicht → weiterhin JA, aber ohne Fristanzeige.",
+    "P4 = JA hängt daran, dass die Extraktion die Überschrift als 'Beiträge' liefert und nicht als '5. Beiträge' — die Werteliste im Schema enthält nur die kurze Form. Liefert ein Modell die lange Form, kippt P4 auf WERTUNG (nicht auf NEIN).",
+    "P2 = JA hängt daran, dass kreuzpruefung_klauselverweis() den Verweis 'Ziffer 5.2' in einem AGB-Text findet, der nur '5.2' schreibt. Unser Primitiv prüft zusätzlich die Kurzform; ein strikteres Primitiv ließe P2 auf FEHLT laufen.",
+    "Die gesamte Erwartung ist unsere eigene Lesart (geprueft:false, 15 §11) — advisory, nicht gating. Franz' Lösungszettel ersetzen sie 1:1 über den Ingest-Map in 15 §13."
+  ]
+}

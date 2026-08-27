@@ -1,0 +1,135 @@
+{
+  "case_id": "seepark_seite_fehlt",
+  "titel": "Seepark — die Seite mit Ziffer 5.2 fehlt, dann nachgereicht (12 §5 Fälle 3 und 3b): die Gegenprobe",
+  "quelle": "eigene Fiktion, kein Lösungszettel — Erwartung von Hand aus den Regeln in 15 §2 abgeleitet, nicht aus der Engine-Ausgabe übernommen",
+  "geprueft": false,
+  "gating": false,
+  "stichtag": "2026-08-27",
+  "fall_verzeichnis": "demo/faelle/seepark_seite_fehlt",
+  "fallgruppe_id": "preiserhoehung",
+  "stufen": [
+    {
+      "name": "initial",
+      "dokumente": [
+        "schreiben.md",
+        "bedingungen_seite1.md",
+        "vertrag.md"
+      ],
+      "erwartet": {
+        "einordnung": "unklar – es fehlt …",
+        "fehlt": [
+          {
+            "dokumenttyp": "agb",
+            "quelle": "verbraucher"
+          },
+          {
+            "dokumenttyp": "kostenkalkulation",
+            "quelle": "unternehmen"
+          }
+        ],
+        "gekippte_pruefpunkte": [],
+        "hauptvorschlag": "nachforderung",
+        "gerissene_stufe": null,
+        "zustaende": {
+          "P0": "JA",
+          "P1": "JA",
+          "P2": "FEHLT",
+          "P3": "JA",
+          "P4": "FEHLT",
+          "P5": "FEHLT",
+          "P6": "FEHLT",
+          "P7": "FEHLT",
+          "P8": "JA",
+          "P8c": "JA",
+          "P8d": "JA",
+          "P8b": "JA",
+          "P9": "JA",
+          "P10": "JA",
+          "P11": "FEHLT",
+          "P14": "JA"
+        },
+        "dokumenttypen": {
+          "D1": "erhoehungsschreiben",
+          "D2": "agb",
+          "D3": "vertrag"
+        },
+        "brief_gerendert": true
+      }
+    },
+    {
+      "name": "nachreichung",
+      "dokumente": [
+        "schreiben.md",
+        "bedingungen_seite1.md",
+        "vertrag.md",
+        "bedingungen_seite2_nachgereicht.md"
+      ],
+      "erwartet": {
+        "einordnung": "wirksam",
+        "fehlt": [
+          {
+            "dokumenttyp": "kostenkalkulation",
+            "quelle": "unternehmen"
+          }
+        ],
+        "gekippte_pruefpunkte": [],
+        "hauptvorschlag": "kuendigung_bei_wirksam",
+        "gerissene_stufe": null,
+        "zustaende": {
+          "P0": "JA",
+          "P1": "JA",
+          "P2": "JA",
+          "P3": "JA",
+          "P4": "JA",
+          "P5": "JA",
+          "P6": "JA",
+          "P7": "JA",
+          "P8": "JA",
+          "P8c": "JA",
+          "P8d": "JA",
+          "P8b": "JA",
+          "P9": "JA",
+          "P10": "JA",
+          "P11": "FEHLT",
+          "P14": "JA"
+        },
+        "dokumenttypen": {
+          "D1": "erhoehungsschreiben",
+          "D2": "agb",
+          "D3": "vertrag",
+          "D4": "agb"
+        },
+        "brief_gerendert": true
+      }
+    }
+  ],
+  "ableitung_initial": {
+    "P2": "Das ist der Prüfpunkt, den dieser Fall auslöst. kreuzpruefung_klauselverweis() sucht den Verweis 'Ziffer 5.2' aus dem Schreiben in AGB- und Vertragstext; Seite 1 der Bedingungen enthält nur die Ziffern 1 bis 4, der Vertrag keine Ziffer → das Primitiv liefert false → FEHLT_wenn feuert → FEHLT. Der Grund kommt aus dem schema-eigenen fehlt_text: „die Seite mit Ziffer 5.2“. Genau die Abgrenzung, die Franz mit Fall 3 wollte: nicht 'Unterlage fehlt', sondern 'Unterlage unvollständig'.",
+    "P3": "Kein Preisgarantie-Feld extrahiert → NEIN_wenn null; Pflichteingaben vertrag.datum und wirksam_ab liegen vor → sonst JA. Der Vertrag ist vollständig da, nur die Bedingungen sind es nicht — deshalb kippt hier nichts.",
+    "P4/P5/P6/P7": "Alle vier hängen an agb.preisklausel_text bzw. den Klauselkriterien, die auf der fehlenden Seite stehen. Keine Bedingung kann feuern (die NEIN-/JA-Zweige verlangen verifizierte Felder), also greift die implizite FEHLT-Prüfung über die Pflichteingaben → FEHLT. P5 ist ein gate im Zustand FEHLT: das deaktiviert nichts und stoppt nichts.",
+    "P8/P9/P10": "Alle drei entscheiden allein aus dem Erhöhungsschreiben und dem Vertrag, die beide vollständig vorliegen. P8: zustimmungsmechanismus 'keiner' ≠ 'schweigen'; laufzeit 24 > 24 falsch und keine Verlängerungsklausel im Vertrag → sonst JA. P9: 'keiner' ∉ [schweigen, weiternutzung] → JA. P10: NEIN_wenn scheitert daran, dass kuendigungshinweis true ist; Zugang = 20.08.2026 + 3 = 23.08.2026, tage_zwischen(23.08.2026, 01.11.2026) = 70, nicht < 30; form 'brief' → JA.",
+    "P8b/P11/P14": "P8b: leistungsaenderungsrecht false (Ziffer 3.1 steht auf Seite 1 und wurde gelesen) → JA. P11: keine Kostenkalkulation → FEHLT, owner unternehmen. P14: kein Gesprächswert → JA.",
+    "baum": "S1 JA. S2 = AND(P2 FEHLT, P3 JA, P4 FEHLT) = FEHLT. S3 = AND(P6 FEHLT, P7 FEHLT, P8 JA, P9 JA) = FEHLT. S4 JA. root = FEHLT → 'unklar – es fehlt …'.",
+    "einordnung_text": "Alle verbraucherseitigen Lücken gehören zu einem Dokument, das vorliegt, aber unvollständig ist → die Engine nennt es einmal als '… — liegen vor, aber unvollständig' (V-29, 25 Aug) statt sieben Feldnamen aufzuzählen. Der genaue Satz 'die Seite mit Ziffer 5.2' steht in der Spur bei P2.",
+    "hauptvorschlag": "einordnung == 'unklar – es fehlt …' → nachforderung (erster Eintrag der Garantie für diesen Zweig), Template nachforderung_vbs. Die Unterlagenliste im Brief nennt die AGB einmal — ein Block je Dokument, nicht je Feldlücke."
+  },
+  "ableitung_nachreichung": {
+    "welche AGB-Fassung gilt": "Nach der Nachreichung liegen zwei Dokumente vom Typ agb vor (Seite 1 und Seite 2, beide Fassung 01.06.2024). soll.relevante_agb_fassung wählt die jüngste Fassung, deren Datum nicht nach dem Vertragsdatum liegt; bei gleichem Datum entscheidet, welches Dokument die Pflichtfelder tatsächlich trägt (18 #33/#45) — das ist die nachgereichte Seite D4. Die Klauselfelder werden damit aus D4 gelesen, agb.leistungsaenderungsrecht mangels Alternative weiter aus D2.",
+    "P2": "kreuzpruefung_klauselverweis() findet '5.2' jetzt im AGB-Text → FEHLT_wenn feuert nicht. agb.fassung_datum 01.06.2024 > vertrag.datum 15.03.2025 ist falsch → NEIN_wenn false. agb_einbezogen_hinweis liegt vor → WERTUNG_wenn false. Pflichteingaben vollständig → JA.",
+    "P4": "klausel_ueberschrift 'Beiträge' (aus '5. Beiträge und Beitragsanpassung') verifiziert und in der Werteliste → JA.",
+    "P6": "Ziffer 5.1 nennt den Anlass, 5.2 Voraussetzung und Umfang — alle drei Kriterien true und jedes mit eigenem Zitat verifiziert → JA_wenn → JA.",
+    "P7": "senkungspflicht 'pflicht' (Ziffer 5.3 'ist das Studio verpflichtet') und kostenbezug true (Ziffer 5.1), beide verifiziert → JA.",
+    "P8c": "Die nachgereichte Seite nennt keine Form für einen Widerspruch → keine_angabe → NEIN_wenn false → sonst JA; ohne die Seite: Feld abwesend, nicht pflicht → sonst JA.",
+    "P5/P10": "P5: preisklausel_text liegt vor → JA. P10: agb.kuendigungsrecht_bei_erhoehung ist jetzt true, aber kuendigungshinweis ebenfalls true → NEIN_wenn false; Vorlaufzeit 70 Tage, Form 'brief' → JA.",
+    "baum": "S1 JA, S2 JA, S3 JA, S4 JA → root JA → 'wirksam'.",
+    "hauptvorschlag": "garantie_pro_zweig['wirksam'] → kuendigung_bei_wirksam, Template musterbrief_kuendigung, Variante 'sonderkuendigung' (die Klausel räumt selbst ein Kündigungsrecht ein). Der in Stufe 1 gewählte Rechtsbehelf 'nachforderung' steht nicht mehr zur Auswahl und wird verworfen.",
+    "wozu der Fall gut ist": "Er ist die einzige Stelle im Testsatz, an der eine Nachreichung zugunsten des Unternehmens ausgeht. Ohne ihn belegt der Testsatz nur, dass das Werkzeug Fehler findet, wenn es genug Unterlagen bekommt."
+  },
+  "annahmen": [
+    "Die nachgereichte Seite kommt als **zweites Dokument vom Typ agb** in denselben Fall, nicht als Ersatz für Seite 1. Das ist die ehrlichere Abbildung (die Verbraucherin schickt die fehlende Seite nach, sie tauscht nicht die Bedingungen aus). Welches der beiden Dokumente gilt, entscheidet seit 23 Aug eine Regel statt eines Zufalls der Sortierung: gleiches Datum → das Dokument mit den Pflichtfeldern (18 #45). Über die API, wo kein fassung_datum aus Metadaten kommt, greift dieselbe Regel über das extrahierte Feld agb.fassung_datum.",
+    "P8 = JA hängt daran, dass der Vertrag keine Verlängerungsklausel enthält (feste 24 Monate mit automatischem Ende). Dieselbe Konstruktion wie im Fall sauber_aktivpark und aus demselben Grund: mit Verlängerungsklausel wäre P8 = WERTUNG und die zweite Stufe endete auf 'unklar' statt 'wirksam'.",
+    "P10 = JA hängt an frist_min_tage = 30 (geprueft:false). 70 Tage Vorlauf halten deutlichen Abstand zur Schwelle.",
+    "Dass die Klassifikation beide Seiten als 'agb' erkennt, ist Teil der Fiktion: der Seitenfuß ('Seite 1 von 3', 'Seite 2 von 3') und die Kopfzeile machen die Zugehörigkeit eindeutig. Ohne diese Marker wäre die zweite Seite ein realistischer Kandidat für 'sonstiges' mit Bestätigung durch die Beraterin.",
+    "Die gesamte Erwartung ist unsere eigene Lesart (geprueft:false, 15 §11) — advisory, nicht gating."
+  ]
+}

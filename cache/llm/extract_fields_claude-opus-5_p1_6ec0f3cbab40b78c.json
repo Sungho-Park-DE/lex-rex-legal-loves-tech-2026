@@ -1,0 +1,248 @@
+{
+  "aufgabe": "extract_fields",
+  "modell": "claude-opus-5",
+  "prompt_version": "p1",
+  "eingabe": {
+    "dokumenttyp": "erhoehungsschreiben",
+    "seiten": [
+      {
+        "nr": 1,
+        "text": "AktivPark Fitness GmbH · Donaustraße 27 · 93055 Regensburg\n\nHerrn\n@@PERSON_1@@\n@@ADRESSE_1@@\n@@ADRESSE_2@@\n\nRegensburg, 15.07.2026\n\nAnpassung Ihres Mitgliedsbeitrags zum 01.10.2026 — Mitgliedsnummer @@KUNDENNR_1@@\n\nSehr geehrter Herr @@PERSON_2@@,\n\ndie Kosten, an die Ziffer 6.3 unserer Allgemeinen Geschäftsbedingungen die Beitragshöhe knüpft, haben sich seit Ihrem Vertragsschluss verändert: Energie um 9,4 Prozent, Personal um 5,1 Prozent, Miete um 2,0 Prozent und die Wartung der Trainingsgeräte um 3,8 Prozent. Nach ihrem Anteil an unseren Betriebskosten gewichtet ergibt das eine Steigerung von 4,2 Prozent.\n\nAuf Grundlage von Ziffer 6.3 unserer Allgemeinen Geschäftsbedingungen („Der Umfang der Erhöhung ist auf den Prozentsatz begrenzt, um den die in Ziffer 6.1 genannten Kosten gestiegen sind, höchstens jedoch auf 5 Prozent des zuletzt geschuldeten Beitrags.“) erhöhen wir Ihren monatlichen Beitrag mit Wirkung zum 01.10.2026 von 34,90 EUR auf 36,35 EUR. Das entspricht den genannten 4,2 Prozent und bleibt damit unter der in Ziffer 6.3 vereinbarten Obergrenze.\n\nSinken diese Kosten wieder, senken wir Ihren Beitrag nach denselben Maßstäben und ohne dass Sie uns dazu auffordern müssen; so sieht es Ziffer 6.4 unserer Bedingungen vor.\n\nWie in Ziffer 6.5 vereinbart, weisen wir Sie ausdrücklich auf Ihr Kündigungsrecht hin: Sie können Ihre Mitgliedschaft bis zum 30.09.2026 zum Wirksamwerden dieser Anpassung, also zum 30.09.2026, kündigen. Eine Kündigung in Textform an die oben genannte Anschrift oder an @@EMAIL_2@@ genügt.\n\nIhre Mitgliedschaft läuft im Übrigen unverändert weiter. Für Rückfragen zur Kostenentwicklung stehen wir Ihnen gern zur Verfügung.\n\nMit freundlichen Grüßen\n\nAktivPark Fitness GmbH"
+      }
+    ],
+    "felder": [
+      {
+        "feld_id": "erhoehungsschreiben.datum",
+        "typ": "datum",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": true
+      },
+      {
+        "feld_id": "erhoehungsschreiben.zugang",
+        "typ": "datum",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": false
+      },
+      {
+        "feld_id": "erhoehungsschreiben.form",
+        "typ": "enum",
+        "werte": [
+          "brief",
+          "email",
+          "app",
+          "aushang",
+          "website",
+          "unbekannt"
+        ],
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": true
+      },
+      {
+        "feld_id": "erhoehungsschreiben.wirksam_ab",
+        "typ": "datum",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": true
+      },
+      {
+        "feld_id": "erhoehungsschreiben.alter_betrag",
+        "typ": "betrag",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": false
+      },
+      {
+        "feld_id": "erhoehungsschreiben.neuer_betrag",
+        "typ": "betrag",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": true
+      },
+      {
+        "feld_id": "erhoehungsschreiben.grundlage_genannt",
+        "typ": "enum",
+        "werte": [
+          "klausel",
+          "gesetz",
+          "zustimmung_aktiv",
+          "zustimmungsfiktion",
+          "neue_entgeltposition",
+          "keine"
+        ],
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "erhoehungsschreiben.klauselverweis",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": "zitierte Ziffer, z. B. „Ziffer 5.2“",
+        "zitat_pflicht": false,
+        "pflicht": false
+      },
+      {
+        "feld_id": "erhoehungsschreiben.klauselzitat",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": "Wortlaut der Klausel, so wie das Schreiben ihn wiedergibt",
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "erhoehungsschreiben.zustimmungsmechanismus",
+        "typ": "enum",
+        "werte": [
+          "schweigen",
+          "weiternutzung",
+          "klick",
+          "unterschrift",
+          "keiner"
+        ],
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "erhoehungsschreiben.kuendigungshinweis",
+        "typ": "bool",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": true,
+        "pflicht": true
+      },
+      {
+        "feld_id": "erhoehungsschreiben.begruendung",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": false
+      },
+      {
+        "feld_id": "erhoehungsschreiben.zitierte_fundstellen",
+        "typ": "liste_text",
+        "werte": null,
+        "beschreibung": "alle §§ und Aktenzeichen, die das Schreiben selbst nennt",
+        "zitat_pflicht": true,
+        "pflicht": false
+      },
+      {
+        "feld_id": "erhoehungsschreiben.absender",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": "Name des Anbieters laut Briefkopf",
+        "zitat_pflicht": false,
+        "pflicht": true
+      },
+      {
+        "feld_id": "erhoehungsschreiben.absender_adresse",
+        "typ": "text",
+        "werte": null,
+        "beschreibung": null,
+        "zitat_pflicht": false,
+        "pflicht": false
+      }
+    ]
+  },
+  "ausgabe": {
+    "felder": [
+      {
+        "feld_id": "erhoehungsschreiben.datum",
+        "wert": "2026-07-15",
+        "zitat": "Regensburg, 15.07.2026",
+        "seite": 1
+      },
+      {
+        "feld_id": "erhoehungsschreiben.form",
+        "wert": "brief",
+        "zitat": "AktivPark Fitness GmbH · Donaustraße 27 · 93055 Regensburg",
+        "seite": 1
+      },
+      {
+        "feld_id": "erhoehungsschreiben.wirksam_ab",
+        "wert": "2026-10-01",
+        "zitat": "mit Wirkung zum 01.10.2026",
+        "seite": 1
+      },
+      {
+        "feld_id": "erhoehungsschreiben.alter_betrag",
+        "wert": "34,90",
+        "zitat": "von 34,90 EUR auf 36,35 EUR",
+        "seite": 1
+      },
+      {
+        "feld_id": "erhoehungsschreiben.neuer_betrag",
+        "wert": "36,35",
+        "zitat": "von 34,90 EUR auf 36,35 EUR",
+        "seite": 1
+      },
+      {
+        "feld_id": "erhoehungsschreiben.grundlage_genannt",
+        "wert": "klausel",
+        "zitat": "Auf Grundlage von Ziffer 6.3 unserer Allgemeinen Geschäftsbedingungen",
+        "seite": 1
+      },
+      {
+        "feld_id": "erhoehungsschreiben.klauselverweis",
+        "wert": "Ziffer 6.3",
+        "zitat": "Ziffer 6.3",
+        "seite": 1
+      },
+      {
+        "feld_id": "erhoehungsschreiben.klauselzitat",
+        "wert": "Der Umfang der Erhöhung ist auf den Prozentsatz begrenzt, um den die in Ziffer 6.1 genannten Kosten gestiegen sind, höchstens jedoch auf 5 Prozent des zuletzt geschuldeten Beitrags.",
+        "zitat": "Der Umfang der Erhöhung ist auf den Prozentsatz begrenzt, um den die in Ziffer 6.1 genannten Kosten gestiegen sind, höchstens jedoch auf 5 Prozent des zuletzt geschuldeten Beitrags.",
+        "seite": 1
+      },
+      {
+        "feld_id": "erhoehungsschreiben.zustimmungsmechanismus",
+        "wert": "keiner",
+        "zitat": "Wie in Ziffer 6.5 vereinbart, weisen wir Sie ausdrücklich auf Ihr Kündigungsrecht hin",
+        "seite": 1
+      },
+      {
+        "feld_id": "erhoehungsschreiben.kuendigungshinweis",
+        "wert": true,
+        "zitat": "Wie in Ziffer 6.5 vereinbart, weisen wir Sie ausdrücklich auf Ihr Kündigungsrecht hin",
+        "seite": 1
+      },
+      {
+        "feld_id": "erhoehungsschreiben.begruendung",
+        "wert": "gewichtete Steigerung der Betriebskosten um 4,2 Prozent",
+        "zitat": "Nach ihrem Anteil an unseren Betriebskosten gewichtet ergibt das eine Steigerung von 4,2 Prozent.",
+        "seite": 1
+      },
+      {
+        "feld_id": "erhoehungsschreiben.zitierte_fundstellen",
+        "wert": [],
+        "zitat": "Auf Grundlage von Ziffer 6.3 unserer Allgemeinen Geschäftsbedingungen",
+        "seite": 1
+      },
+      {
+        "feld_id": "erhoehungsschreiben.absender",
+        "wert": "AktivPark Fitness GmbH",
+        "zitat": "AktivPark Fitness GmbH · Donaustraße 27 · 93055 Regensburg",
+        "seite": 1
+      },
+      {
+        "feld_id": "erhoehungsschreiben.absender_adresse",
+        "wert": "Donaustraße 27, 93055 Regensburg",
+        "zitat": "Donaustraße 27 · 93055 Regensburg",
+        "seite": 1
+      }
+    ]
+  },
+  "dauer_ms": 4200,
+  "kosten_cent": 1.1,
+  "zeit": null,
+  "aus_cache": false
+}

@@ -1,0 +1,11 @@
+{
+  "fallgruppe_id": "kuendigung",
+  "name": "Strittige Kündigung",
+  "stufe": "C",
+  "version": "0.1.0",
+  "stand": "2026-08-23",
+  "geprueft_von": [],
+  "pruefpunkte": [],
+  "dokumenten_soll": {"dokumente": []},
+  "kommentar": "Contract §3: Stufe C — name only. Zuordnung + Dokumentenliste + Speicherung; die Einordnung nimmt die Beraterin wie gewohnt selbst vor."
+}

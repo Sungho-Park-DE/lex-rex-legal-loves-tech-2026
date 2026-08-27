@@ -1,0 +1,21 @@
+# environment
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+
+# generated artifacts (statutes_de.json is deliberately committed)
+core/chroma_db/
+
+# local claude session config
+.claude/
+
+# case objects contain the pseudonym map — contract 15 §4: never leaves the
+# machine. Regenerate any demo case with tools/demo_fixture.py.
+cases/
+store/
+tools/live_probe/node_modules/
+
+# Claude-Design-Payload: aus den .dc.html + canvas.json neu erzeugbar (2,2 MB)
+pitch/diagramm/pruefbaum-pitch.html

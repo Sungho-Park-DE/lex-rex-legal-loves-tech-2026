@@ -1,0 +1,95 @@
+{
+  "pages": [
+    {
+      "id": "page-1",
+      "name": "Fürs Pitch"
+    },
+    {
+      "id": "page-2",
+      "name": "Ausführlich"
+    },
+    {
+      "id": "page-3",
+      "name": "Skizzen"
+    }
+  ],
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1920,
+      "h": 1080,
+      "title": "Und-Baum (Beamer)",
+      "page": "page-1"
+    },
+    {
+      "file": "Bedingt.dc.html",
+      "x": 2060,
+      "y": 0,
+      "w": 1920,
+      "h": 1080,
+      "title": "Bedingter Baum (Beamer)",
+      "page": "page-1"
+    },
+    {
+      "file": "Schema.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1600,
+      "h": 900,
+      "title": "Prüfungsschema",
+      "page": "page-2"
+    },
+    {
+      "file": "Massstaebe.dc.html",
+      "x": 1720,
+      "y": 0,
+      "w": 1600,
+      "h": 900,
+      "title": "Maßstäbe",
+      "page": "page-2"
+    },
+    {
+      "file": "BildA.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1200,
+      "h": 800,
+      "title": "A — Kaskade",
+      "page": "page-3"
+    },
+    {
+      "file": "BildB.dc.html",
+      "x": 1320,
+      "y": 0,
+      "w": 1200,
+      "h": 800,
+      "title": "B — Sieb",
+      "page": "page-3"
+    },
+    {
+      "file": "BildC.dc.html",
+      "x": 2640,
+      "y": 0,
+      "w": 1200,
+      "h": 800,
+      "title": "C — Rangfolge",
+      "page": "page-3"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "beamer",
+      "x": 0,
+      "y": -170,
+      "w": 700,
+      "text": "Zwei Folien, 1920×1080, für den Beamer gebaut:\n\nlinks der Und-Baum — jeder Ast muss halten, alle werden gegangen.\nrechts der bedingte Baum — drei Vorfragen entscheiden, was überhaupt geprüft wird.\n\nBeide sind vermessen: kein Text steht über seinem Rahmen, nichts überdeckt sich.\nDie frühen Skizzen A–C liegen auf Seite 3.",
+      "page": "page-1"
+    }
+  ],
+  "launch": {
+    "view": "canvas",
+    "page": "page-1"
+  }
+}

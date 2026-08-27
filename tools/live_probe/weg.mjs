@@ -1,0 +1,12 @@
+import { chromium } from "playwright";
+const b = await chromium.launch();
+const s = await b.newPage({ viewport: { width: 1440, height: 900 } });
+await s.goto(`http://localhost:8080/faelle/${process.argv[2]}`, { waitUntil: "networkidle" });
+await s.waitForTimeout(800);
+const t = await s.evaluate(() => document.body.innerText);
+console.log('"Weg:" auf dem Schirm:', (t.match(/Weg:/g) || []).length, "mal");
+console.log('"Auskunftsverlangen":', (t.match(/Auskunftsverlangen/g) || []).length, "mal");
+const karte = await s.locator('section, div').filter({ hasText: "liegen vor, aber unvollständig" }).last().textContent();
+console.log("Hero-Kartenausschnitt:", karte?.replace(/\s+/g," ").slice(0,200));
+await s.screenshot({ path: "shots/hero_ohne_weg.png" });
+await b.close();

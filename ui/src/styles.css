@@ -1,0 +1,218 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Design system definition.
+ *
+ * The @theme inline block maps CSS custom properties to Tailwind utility
+ * classes (e.g. --color-primary -> bg-primary, text-primary).
+ *
+ * The :root and .dark blocks define the actual color values using oklch.
+ * All colors MUST use oklch format.
+ *
+ * To add a new semantic color:
+ * 1. Add the variable to :root (light value) and .dark (dark value)
+ * 2. Register it in @theme inline as --color-<name>: var(--<name>)
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.129 0.042 264.695);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.129 0.042 264.695);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.129 0.042 264.695);
+  --primary: oklch(0.208 0.042 265.755);
+  --primary-foreground: oklch(0.984 0.003 247.858);
+  --secondary: oklch(0.968 0.007 247.896);
+  --secondary-foreground: oklch(0.208 0.042 265.755);
+  --muted: oklch(0.968 0.007 247.896);
+  --muted-foreground: oklch(0.554 0.046 257.417);
+  --accent: oklch(0.968 0.007 247.896);
+  --accent-foreground: oklch(0.208 0.042 265.755);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.984 0.003 247.858);
+  --border: oklch(0.929 0.013 255.508);
+  --input: oklch(0.929 0.013 255.508);
+  --ring: oklch(0.704 0.04 256.788);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.984 0.003 247.858);
+  --sidebar-foreground: oklch(0.129 0.042 264.695);
+  --sidebar-primary: oklch(0.208 0.042 265.755);
+  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-accent: oklch(0.968 0.007 247.896);
+  --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
+  --sidebar-border: oklch(0.929 0.013 255.508);
+  --sidebar-ring: oklch(0.704 0.04 256.788);
+}
+
+.dark {
+  --background: oklch(0.129 0.042 264.695);
+  --foreground: oklch(0.984 0.003 247.858);
+  --card: oklch(0.208 0.042 265.755);
+  --card-foreground: oklch(0.984 0.003 247.858);
+  --popover: oklch(0.208 0.042 265.755);
+  --popover-foreground: oklch(0.984 0.003 247.858);
+  --primary: oklch(0.929 0.013 255.508);
+  --primary-foreground: oklch(0.208 0.042 265.755);
+  --secondary: oklch(0.279 0.041 260.031);
+  --secondary-foreground: oklch(0.984 0.003 247.858);
+  --muted: oklch(0.279 0.041 260.031);
+  --muted-foreground: oklch(0.704 0.04 256.788);
+  --accent: oklch(0.279 0.041 260.031);
+  --accent-foreground: oklch(0.984 0.003 247.858);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.984 0.003 247.858);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.551 0.027 264.364);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.208 0.042 265.755);
+  --sidebar-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-accent: oklch(0.279 0.041 260.031);
+  --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.551 0.027 264.364);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+}
+
+/* Traffic-light tone tokens — one vocabulary for verdicts, trace, letter, radar. */
+@theme inline {
+  --color-tone-gruen: var(--tone-gruen);
+  --color-tone-gelb: var(--tone-gelb);
+  --color-tone-rot: var(--tone-rot);
+  --color-tone-grau: var(--tone-grau);
+  --color-tone-gruen-bg: var(--tone-gruen-bg);
+  --color-tone-gelb-bg: var(--tone-gelb-bg);
+  --color-tone-rot-bg: var(--tone-rot-bg);
+  --color-tone-grau-bg: var(--tone-grau-bg);
+}
+
+/* Citation highlight marker — classic German Textmarker-Gelb.
+   Deliberately NOT tone-gelb: the traffic light says "unclear/action needed",
+   the marker says "this is the cited passage" — two meanings, two colours. */
+@theme inline {
+  --color-marker: var(--marker);
+  --color-marker-foreground: var(--marker-foreground);
+  --color-marker-schwach: var(--marker-schwach);
+}
+
+/* Norm chip colour — German convention: statutes are blue, not grey.
+   A structural component-class colour, not a state tone. */
+@theme inline {
+  --color-norm: var(--norm);
+  --color-norm-bg: var(--norm-bg);
+}
+
+/* Warning frame around the RDG disclaimer (team feedback 26 Aug: "rotes
+   Kästchen mit Ausrufezeichen"). Deliberately its own token, not tone-rot:
+   the traffic light says "Prüfpunkt nicht erfüllt" about a case, this says
+   "read this sentence" about the tool — same colour family, different claim.
+   Structural like --norm, so no code ever maps to it (27 §2). */
+@theme inline {
+  --color-warnung: var(--warnung);
+  --color-warnung-bg: var(--warnung-bg);
+}
+
+:root {
+  --tone-gruen: oklch(0.4 0.11 150);
+  --tone-gelb: oklch(0.42 0.11 75);
+  --tone-rot: oklch(0.44 0.17 25);
+  --tone-grau: oklch(0.4 0.02 260);
+  --tone-gruen-bg: oklch(0.93 0.06 150);
+  --tone-gelb-bg: oklch(0.93 0.09 90);
+  --tone-rot-bg: oklch(0.93 0.06 25);
+  --tone-grau-bg: oklch(0.93 0.01 260);
+  --marker: oklch(0.92 0.18 102);
+  --marker-foreground: oklch(0.22 0.02 260);
+  --marker-schwach: oklch(0.97 0.09 102);
+  --norm: oklch(0.4 0.15 262);
+  --norm-bg: oklch(0.92 0.06 262);
+  --warnung: oklch(0.5 0.19 27);
+  --warnung-bg: oklch(0.98 0.02 27);
+}
+
+.dark {
+  --tone-gruen: oklch(0.8 0.13 150);
+  --tone-gelb: oklch(0.85 0.13 90);
+  --tone-rot: oklch(0.78 0.15 25);
+  --tone-grau: oklch(0.75 0.02 260);
+  --tone-gruen-bg: oklch(0.28 0.05 150);
+  --tone-gelb-bg: oklch(0.29 0.05 90);
+  --tone-rot-bg: oklch(0.29 0.06 25);
+  --tone-grau-bg: oklch(0.28 0.02 260);
+  --marker: oklch(0.42 0.1 100);
+  --marker-foreground: oklch(0.984 0.003 247.858);
+  --marker-schwach: oklch(0.3 0.05 100);
+  --norm: oklch(0.78 0.11 262);
+  --norm-bg: oklch(0.3 0.06 262);
+  --warnung: oklch(0.72 0.16 27);
+  --warnung-bg: oklch(0.22 0.04 27);
+}

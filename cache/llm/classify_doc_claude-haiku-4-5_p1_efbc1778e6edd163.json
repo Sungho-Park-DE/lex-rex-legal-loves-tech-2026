@@ -1,0 +1,22 @@
+{
+  "aufgabe": "classify_doc",
+  "modell": "claude-haiku-4-5",
+  "prompt_version": "p1",
+  "eingabe": {
+    "seiten": [
+      {
+        "nr": 1,
+        "text": "AktivPark Fitness GmbH — Mitgliedsvertrag\n\nMitglied: @@PERSON_1@@, @@ADRESSE_1@@, @@ADRESSE_2@@\nMitgliedsnummer: @@KUNDENNR_1@@\nVertragsdatum: 01.03.2025\n\nTarif: Komfort\nMonatlicher Beitrag: 34,90 EUR\nLaufzeit: 24 Monate ab Vertragsbeginn. Die Mitgliedschaft endet mit Ablauf des 28.02.2027, ohne dass es einer Kündigung bedarf.\n\nDie Allgemeinen Geschäftsbedingungen in der Fassung vom 01.11.2024 habe ich erhalten und erkenne sie an. Auf Ziffer 6 (Beitragsanpassung) wurde ich gesondert hingewiesen.\n\nRegensburg, 01.03.2025\n\nUnterschrift Mitglied: @@PERSON_3@@"
+      }
+    ]
+  },
+  "ausgabe": {
+    "dokumenttyp": "vertrag",
+    "konfidenz": 0.95,
+    "begruendung": "Mitgliedsvertrag mit Vertragsdatum, Tarif, Beitrag, Laufzeit und Unterschriftszeile."
+  },
+  "dauer_ms": 610,
+  "kosten_cent": 0.05,
+  "zeit": null,
+  "aus_cache": false
+}

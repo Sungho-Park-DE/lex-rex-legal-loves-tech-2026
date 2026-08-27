@@ -1,0 +1,62 @@
+{
+  "case_id": "sauber_aktivpark",
+  "titel": "AktivPark — sauberer Fall (12 §5 Fall 5): der wirksam-Zweig",
+  "quelle": "eigene Fiktion, kein Lösungszettel — Erwartung von Hand aus den Regeln in 15 §2 abgeleitet, nicht aus der Engine-Ausgabe übernommen",
+  "geprueft": false,
+  "gating": false,
+  "stichtag": "2026-08-27",
+  "fall_verzeichnis": "demo/faelle/sauber_aktivpark",
+  "fallgruppe_id": "preiserhoehung",
+
+  "stufen": [
+    {
+      "name": "initial",
+      "dokumente": ["schreiben.md", "agb.md", "vertrag.md"],
+      "erwartet": {
+        "einordnung": "wirksam",
+        "fehlt": [{"dokumenttyp": "kostenkalkulation", "quelle": "unternehmen"}],
+        "gekippte_pruefpunkte": [],
+        "hauptvorschlag": "kuendigung_bei_wirksam",
+        "gerissene_stufe": null,
+        "zustaende": {
+          "P0": "JA", "P1": "JA", "P2": "JA", "P3": "JA", "P4": "JA",
+          "P5": "JA", "P6": "JA", "P7": "JA", "P8": "JA", "P8c": "JA", "P8d": "JA", "P8b": "JA",
+          "P9": "JA", "P10": "JA", "P11": "FEHLT", "P14": "JA"
+        },
+        "dokumenttypen": {"D1": "erhoehungsschreiben", "D2": "agb", "D3": "vertrag"},
+        "brief_gerendert": true
+      }
+    }
+  ],
+
+  "ableitung": {
+    "P0": "grundlage_genannt = klausel → NEIN_wenn verlangt zustimmung_aktiv + Beleg, WERTUNG_wenn verlangt neue_entgeltposition; beide feuern nicht, Pflichteingabe liegt vor → sonst JA. gate, zählt nicht zur Einordnung.",
+    "P1": "grundlage_genannt != 'keine' → sonst JA.",
+    "P2": "FEHLT_wenn: kreuzpruefung_klauselverweis() findet die Kurzform '6.3' im AGB-Text → true, also nicht false → feuert nicht. NEIN_wenn: agb.fassung_datum 01.11.2024 > vertrag.datum 01.03.2025 ist falsch → alle=false. WERTUNG_wenn: agb_einbezogen_hinweis liegt vor (nicht fehlt) und dasselbe Datumsverhältnis ist falsch → eine=false. Pflichteingaben preisklausel_text und vertrag.datum liegen vor → sonst JA.",
+    "P3": "Der Vertrag enthält keine Preisgarantie, vertrag.preisgarantie_monate wird nicht extrahiert → das erste Atom von NEIN_wenn ist null, alle=null → feuert nicht. Pflichteingaben vertrag.datum und wirksam_ab liegen vor → sonst JA. Bewusst konstruiert: die Preisgarantie-Abdeckung bleibt bei drehkreuz/ (20 §6).",
+    "P4": "JA_wenn: klausel_ueberschrift 'Beitragsanpassung' ist verifiziert (Zitat '6. Beitragsanpassung') und steht in der Werteliste → JA.",
+    "P5": "gespraech.klausel_ist_urspruenglicher_preis fehlt → NEIN_wenn null, feuert nicht; Pflichteingabe preisklausel_text liegt vor → sonst JA. gate, deaktiviert nichts.",
+    "P6": "JA_wenn verlangt alle drei Kriterien true UND alle drei verifiziert. Ziffer 6.1 nennt den Anlass (vier Kostenarten), 6.2 die Voraussetzung (>3 % gewichtete Steigerung, frühestens nach zwölf Monaten), 6.3 den Umfang (Kostenprozentsatz, gedeckelt auf 5 %) — jedes Kriterium mit eigenem Zitat → JA. Ohne verifizierte Zitate wäre der Ausgang WERTUNG, nicht JA: das ist die Stelle, an der die Fiktion beweist, dass 'sauber' nicht geraten wird.",
+    "P7": "JA_wenn: senkungspflicht = 'pflicht' (Ziffer 6.4 'ist das Studio verpflichtet') und kostenbezug = true (Ziffer 6.1), beide verifiziert → JA. NEIN_wenn verlangt senkungspflicht ∈ [ermessen, keine] → falsch.",
+    "P8": "NEIN_wenn verlangt zustimmungsmechanismus == 'schweigen' — hier 'keiner' → false. WERTUNG_wenn: laufzeit_monate 24 > 24 ist falsch, und vertrag.verlaengerung_text wird nicht extrahiert, weil der Vertrag keine Verlängerungsklausel enthält (er endet mit Ablauf der Laufzeit) → eine=false → sonst JA. Das ist der empfindlichste Punkt des Falls, siehe annahmen.",
+    "P8c": "Ziff. 6.5 sieht ein Kündigungsrecht vor, keine Widerspruchsform → keine_angabe → NEIN_wenn false → sonst JA.",
+    "P8b": "leistungsaenderungsrecht = false → NEIN_wenn feuert nicht → sonst JA. ergaenzend.",
+    "P9": "zustimmungsmechanismus = 'keiner' ∉ [schweigen, weiternutzung] → NEIN_wenn false → sonst JA. Das Schreiben verlangt keine Zustimmung und liest auch keine in das Weitertrainieren hinein; es kündigt eine einseitige Anpassung an und weist auf das Kündigungsrecht hin.",
+    "P10": "NEIN_wenn: agb.kuendigungsrecht_bei_erhoehung = true, aber kuendigungshinweis = true (nicht false) → alle=false. WERTUNG_wenn: Zugang = 15.07.2026 + 3 = 18.07.2026 (Annahme zugang_plus_3), tage_zwischen(18.07.2026, 01.10.2026) = 75, nicht < 30; form 'brief' ∉ [aushang, website] → eine=false → sonst JA.",
+    "P11": "WERTUNG_wenn verlangt dok_vorhanden(kostenkalkulation) → keine vorhanden → sonst FEHLT, fehlt_owner = unternehmen. ergaenzend, ändert die Einordnung nicht — sie steht auch im wirksam-Zweig im Prüfumfang-Kasten und trägt den Auskunftsverlangen-Vorschlag.",
+    "P14": "gespraech.monate_erhoeht_gezahlt fehlt → WERTUNG_wenn null → sonst JA.",
+    "baum": "S0 = INAKTIV (einziges Kind ist ein gate). S1 JA. S2 JA (P2/P3/P4). S3 JA (P6/P7/P8/P9; P5 ist gate und zählt nicht). S4 JA (P10). S5/S6 = INAKTIV (nur ergaenzend). root AND über die aktiven tragenden Prüfpunkte, alle JA → JA.",
+    "einordnung": "root == JA → 'wirksam'. Kein einziger tragender Prüfpunkt kippt — das ist der Punkt des Falls (Franz: „damit unser Werkzeug nicht wirkt, als finde es immer einen Fehler“).",
+    "gerissene_stufe": "keine Stufe S1…S4 ist NEIN → null.",
+    "hauptvorschlag": "garantie_pro_zweig['wirksam'] = [kuendigung_bei_wirksam, auskunftsverlangen_vorbehalt]; beide wenn-Bedingungen (einordnung == 'wirksam') treffen zu, die Reihenfolge der Garantie entscheidet → kuendigung_bei_wirksam. Das Template zieht die Variante 'sonderkuendigung', weil agb.kuendigungsrecht_bei_erhoehung = true.",
+    "vollstaendigkeit": "verbraucherseitig nichts offen (alle drei Pflichtdokumente vollständig extrahiert); unternehmensseitig die Kostenkalkulation — einmal aus dem Soll (pflicht 'hinweis') und einmal aus P11 FEHLT, die Engine dedupliziert."
+  },
+
+  "annahmen": [
+    "P8 = JA hängt daran, dass der Vertrag keine Verlängerungsklausel enthält. Enthielte er eine — und die meisten Fitnessverträge tun das —, feuerte WERTUNG_wenn und der Fall wäre 'unklar', nicht 'wirksam'. Die Fiktion setzt deshalb eine feste 24-Monats-Laufzeit mit automatischem Ende. Das ist zulässig konstruiert, aber es ist eine Konstruktion: sobald Franz' Fall 5 vorliegt, gilt seine.",
+    "P8 = JA hängt außerdem daran, dass die WERTUNG_wenn-Schwelle laufzeit_monate > 24 lautet. Bei 24 Monaten steht der Fall exakt auf der Grenze, unterschreitet sie aber. Senkt Franz die Schwelle (15 §14, offene Frage 'P8 Laufzeit-Regel'), kippt der Fall auf WERTUNG.",
+    "P10 = JA hängt an frist_min_tage = 30 (geprueft:false) und an der Annahme zugang_plus_3. Mit 75 Tagen Vorlauf ist der Abstand zur Schwelle groß genug, dass eine Korrektur des Parameters den Fall nicht kippt.",
+    "P6/P7 = JA hängen daran, dass die Extraktion für jedes Kriterium ein Zitat liefert, das die Prüfung besteht. Liefert ein Modell einen der Werte ohne belastbares Zitat, fällt der Prüfpunkt auf WERTUNG und die Einordnung auf 'unklar' — nicht auf 'wahrscheinlich unwirksam'. Das ist die gewollte Richtung des Fehlers.",
+    "Die gesamte Erwartung ist unsere eigene Lesart (geprueft:false, 15 §11) — advisory, nicht gating. Ob eine solche Klausel vor Gericht hielte, sagt dieser Test nicht; er sagt, dass das Programm sie nach den hinterlegten Regeln nicht beanstandet."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "aufgabe": "propose_fallgruppe",
+  "modell": "claude-opus-5",
+  "prompt_version": "p1",
+  "eingabe": {
+    "freitext": "Mein Sportclub hat mir einen Brief geschickt, dass mein Beitrag ab Oktober von 27,50 auf 31,90 Euro steigt. Der Brief nennt eine Ziffer aus den AGB, aber die AGB habe ich gerade nicht zur Hand — ich weiß auch nicht mehr, ob ich sie damals überhaupt bekommen habe. Den Brief hänge ich an. Ist das so in Ordnung?",
+    "doktypen": [
+      "agb",
+      "erhoehungsschreiben",
+      "vertrag"
+    ],
+    "taxonomie": [
+      "inkasso",
+      "klausel_check",
+      "kuendigung",
+      "preiserhoehung"
+    ]
+  },
+  "ausgabe": {
+    "vorschlaege": [
+      {
+        "fallgruppe_id": "preiserhoehung",
+        "begruendung": "Der Club erhöht den laufenden Monatsbeitrag einseitig.",
+        "zitate": [
+          "dass mein Beitrag ab Oktober von 27,50 auf 31,90 Euro steigt"
+        ]
+      },
+      {
+        "fallgruppe_id": "klausel_check",
+        "begruendung": "Im Kern steht die Wirksamkeit der Preisanpassungsklausel in den AGB.",
+        "zitate": []
+      }
+    ]
+  },
+  "dauer_ms": 3100,
+  "kosten_cent": 0.6,
+  "zeit": null,
+  "aus_cache": false
+}

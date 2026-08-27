@@ -1,0 +1,26 @@
+{
+  "aufgabe": "classify_doc",
+  "modell": "claude-haiku-4-5",
+  "prompt_version": "p1",
+  "eingabe": {
+    "seiten": [
+      {
+        "nr": 1,
+        "text": "Allgemeine Geschäftsbedingungen der Nordlicht Sportclub GmbH\nFassung vom 15.01.2023\n\n1. Geltungsbereich\n\n1.1 Diese Bedingungen gelten für alle Mitgliedschaften der Nordlicht Sportclub GmbH.\n\n2. Vertragsschluss\n\n2.1 Der Vertrag kommt mit Unterzeichnung des Mitgliedsvertrages zustande.\n\n3. Leistungen\n\n3.1 Der Club stellt die in der Clubbeschreibung genannten Trainingsflächen, Kurse und den Saunabereich zur Verfügung.\n\n4. Öffnungszeiten\n\n4.1 Die Öffnungszeiten werden im Club ausgehängt.\n\n5. Trainingsbetrieb\n\n5.1 Das Mitglied trainiert auf eigene Verantwortung und beachtet die Einweisung des Personals.\n\n6. Gastkarten\n\n6.1 Mitglieder können gegen Entgelt Gastkarten erwerben."
+      },
+      {
+        "nr": 2,
+        "text": "7. Beiträge\n\n7.1 Der bei Vertragsschluss vereinbarte Beitrag ist monatlich im Voraus zum Monatsersten fällig.\n\n7.2 Wir behalten uns vor, die Beiträge anzupassen. Die Anpassung wird dem Mitglied mitgeteilt.\n\n7.3 Die Zahlung erfolgt per SEPA-Lastschrift. Bei einer Rücklastschrift, die das Mitglied zu vertreten hat, wird eine Bearbeitungspauschale erhoben.\n\n8. Laufzeit\n\n8.1 Die Mindestlaufzeit ergibt sich aus dem Mitgliedsvertrag.\n\n9. Hausordnung\n\n9.1 Die im Club ausgehängte Hausordnung ist Bestandteil des Vertrages."
+      }
+    ]
+  },
+  "ausgabe": {
+    "dokumenttyp": "agb",
+    "konfidenz": 0.96,
+    "begruendung": "Nummerierte Allgemeine Geschäftsbedingungen mit Geltungsbereich, Leistungen, Beiträgen und Laufzeit."
+  },
+  "dauer_ms": 610,
+  "kosten_cent": 0.05,
+  "zeit": null,
+  "aus_cache": false
+}

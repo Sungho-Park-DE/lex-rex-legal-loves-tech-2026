@@ -1,0 +1,39 @@
+{
+  "aufgabe": "propose_fallgruppe",
+  "modell": "claude-opus-5",
+  "prompt_version": "p1",
+  "eingabe": {
+    "freitext": "Mein Studio schreibt mir, dass der Beitrag ab November von 32,00 auf 33,60 Euro steigt, und beruft sich dabei auf Ziffer 5.2 seiner Bedingungen. Ich habe die Bedingungen und den Vertrag herausgesucht und schicke beides mit — allerdings ist mir aufgefallen, dass bei den Bedingungen die zweite Seite fehlt, ausgerechnet die mit Ziffer 5. Können Sie trotzdem schon sagen, ob das zulässig ist?",
+    "doktypen": [
+      "agb",
+      "erhoehungsschreiben",
+      "vertrag"
+    ],
+    "taxonomie": [
+      "inkasso",
+      "klausel_check",
+      "kuendigung",
+      "preiserhoehung"
+    ]
+  },
+  "ausgabe": {
+    "vorschlaege": [
+      {
+        "fallgruppe_id": "preiserhoehung",
+        "begruendung": "Das Studio erhöht den laufenden Monatsbeitrag einseitig.",
+        "zitate": [
+          "dass der Beitrag ab November von 32,00 auf 33,60 Euro steigt"
+        ]
+      },
+      {
+        "fallgruppe_id": "klausel_check",
+        "begruendung": "Im Kern steht die Wirksamkeit der Preisanpassungsklausel in den Bedingungen.",
+        "zitate": []
+      }
+    ]
+  },
+  "dauer_ms": 3100,
+  "kosten_cent": 0.6,
+  "zeit": null,
+  "aus_cache": false
+}

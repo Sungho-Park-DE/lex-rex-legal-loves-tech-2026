@@ -1,0 +1,20 @@
+{
+  "kanal": "vbs",
+  "ticket_nr": "VBS-48901",
+  "thema": "Allgemeines Verbraucherrecht",
+  "eingegangen_am": "2026-08-21T10:40:00",
+  "anbieter": "PULSE Fitness & Wellness GmbH",
+  "branche": "fitness",
+  "gegner": null,
+  "freitext": "Guten Tag, ich weiß nicht, ob Sie mir da weiterhelfen können, aber ich komme mit meinem Fitnessstudio nicht weiter und ärgere mich langsam wirklich. Ich bin seit September 2024 im PULSE Nordstadt angemeldet, für 44,90 € im Monat, der Vertrag läuft noch bis Ende August. Ende Februar kam eine E-Mail, dass der Beitrag ab April auf 54,90 € steigt. Das sind zehn Euro mehr, also fast ein Viertel, das finde ich ziemlich happig. In der Mail stand außerdem, wer ab dem 1. April durch das Drehkreuz geht und weiter trainiert, der stimmt der Erhöhung damit zu, und man müsse dann nichts mehr extra sagen. Das steht wohl auch so in den AGB. Ich bin am 5. März zur Rezeption gegangen und habe dem Mitarbeiter gesagt, dass ich das so nicht in Ordnung finde und nicht zahlen will. Er hat gemeint, das müsse ich schriftlich machen, mündlich zähle das nicht, und außerdem sei die Frist von zwei Wochen ja bald rum. Ich habe dann nichts weiter gemacht, weil ich dachte, da kann man sowieso nichts machen, wenn es in den AGB steht. Trainiert habe ich ganz normal weiter, ich gehe zwei- bis dreimal die Woche hin, das mache ich seit zwei Jahren so und ich zahle ja auch dafür. Vergangene Woche habe ich mir mal die Kontoauszüge angeschaut und gesehen, dass seit April die 54,90 € abgebucht werden. Als ich das im Studio angesprochen habe, hieß es nur, ich hätte ja zugestimmt, ich sei schließlich weiter trainieren gewesen, das sei genau der Punkt. Meine Fragen: Habe ich da wirklich zugestimmt, nur weil ich weiter hingegangen bin? Ich habe doch nie irgendetwas unterschrieben und ich habe sogar gesagt, dass ich nicht einverstanden bin. Bekomme ich das Geld zurück? Und kann ich einfach aufhören zu zahlen oder kündigen? Ich will eigentlich weiter trainieren, ich will nur nicht die zehn Euro mehr zahlen. Den Vertrag, den Ausschnitt aus den AGB und die E-Mail von Ende Februar habe ich Ihnen mitgeschickt. Viele Grüße S. Kern",
+  "identitaet": {
+    "name": "Sabine Kern",
+    "adresse": "Ahornweg 14, 30169 Musterstadt",
+    "email": "s.kern@example-mail.de",
+    "telefon": "0176 2233 44 55",
+    "kundennummer": "NST-2024-08871"
+  },
+  "anhaenge": ["schreiben.md", "agb.md", "vertrag.md"],
+  "geprueft": false,
+  "hinweis": "Fiktion — Testfall Franz Runde 2, Fall Nr. 1 (Drehkreuz-Konstellation, Hauptfall der Live-Vorführung nach 12_aufgaben_franz_runde2_de §5). Quelle: data/eingang/franz_runde2_faelle_1_2.pdf. Kein echter Fall, keine echten Personen."
+}

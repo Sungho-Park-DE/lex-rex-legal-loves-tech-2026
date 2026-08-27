@@ -1,0 +1,39 @@
+{
+  "aufgabe": "propose_fallgruppe",
+  "modell": "claude-opus-5",
+  "prompt_version": "p1",
+  "eingabe": {
+    "freitext": "Mein Fitnessstudio erhöht meinen Beitrag ab Oktober von 34,90 auf 36,35 Euro und schreibt etwas von gestiegenen Energie- und Personalkosten. Ich finde das ärgerlich, weil ich seit anderthalb Jahren dort trainiere. Im Brief steht auch, dass ich kündigen darf. Ich schicke Ihnen den Brief, die AGB und meinen Vertrag mit. Muss ich die Erhöhung akzeptieren, oder kann ich mich dagegen wehren?",
+    "doktypen": [
+      "agb",
+      "erhoehungsschreiben",
+      "vertrag"
+    ],
+    "taxonomie": [
+      "inkasso",
+      "klausel_check",
+      "kuendigung",
+      "preiserhoehung"
+    ]
+  },
+  "ausgabe": {
+    "vorschlaege": [
+      {
+        "fallgruppe_id": "preiserhoehung",
+        "begruendung": "Das Studio erhöht den laufenden Monatsbeitrag einseitig.",
+        "zitate": [
+          "Mein Fitnessstudio erhöht meinen Beitrag ab Oktober von 34,90 auf 36,35 Euro"
+        ]
+      },
+      {
+        "fallgruppe_id": "klausel_check",
+        "begruendung": "Im Kern steht die Wirksamkeit der Preisanpassungsklausel in den AGB.",
+        "zitate": []
+      }
+    ]
+  },
+  "dauer_ms": 3100,
+  "kosten_cent": 0.6,
+  "zeit": null,
+  "aus_cache": false
+}

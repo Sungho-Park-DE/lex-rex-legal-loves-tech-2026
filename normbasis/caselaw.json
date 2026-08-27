@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "note": "Case-law anchors cited by the schema files. `geprueft` means a law student has confirmed court, Aktenzeichen, date, outcome and transferability — NOT that someone typed it here. Every entry is geprueft:false until Franz' Aufgabe 4 lands (15 §13); unverified anchors render grey and never go on a slide (14 §8, 15 §2 note iv).",
+    "attribution_regel": "CLAUDE.md binding table — LG Bamberg 13 O 730/22 (McFit) = vzbv, not VZ Bayern; OLG Bamberg 3 UKl 20/24 e (FitOne) = VZ Bayern; 1N Sammelklage = vzbv."
+  },
+  "eintraege": {
+    "bgh_xi_zr_26_20": {
+      "key": "bgh_xi_zr_26_20",
+      "gericht": "BGH",
+      "az": "XI ZR 26/20",
+      "datum": "2021-04-27",
+      "klaeger": "vzbv",
+      "kernaussage": "Zustimmungsfiktion in AGB für Entgeltänderungen unwirksam (Banken); die Begründung ist allgemeines Vertragsrecht (§§ 145 ff., 305 Abs. 2, 311 Abs. 1 BGB — Schweigen ist keine Annahme), nicht Bankrecht. Auf Fitness angewandt von LG Bamberg 13 O 730/22, das dieses Urteil ausdrücklich zitiert.",
+      "url": "https://dejure.org/dienste/vernetzung/rechtsprechung?Text=XI+ZR+26%2F20",
+      "ebene": "dogmatik",
+      "status": "gefestigt",
+      "geprueft": false,
+      "geprueft_von": null,
+      "geprueft_am": null,
+      "verlauf": "Recherche 25.08.2026 (analysis/34 §1): die Brücke zu Fitness ist LG Bamberg 13 O 730/22. Der Vorbehalt „Übertragbarkeit auf Fitness: zu prüfen“ ist am 26.08.2026 von Paulina geschlossen worden (Runde 4, Frage 2c: „ja das trägt“) — die Brücke über LG Bamberg 13 O 730/22 trägt damit nach juristischer Aussage. `geprueft` bleibt trotzdem **false**: der Test test_rung1::test_alle_anker_sind_noch_ungeprueft verlangt, dass ein Mensch das Original gelesen hat, und das ist bei keinem der beiden Urteile geschehen. Zum Umstellen gehoert eine ausdrueckliche Entscheidung und eine Aenderung dieses Tests."
+    },
+    "lg_bamberg_13_o_730_22": {
+      "key": "lg_bamberg_13_o_730_22",
+      "gericht": "LG Bamberg",
+      "az": "13 O 730/22",
+      "datum": "2024-03-15",
+      "klaeger": "vzbv",
+      "kernaussage": "Drehkreuz/Weiternutzung als Zustimmung = aggressive geschäftliche Handlung",
+      "url": "https://www.gesetze-bayern.de/Content/Document/Y-300-Z-GRURRS-B-2024-N-8090",
+      "ebene": "rechtsanwendung",
+      "status": "gefestigt",
+      "geprueft": true,
+      "geprueft_von": "Paulina",
+      "geprueft_am": "2026-08-26",
+      "verlauf": "Berufung OLG Bamberg 3 U 39/24 e: McFIT gab in zweiter Instanz eine Unterlassungserklärung ab, daraufhin haben die Parteien den Rechtsstreit übereinstimmend für erledigt erklärt (vzbv, Stand 24.09.2024) — keine Rücknahme, keine Bestätigung durch das OLG — nicht vom OLG bestätigt. Recherche 24.08.2026 (analysis/30 §5); geprueft bleibt false, bis ein Mensch aus dem Team das Original gelesen hat. · Recherche 25.08.2026 (analysis/34 §1): Endurteil-Datum 15.03.2024 am Volltext (gesetze-bayern.de) bestätigt, Leitsätze verbatim übernommen. ⚠️ Nicht mit LG Bamberg 1 HK O 27/24 (21.02.2025, Preisangaben) verwechseln — anderes Verfahren, anderes Thema. · **26.08.2026: Paulina hat das Urteil im Original gelesen** (Runde 4) — damit ist die Bedingung erfüllt, die hier seit dem 24.08. stand („geprueft bleibt false, bis ein Mensch aus dem Team das Original gelesen hat“). Erster bestätigter Anker im Bestand. BGH XI ZR 26/20 bleibt false: gelesen wurde das Bamberger Urteil, nicht das des BGH.",
+      "url_sekundaer": "https://www.vzbv.de/urteile/urteil-vorgehen-bei-preiserhoehung-mcfit-studios-unzulaessig",
+      "text": "Leitsatz 1: „Die Aufforderung an die Mitglieder der Fitness-Studios, ein Drehkreuz am Eingang zu durchschreiten und damit der geforderten Beitragserhöhung zuzustimmen, stellt sich als unzulässige aggressive geschäftliche und damit unlautere geschäftliche Handlung dar.“ — Leitsatz 2: „Entsprechende Vertragsklauseln weichen zudem von dem wesentlichen Grundgedanken der §§ 305 Abs. 2, § 311 Abs. 1, § 145 ff. BGB ab und benachteiligen die Mitglieder unangemessen nach § 307 Abs. 1 S. 1, Abs. 2 Nr. 1 BGB.“"
+    },
+    "bgh_viii_zr_138_07": {
+      "key": "bgh_viii_zr_138_07",
+      "gericht": "BGH",
+      "az": "VIII ZR 138/07",
+      "datum": "2008-11-19",
+      "klaeger": null,
+      "kernaussage": "Wer sich auf ein einseitiges Preisanpassungsrecht beruft, trägt die Darlegungs- und Beweislast dafür, dass die Erhöhung auf Steigerungen der eigenen Kosten beruht und ihnen keine Einsparungen in anderen Kostenpositionen gegenüberstehen (§ 315 Abs. 3 BGB). Energieversorgung; Übertragbarkeit auf Fitness: zu prüfen.",
+      "zitat": "die Darlegungs- und Beweislast dafür, dass die Preiserhöhungen auf Steigerungen der eigenen (Bezugs-)Kosten beruhen und ihnen keine Einsparungen in anderen Kostenpositionen gegenüberstehen, der Klägerin als derjenigen auferlegt, die sich auf das insoweit bestehende Recht zur Preisanpassung beruft",
+      "zitat_quelle": "Wiedergabe in BGH 06.04.2016 – VIII ZR 71/10, Rn. 28 (dejure.org), als Bestätigung von VIII ZR 138/07 und VIII ZR 314/07; BGHZ 178, 362",
+      "url": "https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BGH&Datum=19.11.2008&Aktenzeichen=VIII+ZR+138/07",
+      "ebene": "rechtsanwendung",
+      "status": "gefestigt",
+      "geprueft": false,
+      "geprueft_von": null,
+      "geprueft_am": null,
+      "verlauf": "Recherche 25.08.2026 (V-N5): Antwort auf Franz' Frage 26 §4.1 / §8.2, welche Norm den Offenlegungsanspruch trägt, wenn die Klausel schweigt. Zitat nicht am Originaltext des BGH gelesen (juris-Link leitet um) — deshalb geprueft:false und zitat_quelle genannt."
+    },
+    "bgh_xii_zr_136_09": {
+      "key": "bgh_xii_zr_136_09",
+      "gericht": "BGH",
+      "az": "XII ZR 136/09",
+      "datum": "2011-11-09",
+      "klaeger": null,
+      "kernaussage": "Allgemeiner Auskunftsanspruch aus § 242 BGB: wenn der Berechtigte in entschuldbarer Weise über Bestehen oder Umfang seines Rechts im Ungewissen ist und der Verpflichtete die Auskunft unschwer erteilen kann. Formel seit BGHZ 141, 307 (XII ZR 184/97).",
+      "zitat": "Nach ständiger Rechtsprechung des Bundesgerichtshofs gebieten es Treu und Glauben auch grundsätzlich, dem Anspruchsberechtigten einen Auskunftsanspruch zuzubilligen, wenn die zwischen den Parteien bestehenden Rechtsbeziehungen es mit sich bringen, dass der Anspruchsberechtigte in entschuldbarer Weise über das Bestehen oder den Umfang seines Rechts im Ungewissen ist, und der Verpflichtete in der Lage ist, unschwer die zur Beseitigung dieser Ungewissheit erforderlichen Auskünfte zu erteilen",
+      "zitat_quelle": "Rn. 20, Volltext lorenz.userweb.mwn.de",
+      "url": "https://lorenz.userweb.mwn.de/urteile/xiizr136_09.htm",
+      "ebene": "dogmatik",
+      "status": "gefestigt",
+      "geprueft": false,
+      "geprueft_von": null,
+      "geprueft_am": null,
+      "verlauf": "Recherche 25.08.2026 (V-N5): die „schwammige“ zweite Stufe, die Franz meinte — sie ist eine gefestigte Formel, nicht bloß § 242 als Gefühl. Anwendung auf die Kostenkalkulation eines Fitnessstudios: zu prüfen (entschuldbare Ungewissheit ja; „unschwer“ ist die Frage)."
+    }
+  }
+}

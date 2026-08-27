@@ -1,0 +1,55 @@
+{
+  "_zweck": "Franz' Prüfpunkt-Nummern <-> unsere P-IDs. Getrennte Datei, kein Feld am Prüfpunkt: acht der zwanzig Zeilen sind nicht 1:1 (fünf haben gar keine P-ID, eine bildet auf einen Teil einer anderen ab), und das trägt kein Feld an `pruefpunkte[*]`. Der Unterstrich im Dateinamen ist funktional — `schema.taxonomie()` überspringt `_`-Dateien, das hier ist keine Fallgruppe.",
+  "_hauptverwendung": "Eingabe für `tools/loesungszettel_vorlage.py`, NICHT für einen Parser. Die Vorlage druckt P-IDs mit Titel als Ankreuzliste, damit Franz gar keine Nummer mehr schreiben muss — dann braucht der Ingest diese Map nicht. Sie bleibt, um seine bereits gelieferten Fälle nachträglich lesen zu können und um zu sehen, was in seiner Liste bei uns fehlt.",
+  "_stand": "2026-08-23",
+  "fallgruppe_id": "preiserhoehung",
+
+  "runde_1": {
+    "_belegt": "analysis/12_aufgaben_franz_runde2_de.md §4 — die Liste, die wir ihm geschickt haben — gegen schemas/preiserhoehung.json anker[*].norm maschinell verglichen: 0-13 stimmen Anker für Anker mit P0-P13 überein.",
+    "_regel": "1:1, seine Nummer n -> P<n>. Diese Zuordnung war nirgends aufgeschrieben.",
+    "abbildung": {
+      "0": "P0", "1": "P1", "2": "P2", "3": "P3", "4": "P4", "5": "P5", "6": "P6",
+      "7": "P7", "8": "P8", "9": "P9", "10": "P10", "11": "P11", "12": "P12", "13": "P13"
+    }
+  },
+
+  "runde_2": {
+    "_belegt": "data/eingang/franz_runde2_faelle_1_2.pdf S. 1-2, transkribiert und geprüft in analysis/20_franz_lieferung_r2.md §2.",
+    "_warnung": "Seine eigenen Fall-Lösungen verwenden diese Nummern NICHT konsistent: Fall 2b („ehemals 6, jetzt 11\") folgt dem Titel, Fall 1 („ehemals 9, jetzt 13\") nicht — nach Titel müsste es „ehemals 10\" heißen. Fall 4 („Prüfpunkt 11\" für die Preisgarantie) passt zu keiner der beiden Listen. Solange analysis/20 §7 Frage 1 offen ist, darf kein Ingest auf diesen Nummern rechnen.",
+    "abbildung": {
+      "0":   {"p_id": null,  "titel": "Anwendungsbereich eröffnet (Verbrauchsgüterkauf)", "norm": "§§ 305 ff., 474 ff., 476 I 1 BGB", "status": "neu"},
+      "0.1": {"p_id": null,  "titel": "§§ 305 II, III, 308, 309 gelten nicht ggü. Unternehmer", "norm": "§ 310 Abs. 1 S. 1 BGB", "status": "neu"},
+      "0.2": {"p_id": null,  "titel": "Sonderregime Energie / Gas / Fernwärme / Wasser", "norm": "§ 310 Abs. 2 BGB", "status": "neu"},
+      "0.3": {"p_id": "P0",  "titel": "Um welche Art Vertrag geht es?", "norm": "§ 310 Abs. 3 BGB", "status": "eins_zu_eins"},
+      "1":   {"p_id": "P1",  "titel": "Nennt das Schreiben eine Grundlage?", "norm": null, "status": "eins_zu_eins"},
+      "2":   {"p_id": null,  "titel": "Liegen AGB vor? (für eine Vielzahl vorformuliert)", "norm": "§ 305 I 1 BGB", "status": "neu"},
+      "3":   {"p_id": null,  "titel": "Einbeziehung durch Rahmenvereinbarung", "norm": "§ 305 III BGB", "status": "neu"},
+      "4":   {"p_id": "P2",  "titel": "Wirksam einbezogen — steht die Klausel in dieser Fassung?", "norm": "§ 305 Abs. 2 BGB", "status": "eins_zu_eins"},
+      "5":   {"p_id": "P3",  "titel": "Individualabrede / Preisgarantie geht vor", "norm": "§ 305b BGB", "status": "eins_zu_eins"},
+      "6":   {"p_id": "P4",  "titel": "Überraschend platziert oder unklar formuliert?", "norm": "§ 305c BGB", "status": "eins_zu_eins"},
+      "7":   {"p_id": null,  "titel": "Unklarheitenregel — Zweifel zu Lasten des Verwenders", "norm": "§ 305c Abs. 2 BGB", "status": "neu", "hinweis": "bei uns in P4 mitgedacht, kein eigener Prüfpunkt"},
+      "8":   {"p_id": "P8",  "titel": "Klauselverbot ohne Wertungsmöglichkeit", "norm": "§§ 308 Nr. 5, 309 Nr. 9 BGB", "status": "teilweise", "hinweis": "P8 deckt die Erklärungsfiktion (§ 308 Nr. 5); die Laufzeit (§ 309 Nr. 9) ist seit 24 Aug der ergänzende P8d — seine Nr. 8 ist weiter gefasst"},
+      "9":   {"p_id": "P9",  "titel": "Klauselverbot mit Wertungsmöglichkeit — Zustimmungsfiktion", "norm": "§ 308 Nr. 5, § 307 BGB", "status": "eins_zu_eins"},
+      "10":  {"p_id": "P5",  "titel": "Inhaltlich kontrollierbar?", "norm": "§ 307 Abs. 3 BGB", "status": "eins_zu_eins"},
+      "11":  {"p_id": "P6",  "titel": "Transparenz — Anlass, Voraussetzungen, Umfang", "norm": "§ 307 Abs. 1 S. 2 BGB", "status": "eins_zu_eins"},
+      "12":  {"p_id": "P7",  "titel": "Symmetrie — Weitergabe von Kostensenkungen", "norm": "§ 307 Abs. 1 S. 1, Abs. 2 BGB", "status": "eins_zu_eins"},
+      "13":  {"p_id": "P10", "titel": "Formalien: rechtzeitig, Form, Pflichtangaben, Zugang", "norm": null, "status": "eins_zu_eins"},
+      "14":  {"p_id": "P11", "titel": "Höhe angemessen?", "norm": "§ 315 Abs. 3 BGB", "status": "eins_zu_eins"},
+      "15":  {"p_id": "P12", "titel": "Rechtsfolgen: Rückforderung, Verjährung", "norm": "§§ 306, 812, 195, 199 BGB", "status": "eins_zu_eins"},
+      "16":  {"p_id": "P13", "titel": "Nächster Schritt", "norm": null, "status": "eins_zu_eins"}
+    },
+    "_ohne_gegenstueck_bei_uns": ["P8b", "P8d", "P14"],
+    "_ohne_gegenstueck_bei_ihm": "Seine 0, 0.1, 0.2, 2, 3, 7 haben keine P-ID. Das sind zusätzliche Prüfungen, keine bessere Lesart vorhandener — sie aufzunehmen ändert Baum, Aggregation, Goldens und Caches. Entscheidung offen, siehe analysis/20 §7."
+  },
+
+  "einordnung": {
+    "_warnung": "SEINE Wörter bedeuten nicht unsere. Aus data/eingang/franz_runde1_trainingsset_6_musterfaelle.pdf, seine eigene Definition (Z. 20-23) und sein JSONL-Schema (Z. 836):",
+    "_seine_definition": {
+      "unwirksam": "der Mangel ist am vorliegenden Material bereits belegbar",
+      "wahrscheinlich_unwirksam": "ein tragender Mangel liegt nahe, das Material trägt den Nachweis aber noch nicht",
+      "wirksam": "kein tragfähiger Angriffspunkt erkennbar"
+    },
+    "_der_konflikt": "Sein `wahrscheinlich_unwirksam` (Nachweis fehlt noch) ist inhaltlich UNSER `unklar – es fehlt …`. Unser `wahrscheinlich unwirksam` ist die Wurzel auf NEIN, also eine Regel, die tatsächlich gerissen ist. `unklar` kommt in seinem Vokabular nicht vor — in Runde 1 null Treffer. Eine wörtliche Übernahme würde genau die Fälle, die `unklar` sein müssen, zu einem harten Urteil befördern und damit die Erwartungsseite der Kennzahl `falsche sichere Antworten` verfälschen.",
+    "_konsequenz": "Nicht automatisch übersetzen. Die Vorlage druckt unsere drei Wörter als Ankreuzfeld und fragt darunter getrennt: fehlt der Nachweis, oder ist die Regel gerissen? Das ist die ganze Unterscheidung."
+  }
+}

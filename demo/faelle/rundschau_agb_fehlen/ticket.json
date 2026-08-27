@@ -1,0 +1,20 @@
+{
+  "kanal": "vbs",
+  "ticket_nr": "VBS-48912",
+  "thema": "Allgemeines Verbraucherrecht",
+  "eingegangen_am": "2026-08-21T14:05:00",
+  "anbieter": "Musterstädter Rundschau Verlagsgesellschaft mbH",
+  "branche": "presse",
+  "gegner": null,
+  "freitext": "Sehr geehrte Damen und Herren, ich beziehe seit 2017 die Musterstädter Rundschau und habe jetzt einen Brief bekommen, dass der Preis ab September von 12,90 € auf 14,90 € steigt. In dem Brief steht, das gehe nach Ziffer 4.2 der Bezugsbedingungen. Diese Bezugsbedingungen habe ich noch nie gesehen. Ich habe das Abo damals an einem Stand im Einkaufszentrum abgeschlossen, da war eine Werbeaktion mit einem Gutschein über 25 €. Ich habe irgendein Formular unterschrieben, aber Unterlagen habe ich meiner Erinnerung nach nicht mitbekommen, jedenfalls finde ich zu Hause nichts mehr. Auf der Internetseite stehen welche, da habe ich reingeschaut, aber ob das die von damals sind, kann ich nicht sagen, und ehrlich gesagt verstehe ich das auch nicht. Der Brief sieht ja eigentlich ordentlich aus, deshalb bin ich unsicher. Muss ich das einfach zahlen? Angefangen habe ich damals übrigens mit 9,90 € im Monat, das weiß ich noch genau, weil ich mich gewundert habe, wie günstig das war. Ich schicke Ihnen den Brief mit, mehr habe ich leider nicht. Mit freundlichen Grüßen H. Pohlmann",
+  "identitaet": {
+    "name": "Heinz Pohlmann",
+    "adresse": "Lindenstraße 47 a, 30165 Musterstadt",
+    "email": null,
+    "telefon": null,
+    "kundennummer": "41-772 903"
+  },
+  "anhaenge": ["schreiben.md"],
+  "geprueft": false,
+  "hinweis": "Fiktion — Testfall Franz Runde 2, Fall Nr. 2 (AGB fehlen). ACHTUNG: Abo-Zeitung, nicht Fitness — Abweichung von der Vorgabe in 12_aufgaben_franz_runde2_de §5, siehe analysis/20 §4. Quelle: data/eingang/franz_runde2_faelle_1_2.pdf."
+}

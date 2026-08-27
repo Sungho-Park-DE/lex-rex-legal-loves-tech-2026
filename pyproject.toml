@@ -1,0 +1,61 @@
+# Tooling only — the package is run from the repo root, not installed.
+# `fallpruefer/` has no build step and `requirements.txt` stays the manifest;
+# this file exists so that „was der Linter sagt" is one answer for everyone
+# instead of whatever each session happens to have on its PATH.
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["core", ".venv", "cache", "store", "cases"]
+
+[tool.ruff.lint]
+# Chosen against what this codebase actually got wrong, not by size of rule set.
+# The full default set reported 84 findings here, 75 of them pure form
+# (unused-noqa, import order, quoted annotations) — noise that trains people to
+# skim the output, which is how the one real finding gets skimmed too.
+#
+# Every rule below has either caught a defect in this repo or guards a property
+# the design rests on:
+#   F     pyflakes. F821 found `leitfaden_antworten` missing from api.py's
+#         import list — the endpoint was registered, 259 tests were green, and
+#         the first real request would have raised NameError.
+#   DTZ   datetime. Found `date.today()` in tools/loesungszettel_vorlage.py,
+#         reaching past `zeit.heute()`, so that one generated form disagreed
+#         with every other date in the program. `zeit.py` is the one sanctioned
+#         place and is exempted below.
+#   BLE   blind except — a swallowed exception in a legal assessment is a
+#         verdict nobody computed.
+#   B     bugbear: mutable defaults, loop-variable capture, the quiet ones.
+#   RUF012, C4, PIE, RET, SIM, PTH   small and mechanical.
+select = ["F", "E4", "E7", "E9", "W", "B", "DTZ", "BLE", "RUF012", "C4", "PIE", "RET", "SIM", "PTH"]
+ignore = [
+    "SIM108",   # ternaries are not always clearer than an if/else
+    "RET504",   # a named result before `return` is often the documentation
+    "B008",     # FastAPI's Depends() in a default is the framework's idiom
+]
+
+[tool.ruff.lint.per-file-ignores]
+# The one place `date.today()` belongs: `zeit.heute()` is what everything else
+# calls, and it has to read the clock somewhere.
+"fallpruefer/zeit.py" = ["DTZ011"]
+# Tests build fixtures inline and open files by hand; neither is a defect there.
+"tests/*" = ["PTH", "RUF012", "B011"]
+# One-shot scripts, run by hand, not imported by the package.
+"tools/*" = ["PTH"]
+"data/*" = ["PTH", "DTZ"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Tests reach into the repo root (`fallpruefer`, `tools`) without an install.
+pythonpath = ["."]
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+# Deliberately NOT enforced yet. 43 findings, 28 of them the single
+# `viewmodel.vokabel() -> Vokabel | None` pattern; fixing that is one signature
+# change and only worth making if the `None` is actually reachable. Turning
+# mypy on before that would mean 28 lines of noise on every run, which is how a
+# check stops being read. Config is here so the day it is switched on, everyone
+# switches on the same thing.
+files = ["fallpruefer"]

@@ -1,0 +1,20 @@
+{
+  "kanal": "vbs",
+  "ticket_nr": "VBS-48377",
+  "thema": "Allgemeines Verbraucherrecht",
+  "eingegangen_am": "2026-08-25T14:40:00",
+  "anbieter": "AktivPark Fitness",
+  "branche": "fitness",
+  "gegner": null,
+  "freitext": "Mein Fitnessstudio erhöht meinen Beitrag ab Oktober von 34,90 auf 36,35 Euro und schreibt etwas von gestiegenen Energie- und Personalkosten. Ich finde das ärgerlich, weil ich seit anderthalb Jahren dort trainiere. Im Brief steht auch, dass ich kündigen darf. Ich schicke Ihnen den Brief, die AGB und meinen Vertrag mit. Muss ich die Erhöhung akzeptieren, oder kann ich mich dagegen wehren?",
+  "identitaet": {
+    "name": "Tobias Rehm",
+    "adresse": "Ostengasse 8, 93047 Regensburg",
+    "email": "t.rehm@example.de",
+    "telefon": "0941 998877",
+    "kundennummer": "90233-7"
+  },
+  "anhaenge": ["schreiben.md", "agb.md", "vertrag.md"],
+  "geprueft": false,
+  "hinweis": "Fiktion — eigene Testdaten für den wirksam-Zweig (12_aufgaben_franz_runde2_de §5 Fall 5). Kein echter Fall, keine echten Personen. Wird 1:1 durch Franz' Fall 5 ersetzt, sobald er geliefert ist."
+}

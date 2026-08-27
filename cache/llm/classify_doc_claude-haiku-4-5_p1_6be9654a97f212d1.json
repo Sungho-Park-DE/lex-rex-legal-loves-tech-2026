@@ -1,0 +1,22 @@
+{
+  "aufgabe": "classify_doc",
+  "modell": "claude-haiku-4-5",
+  "prompt_version": "p1",
+  "eingabe": {
+    "seiten": [
+      {
+        "nr": 1,
+        "text": "Mitgliedsbedingungen der Seepark Aktiv GmbH\nFassung vom 01.06.2024\n\n5. Beiträge und Beitragsanpassung\n\n5.1 Anlass einer Anpassung des monatlichen Beitrags sind ausschließlich Veränderungen der Kosten, die dem Studio für den Betrieb entstehen, nämlich der Kosten für Energie, Personal, Miete der Studiofläche und Wartung der Geräte.\n\n5.2 Voraussetzung einer Erhöhung ist, dass die nach ihrem Anteil an den Betriebskosten gewichtete Summe der in Ziffer 5.1 genannten Kosten seit dem Vertragsschluss oder seit der letzten Anpassung um mehr als 3 Prozent gestiegen ist; eine Erhöhung ist höchstens einmal in zwölf Monaten zulässig. Der Umfang der Erhöhung ist auf den Prozentsatz begrenzt, um den die in Ziffer 5.1 genannten Kosten gestiegen sind, höchstens jedoch auf 5 Prozent des zuletzt geschuldeten Beitrags.\n\n5.3 Sinken die in Ziffer 5.1 genannten Kosten, ist das Studio verpflichtet, den Beitrag nach denselben Maßstäben und im selben Umfang zu senken. Die Senkung erfolgt ohne gesonderte Aufforderung des Mitglieds.\n\n5.4 Das Studio teilt jede Anpassung dem Mitglied spätestens zwei Monate vor ihrem Wirksamwerden in Textform mit und legt die maßgebliche Kostenentwicklung dabei dar. Das Mitglied kann den Vertrag bis zum Wirksamwerden der Anpassung zu diesem Zeitpunkt kündigen. Auf dieses Kündigungsrecht weist das Studio in der Mitteilung hin.\n\n6. Zahlung\n\n6.1 Der Beitrag ist monatlich im Voraus zum Monatsersten fällig und wird per SEPA-Lastschrift eingezogen.\n\n— Seite 2 von 3 —"
+      }
+    ]
+  },
+  "ausgabe": {
+    "dokumenttyp": "agb",
+    "konfidenz": 0.93,
+    "begruendung": "Fortsetzung derselben Mitgliedsbedingungen, Seite 2 von 3, mit Ziffer 5 (Beiträge und Beitragsanpassung)."
+  },
+  "dauer_ms": 610,
+  "kosten_cent": 0.05,
+  "zeit": null,
+  "aus_cache": false
+}

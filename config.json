@@ -1,0 +1,90 @@
+{
+  "demo_stichtag": "2026-08-27",
+  "stichtag_modus": "demo",
+  "llm": {
+    "adapter": "anthropic",
+    "modell_klassifikation": "claude-haiku-4-5",
+    "modell_extraktion": "claude-opus-5",
+    "prompt_version": "p1",
+    "cache": true,
+    "nur_cache": true,
+    "vertragsbedingungen": {
+      "zero_retention": "ungeprueft",
+      "eu_region": "ungeprueft"
+    }
+  },
+  "normbasis_modus": "dev",
+  "radar": {
+    "schwelle_beschwerden": 30,
+    "schwelle_beratungen": 15,
+    "k_min": 3
+  },
+  "platzhalter_regex": "\\[[A-Z0-9_]+\\]",
+  "antwortfrist_tage": 14,
+  "pseudonymisierung": {
+    "token_syntax": "@@TYP_N@@",
+    "quellen": [
+      "ticket_felder",
+      "regex_iban",
+      "regex_email",
+      "regex_telefon",
+      "regex_geburtsdatum",
+      "regex_kundennummer"
+    ],
+    "whitelist": [
+      "eingang.anbieter",
+      "eingang.gegner"
+    ],
+    "ner": false,
+    "sensible_keywords": [
+      "Krankheit",
+      "krank",
+      "Behinderung",
+      "Pflege",
+      "schwanger",
+      "Religion",
+      "Gewerkschaft"
+    ]
+  },
+  "log_akteur": "rolle",
+  "aufbewahrung_tage": {
+    "cases": 30,
+    "cache": 30,
+    "store": null
+  },
+  "store_pfad": "store/faelle.jsonl",
+  "hmac_secret_env": "FP_HMAC_SECRET",
+  "texte": {
+    "disclaimer": "Ersteinschätzung auf Basis der vorliegenden Unterlagen — keine Rechtsberatung im Einzelfall. Die Beraterin entscheidet.",
+    "ki_hinweis": "KI-gestützt: Ein Sprachmodell hat die Dokumente gelesen und Felder vorgeschlagen. Einordnung, Fristen und Schreiben berechnet das Programm nach hinterlegten Regeln.",
+    "stufe_b_hinweis": "Für diese Fallart sind noch keine Prüfpunkte hinterlegt — Unterlagen und Zuordnung stehen bereit, die Einordnung nehmen Sie wie gewohnt selbst vor.",
+    "stufe_c_hinweis": "Fallart im Programm nicht hinterlegt — bitte wie gewohnt manuell bearbeiten."
+  },
+  "referat_kriterien": [
+    {
+      "id": "neuigkeitswert",
+      "label": "hoher Neuigkeitswert"
+    },
+    {
+      "id": "dauerbrenner",
+      "label": "Dauerbrenner"
+    },
+    {
+      "id": "verletzliche_zielgruppe",
+      "label": "besonders verletzliche Zielgruppe"
+    },
+    {
+      "id": "dreist_ungewoehnlich",
+      "label": "äußerst dreiste oder ungewöhnliche Sachverhalte"
+    },
+    {
+      "id": "schadenshoehe",
+      "label": "bedeutsame Schadenshöhe"
+    },
+    {
+      "id": "rechtliche_relevanz",
+      "label": "besondere rechtliche Relevanz"
+    }
+  ],
+  "referat_hinweis": "Die sechs Kriterien sind die veröffentlichten Kriterien der Marktbeobachtung des vzbv (Methodik-Seite) — wortgleich übernommen, keine eigene Taxonomie. Nichts wird automatisch angehakt; die Beraterin entscheidet."
+}

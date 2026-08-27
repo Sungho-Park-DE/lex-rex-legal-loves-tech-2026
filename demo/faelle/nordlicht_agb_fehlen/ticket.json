@@ -1,0 +1,20 @@
+{
+  "kanal": "vbs",
+  "ticket_nr": "VBS-48402",
+  "thema": "Allgemeines Verbraucherrecht",
+  "eingegangen_am": "2026-08-26T08:05:00",
+  "anbieter": "Nordlicht Sportclub",
+  "branche": "fitness",
+  "gegner": null,
+  "freitext": "Mein Sportclub hat mir einen Brief geschickt, dass mein Beitrag ab Oktober von 27,50 auf 31,90 Euro steigt. Der Brief nennt eine Ziffer aus den AGB, aber die AGB habe ich gerade nicht zur Hand — ich weiß auch nicht mehr, ob ich sie damals überhaupt bekommen habe. Den Brief hänge ich an. Ist das so in Ordnung?",
+  "identitaet": {
+    "name": "Sabine Kortmann",
+    "adresse": "Bahnhofstraße 45, 86150 Augsburg",
+    "email": "s.kortmann@example.de",
+    "telefon": "0821 445566",
+    "kundennummer": "AB-771904"
+  },
+  "anhaenge": ["schreiben.md"],
+  "geprueft": false,
+  "hinweis": "Fiktion — eigene Testdaten für den unklar-Zweig und die Nachreichung (12_aufgaben_franz_runde2_de §5 Fälle 2 und 2b). Kein echter Fall, keine echten Personen. Die Nachreichungsdateien liegen im selben Verzeichnis und werden erst in der zweiten Stufe eingespielt."
+}
